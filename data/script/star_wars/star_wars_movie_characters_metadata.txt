@@ -1,0 +1,76 @@
+sw_u18 +++$+++ BIBBLE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u54 +++$+++ MACE WINDU +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u59 +++$+++ PALAPATINE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u33 +++$+++ QUI-GON hurries into the shop, followed by ARTOO. QUI-GON +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u1 +++$+++ QUI-GON +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u72 +++$+++ ANAKN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u58 +++$+++ RABE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u51 +++$+++ GREEDO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u70 +++$+++ ANAKNI +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u29 +++$+++ CAPTAIN PANAKA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u53 +++$+++ VALORUM +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u61 +++$+++ AKS MOE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u13 +++$+++ P-59 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u37 +++$+++ SHMI +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u43 +++$+++ WALD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u60 +++$+++ LOTT DOD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u68 +++$+++ GENERAL CEEL +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u31 +++$+++ ANAKIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u64 +++$+++ MAD AMEDDA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u12 +++$+++ RUNE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u6 +++$+++ EG-9 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u45 +++$+++ QU-IG0N +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u71 +++$+++ BRAVO TWO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u23 +++$+++ DARTH SIDIOUS +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u19 +++$+++ OOM-9 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u25 +++$+++ PADME +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u15 +++$+++ AMIDALA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u22 +++$+++ BOSS NASS +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u56 +++$+++ YODA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u73 +++$+++ SABE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u46 +++$+++ FODE/BEED +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u8 +++$+++ OBI-WAN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u69 +++$+++ FIGHTER PILOT +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u26 +++$+++ GUARD DROID +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u38 +++$+++ THREEPIO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u11 +++$+++ OWO-1 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u47 +++$+++ A +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u36 +++$+++ JIRA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u14 +++$+++ TEY HOW +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u17 +++$+++ CAPT. PANAKA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u9 +++$+++ DOFINE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u5 +++$+++ TC-14 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u30 +++$+++ WATTO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u24 +++$+++ BATTLE DROID 3B3 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u57 +++$+++ GUARD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u48 +++$+++ JABBA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u75 +++$+++ BRAVO THREE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u28 +++$+++ RIC OLIE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u21 +++$+++ CAPT. TARPALS +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u65 +++$+++ ASSEMBLY +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u32 +++$+++ PADME looks at him, not knowing what to say. PADME +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u35 +++$+++ SEBULBA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u67 +++$+++ GUNGAN LOOKOUT +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u76 +++$+++ OBI-WAN +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u4 +++$+++ PK-4 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u7 +++$+++ PR-4 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u50 +++$+++ FODE BEED +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u62 +++$+++ MAS AMEDDA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u27 +++$+++ DROID GUARD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u66 +++$+++ PANAKA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u3 +++$+++ NUTE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u74 +++$+++ BATTLE DROID CAPTAIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u63 +++$+++ BAIL ORGANA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u52 +++$+++ PILOT +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u55 +++$+++ KI-ADI +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u44 +++$+++ SEEK +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u42 +++$+++ KITSTER +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u16 +++$+++ PALPATINE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u2 +++$+++ CAPTAIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u20 +++$+++ JAR JAR +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u41 +++$+++ ANKAIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u34 +++$+++ VENDOR +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u10 +++$+++ TC14 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u39 +++$+++ DARTH MAUL +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u40 +++$+++ GUI-GON +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u49 +++$+++ FANTA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
