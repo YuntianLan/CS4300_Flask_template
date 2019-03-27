@@ -1,76 +1,287 @@
-sw_u18 +++$+++ BIBBLE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u54 +++$+++ MACE WINDU +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u59 +++$+++ PALAPATINE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u33 +++$+++ QUI-GON hurries into the shop, followed by ARTOO. QUI-GON +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u1 +++$+++ QUI-GON +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u72 +++$+++ ANAKN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u58 +++$+++ RABE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u51 +++$+++ GREEDO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u70 +++$+++ ANAKNI +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u29 +++$+++ CAPTAIN PANAKA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u53 +++$+++ VALORUM +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u61 +++$+++ AKS MOE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u13 +++$+++ P-59 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u37 +++$+++ SHMI +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u43 +++$+++ WALD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u60 +++$+++ LOTT DOD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u68 +++$+++ GENERAL CEEL +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u31 +++$+++ ANAKIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u64 +++$+++ MAD AMEDDA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u12 +++$+++ RUNE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u6 +++$+++ EG-9 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u45 +++$+++ QU-IG0N +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u71 +++$+++ BRAVO TWO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u23 +++$+++ DARTH SIDIOUS +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u19 +++$+++ OOM-9 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u25 +++$+++ PADME +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u15 +++$+++ AMIDALA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u22 +++$+++ BOSS NASS +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u56 +++$+++ YODA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u73 +++$+++ SABE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u46 +++$+++ FODE/BEED +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u8 +++$+++ OBI-WAN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u69 +++$+++ FIGHTER PILOT +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u26 +++$+++ GUARD DROID +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u38 +++$+++ THREEPIO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u11 +++$+++ OWO-1 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u47 +++$+++ A +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u36 +++$+++ JIRA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u14 +++$+++ TEY HOW +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u17 +++$+++ CAPT. PANAKA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u9 +++$+++ DOFINE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u5 +++$+++ TC-14 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u30 +++$+++ WATTO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u24 +++$+++ BATTLE DROID 3B3 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u57 +++$+++ GUARD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u48 +++$+++ JABBA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u75 +++$+++ BRAVO THREE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u28 +++$+++ RIC OLIE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u21 +++$+++ CAPT. TARPALS +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u65 +++$+++ ASSEMBLY +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u32 +++$+++ PADME looks at him, not knowing what to say. PADME +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u35 +++$+++ SEBULBA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u67 +++$+++ GUNGAN LOOKOUT +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u76 +++$+++ OBI-WAN +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
-sw_u4 +++$+++ PK-4 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u7 +++$+++ PR-4 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u50 +++$+++ FODE BEED +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u62 +++$+++ MAS AMEDDA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u27 +++$+++ DROID GUARD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u66 +++$+++ PANAKA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u3 +++$+++ NUTE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u74 +++$+++ BATTLE DROID CAPTAIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u63 +++$+++ BAIL ORGANA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u52 +++$+++ PILOT +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u55 +++$+++ KI-ADI +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u44 +++$+++ SEEK +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u42 +++$+++ KITSTER +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u16 +++$+++ PALPATINE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u2 +++$+++ CAPTAIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u20 +++$+++ JAR JAR +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u41 +++$+++ ANKAIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u34 +++$+++ VENDOR +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u10 +++$+++ TC14 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u39 +++$+++ DARTH MAUL +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u40 +++$+++ GUI-GON +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
-sw_u49 +++$+++ FANTA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u18 +++$+++ WATTO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u179 +++$+++ CLONE TROOPER +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u258 +++$+++ PILOT +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u238 +++$+++ VOBER DAND +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u89 +++$+++ SOLA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u112 +++$+++ PAGE 84 +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u210 +++$+++ TASU LEECH +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u286 +++$+++ ONIHO ZAYA +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u95 +++$+++ JEDI CHILD MAY +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u211 +++$+++ SNOKE +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u86 +++$+++ SIO BIBBLE +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u169 +++$+++ AAYLA +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u119 +++$+++ SUN RIT +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u273 +++$+++ LARMA D'ACY +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u45 +++$+++ MAS AMEDDA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u97 +++$+++ TAUN WE +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u254 +++$+++ GONERIL +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u196 +++$+++ STORMTROOPER #1 +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u33 +++$+++ FANTA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u249 +++$+++ LEIA +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u216 +++$+++ YOUNG GIRL +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u133 +++$+++ SUPER BATTLE DROID 1 +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u43 +++$+++ LOTT DOD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u44 +++$+++ AKS MOE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u153 +++$+++ GlDDEAN DANU +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u142 +++$+++ SUPER BATTLE DROID +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u108 +++$+++ CLIEGG +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u123 +++$+++ DROID CAPTAIN +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u239 +++$+++ OFFICER TABALA ZO +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u67 +++$+++ ORN FREE TAA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u46 +++$+++ BAIL ORGANA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u134 +++$+++ SUPER BATTLE DROID 2 +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u19 +++$+++ ANAKIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u218 +++$+++ STORMTROOPER #4 +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u103 +++$+++ JANGO +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u150 +++$+++ MON MOTHMA +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u90 +++$+++ JOBAL +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u101 +++$+++ BOBA FETT +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u109 +++$+++ SHMI +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u270 +++$+++ KYLO REN +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u4 +++$+++ RUNE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u38 +++$+++ MACE WINDU +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u135 +++$+++ DROID 1 +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u229 +++$+++ FIRST ORDER OFFICER +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u168 +++$+++ MACE WiNDU +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u62 +++$+++ AMIDALA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u162 +++$+++ JAR JAR +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u205 +++$+++ FINN +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u198 +++$+++ STORMTROOPER #2 +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u50 +++$+++ GUNGAN LOOKOUT +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u176 +++$+++ CLONE SERGEANT +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u138 +++$+++ COUNT DOOKU +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u186 +++$+++ GUARD +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u14 +++$+++ GUARD DROID +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u200 +++$+++ REY +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u261 +++$+++ PILOT 3 +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u83 +++$+++ HERMIONE BAGWA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u194 +++$+++ SENIOR TROOPER +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u267 +++$+++ FINN +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u257 +++$+++ FINCH DALLOW +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u277 +++$+++ DJ +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u16 +++$+++ RIC OLIE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u39 +++$+++ YODA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u23 +++$+++ SHMI +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u156 +++$+++ MOTEE +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u113 +++$+++ PAGE 85 +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u222 +++$+++ TROOPER GUARD #2 +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u87 +++$+++ JOCASTA NU +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u189 +++$+++ MEDICAL DROID +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u107 +++$+++ BERU +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u75 +++$+++ ELAN +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u223 +++$+++ SNAP +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u71 +++$+++ BAIL ORGANA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u197 +++$+++ CAPTAIN PHASMA +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u282 +++$+++ EDRISON PEAVEY +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u56 +++$+++ SABE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u49 +++$+++ PANAKA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u54 +++$+++ BRAVO TWO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u131 +++$+++ BODYGUARD I +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u252 +++$+++ TALLIE +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u225 +++$+++ MAJOR EMATT +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u157 +++$+++ CLONE COMMANDER GREE +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u74 +++$+++ ELAN SLEAZEBAGGANO +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u266 +++$+++ PILOT 8 +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u66 +++$+++ AMBASSADOR DARSANA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u69 +++$+++ YODA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u140 +++$+++ ANAKINN +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u128 +++$+++ CLONE PILOT 2 +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u195 +++$+++ KYLO REN +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u37 +++$+++ VALORUM +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u68 +++$+++ MACE WINDU +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u234 +++$+++ ELLO ASTY +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u11 +++$+++ DARTH SIDIOUS +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u144 +++$+++ MACE WlNDU +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u110 +++$+++ THREEPIO +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u285 +++$+++ EXT +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u145 +++$+++ BAIL ORGANA +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u12 +++$+++ BATTLE DROID 3B3 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u48 +++$+++ ASSEMBLY +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u143 +++$+++ FlRESHIP PILOT +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u244 +++$+++ KAYDEL KO CONNIX +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u228 +++$+++ OFFICER +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u155 +++$+++ CAPTAIN TYPHO +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u187 +++$+++ RUNE HAAKO +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u29 +++$+++ SEEK +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u184 +++$+++ THREEPIO +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u122 +++$+++ PLO KOON +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u182 +++$+++ CLONE CAPTAIN +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u106 +++$+++ OWEN +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u166 +++$+++ FANGZAR +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u96 +++$+++ MACE +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u99 +++$+++ WINDU +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u188 +++$+++ DARTH VADER +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u81 +++$+++ FOOD SERVER +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u88 +++$+++ RYOO & POOJA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u31 +++$+++ A +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u269 +++$+++ SNOKE +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u226 +++$+++ ADMIRAL ACKBAR +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u264 +++$+++ PILOT 6 +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u240 +++$+++ NIV LEK +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u137 +++$+++ PALPATINE +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u63 +++$+++ MAS AMEDDA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u80 +++$+++ SERVER +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u199 +++$+++ UNKAR +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u125 +++$+++ DARTH SIDIOUS +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u190 +++$+++ EPISODE VII +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u151 +++$+++ GIDDEAN DANU +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u158 +++$+++ BANA BREEMU +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u212 +++$+++ REY AND FINN +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u213 +++$+++ MAZ +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u148 +++$+++ YODA +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u159 +++$+++ GiDDEAN DANU +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u259 +++$+++ TEENE +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u233 +++$+++ COLONEL DATOO +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u79 +++$+++ DORME +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u236 +++$+++ JESS +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u207 +++$+++ TECHNICIAN #1 +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u53 +++$+++ ANAKNI +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u227 +++$+++ ADMIRAL STATURA +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u136 +++$+++ DROID 2 +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u173 +++$+++ PLO KOON +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u1 +++$+++ NUTE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u265 +++$+++ PILOT 7 +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u120 +++$+++ POGGLE +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u231 +++$+++ GULCH +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u76 +++$+++ ZAM WESSEL +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u59 +++$+++ CAPTAIN TYPHO +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u242 +++$+++ MEDIC +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u15 +++$+++ DROID GUARD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u279 +++$+++ ANNOUNCER +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u24 +++$+++ THREEPIO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u256 +++$+++ BASCUS +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u132 +++$+++ BATTLE DROID +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u117 +++$+++ COUNT DOOKU +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u94 +++$+++ JEDI CHILD JACK +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u58 +++$+++ BRAVO THREE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u73 +++$+++ ANAKIN +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u191 +++$+++ THE FORCE AWAKENS +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u84 +++$+++ DEXTER JETTSTER +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u255 +++$+++ KAYDEN KO CONNIX +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u171 +++$+++ DARTH SIDIOUS +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u17 +++$+++ CAPTAIN PANAKA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u167 +++$+++ MACE WINDU +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u147 +++$+++ DARTH SlDIOUS +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u115 +++$+++ PAGE 87 +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u274 +++$+++ ROSE +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u124 +++$+++ CLONE CAPTAIN +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u116 +++$+++ PAGE 88 +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u246 +++$+++ ARMITAGE HUX +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u174 +++$+++ DABTH SIDIOUS +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u77 +++$+++ ZAM +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u178 +++$+++ CREATURE +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u102 +++$+++ JANGO FETT +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u180 +++$+++ ROYAL GUARD +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u100 +++$+++ PAMDE +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u55 +++$+++ ANAKN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u204 +++$+++ FIRST ORDER COLONEL +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u219 +++$+++ STORMTROOPER #5 +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u224 +++$+++ BRANCE +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u202 +++$+++ GENERAL HUX +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u247 +++$+++ MONITOR +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u57 +++$+++ BATTLE DROID CAPTAIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u2 +++$+++ DOFINE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u61 +++$+++ CORDÉ +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u250 +++$+++ LANK PAZE +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u149 +++$+++ FANG ZAR +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u35 +++$+++ GREEDO +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u104 +++$+++ BOBA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u21 +++$+++ SEBULBA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u85 +++$+++ QUEEN JAMILLIA +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u183 +++$+++ BAIL +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u25 +++$+++ DARTH MAUL +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u276 +++$+++ AMILYN HOLDO +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u36 +++$+++ PILOT +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u283 +++$+++ SOLDIER #1 +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u78 +++$+++ PADME +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u26 +++$+++ ANKAIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u30 +++$+++ FODE/BEED +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u209 +++$+++ HAN +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u93 +++$+++ CHILDREN +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u114 +++$+++ PAGE 86 +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u9 +++$+++ JAR JAR +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u232 +++$+++ YOLO ZIFF +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u248 +++$+++ POE +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u141 +++$+++ BODYGUARD +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u34 +++$+++ FODE BEED +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u70 +++$+++ DAR WAC +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u82 +++$+++ HERMIONE +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u181 +++$+++ CAPTAIN ANTILLES +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u235 +++$+++ SOMETHING BEHIND +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u3 +++$+++ TC14 +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u111 +++$+++ PAGE 83 +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u230 +++$+++ REAR ADMIRAL +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u126 +++$+++ ANAKIN +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u60 +++$+++ PADMÉ +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u164 +++$+++ WRANGLER +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u268 +++$+++ REY +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u280 +++$+++ FIRST ORDER OFFICER +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u253 +++$+++ CANADY +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u192 +++$+++ LOR SAN TEKKA +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u284 +++$+++ MALE SCOUT +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u177 +++$+++ CLONE COMMANDER APPO +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u51 +++$+++ GENERAL CEEL +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u22 +++$+++ JIRA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u91 +++$+++ RUWEE +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u118 +++$+++ DOOKU +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u278 +++$+++ OFFICER #1 +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u0 +++$+++ CAPTAIN +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u105 +++$+++ WATTO +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u281 +++$+++ PHASMA +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u41 +++$+++ RABE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u214 +++$+++ BAZINE +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u245 +++$+++ PEAVEY +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u8 +++$+++ BIBBLE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u146 +++$+++ PADME +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u13 +++$+++ PADME +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u127 +++$+++ ODD BALL +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u172 +++$+++ CLONE PILOT +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u185 +++$+++ MAS AMEDDA +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u170 +++$+++ BLY +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u92 +++$+++ JOVAL +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u193 +++$+++ POE +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u5 +++$+++ TEY HOW +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u161 +++$+++ CLONE COMMANDER CODY +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u28 +++$+++ WALD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u262 +++$+++ JAYCRIS TUBBS +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u52 +++$+++ FIGHTER PILOT +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u220 +++$+++ LEIA +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u272 +++$+++ LUKE +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u10 +++$+++ BOSS NASS +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u129 +++$+++ GENERAL GRIEVOUS +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u241 +++$+++ YOUNG TECHNICIAN +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u32 +++$+++ JABBA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u275 +++$+++ MAZ +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u27 +++$+++ KITSTER +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u163 +++$+++ TlON MEDON +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u20 +++$+++ VENDOR +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u160 +++$+++ CHI EEKWAY +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u165 +++$+++ NUTE GUNRAY +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u130 +++$+++ CAPTAIN +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u206 +++$+++ LIEUTENANT MITAKA +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u208 +++$+++ UNDER THE GRATING +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u217 +++$+++ UNKAR PLUTT +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u154 +++$+++ MACE +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u243 +++$+++ JONES +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u6 +++$+++ AMIDALA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u64 +++$+++ PALPATINE +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u271 +++$+++ MALE ANNOUNCER +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u215 +++$+++ ON FINN +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u65 +++$+++ SENATOR ASK AAK +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u40 +++$+++ GUARD +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u139 +++$+++ PILOT +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u98 +++$+++ LAMA SU +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u175 +++$+++ YOUNGLINGS +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u121 +++$+++ NUTE GUNRAY +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u203 +++$+++ STORMTROOPER +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u251 +++$+++ HUX +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u263 +++$+++ PILOT 5 +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
+sw_u201 +++$+++ STRAIGHTENS THE +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u221 +++$+++ GENERAL STATURA +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u7 +++$+++ PALPATINE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u152 +++$+++ TERR TANEEL +++$+++ sw_m2 +++$+++ Star Wars: Episode 3: Revenge of the Sith +++$+++ ? +++$+++ ?
+sw_u47 +++$+++ MAD AMEDDA +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u42 +++$+++ PALAPATINE +++$+++ sw_m0 +++$+++ Star Wars: Episode 1: The Phantom Menace +++$+++ ? +++$+++ ?
+sw_u237 +++$+++ KAYDEL KO CONNIX +++$+++ sw_m3 +++$+++ Star Wars: Episode 7: The Force Awakens +++$+++ ? +++$+++ ?
+sw_u72 +++$+++ JAR JAR +++$+++ sw_m1 +++$+++ Star Wars: Episode 2: Attack of the Clones +++$+++ ? +++$+++ ?
+sw_u260 +++$+++ PILOT 2 +++$+++ sw_m4 +++$+++ Star Wars: Episode 8: The Last Jedi +++$+++ ? +++$+++ ?
