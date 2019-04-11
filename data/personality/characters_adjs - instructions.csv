@@ -1,0 +1,12 @@
+Data format
+"Character: Fandom的角色id, tab名是Fandom上fandom wiki名字，所以要找角色wiki地址： https://[tab].fandom.com/wiki/[character]"
+"Original Adjs： Fandom爬下来的形容词，形容词后的数字是weight，1代表形容词语法上靠角色近，比较确定是形容这个角色的, 0.5代表不确定"
+Added Adjs：从别的地方找到的形容词和我自己加上的形容词，weight都是1
+Scores：目前Original Adjs+Added Adjs算出的值，-1到1
+
+TODO
+把形容角色的词填在To Be Added里，不需要weight只需要形容词
+形容词列表在github repo data/personality/big5.csv，column顺序和这个表里一样，尽量看着这个表里的值和形容词的loading来调整
+weight上限是1，所以如果Original Adjs有weight0.5的，在Added Adjs里再填一遍能提升weight到1(特别是如果你确定这个词是用来形容这个角色的话），如果weight本来就是1再填无效
+优先填Added Adjs里空的或者少于5个的，Added Adjs形容词多的我基本都看最后score调整过了；优先填score是极端值+/-1的，调整到中间
+最后算score的时候有normalization，所以形容词越多，每个词对最后值的影响越小
