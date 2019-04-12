@@ -1,20 +1,26 @@
 from . import *  
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
+from app.irsystem.models.helpers import Matcher
 
-project_name = "Ben's Cool Project Template"
-net_id = "Ben Liu: jl3726"
+project_name = "Who are you on screen?"
+net_id = ""
+
+matcher = Matcher()
 
 @irsystem.route('/', methods=['GET'])
 def search():
 	query = request.args.get('search')
+	data = [1,2,3,4,5] # why the fuck do I need this???
 	if not query:
-		data = []
 		output_message = ''
 	else:
-		output_message = "Your search: " + query
-		data = range(5)
-	return render_template('search.html', name=project_name, netid=net_id, output_message=output_message, data=data)
+		query = list(map(float, query.split(',')))
+		res = matcher.match(query)
+		output_message = "" + res
+	return render_template('search.html', \
+		name=project_name, netid=net_id, \
+		output_message=output_message, data=data)
 
 
 
