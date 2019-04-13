@@ -15,7 +15,7 @@ DATA_PATH = 'data/personality/char_big_five/'
 
 
 sanitize = lambda s: s[:s.find(' ')] if ' ' in s else s
-capt = lambda s: ' '.join(map(lambda a: a.capitalize(), s.split('_')))
+capt = lambda s: ' '.join(s.split('_'))
 
 
 # name: path for the csv file containing big 5 information
@@ -70,16 +70,17 @@ class Matcher(object):
 		ans[3] = results[8] - results[3]
 		ans[4] = results[4] - results[9]
 		return ans / 6
-
-	# Returns the information for best matching characters
-	# results is an array of 10 numbers ranging 1-7 for the personality test
-	# Returns (for now): 
-	# 		Char name list
-	#		Movie/TV name list
-	# 		Quote list
-	# 		Char bigfive vec list
-	#		User bigfive vector
-	# Each list has a length of NUM_MATCH, ranking from most to least similar
+	'''
+	Returns the information for best matching characters
+	results is an array of 10 numbers ranging 1-7 for the personality test
+	Returns (for now): 
+			Char name list
+			Movie/TV name list
+			Quote list
+			Char bigfive vector list
+			User bigfive vector
+	Each list has a length of NUM_MATCH, ranking from most to least similar
+	'''
 	def match(self, results):
 		vec = self.__calc_bigfive(results)
 		indices = np.linalg.norm(vec - self.bigfive, axis = 1).argsort()
