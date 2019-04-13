@@ -56,26 +56,24 @@ class Matcher(object):
 				self.bigfive = vecs
 			else:
 				self.bigfive = np.concatenate((self.bigfive, vecs))
-		# print(self.bigfive)
 
 
 	def __calc_bigfive(self, results):
 		assert len(results) == 10, 'must provide 10 answers for bigfive quiz'
 		ans = np.zeros(5)
-		ans[1] = results[0] + 8 - results[5]
-		ans[0] = results[6] + 8 - results[1]
-		ans[2] = results[2] + 8 - results[7]
-		ans[3] = results[8] + 8 - results[3]
-		ans[4] = results[4] + 8 - results[9]
-		return (ans - 8.) / 6
+		ans[1] = results[0] - results[5]
+		ans[0] = results[6] - results[1]
+		ans[2] = results[2] - results[7]
+		ans[3] = results[8] - results[3]
+		ans[4] = results[4] - results[9]
+		return ans / 6
 
 	# Returns the information for best matching characters
 	# results is an array of 10 numbers ranging 1-7 for the personality test
 	def match(self, results):
 		vec = self.__calc_bigfive(results)
-		indices = np.sum((vec * self.bigfive) ** 2, axis = 1).argsort()
+		indices = np.linalg.norm(vec - self.bigfive, axis = 1).argsort()
 		nearest = indices[0]
-		print(vec, self.chars[nearest], self.series[nearest], self.bigfive[nearest])
 		return 'You are most similar to %s in %s' % \
 			(self.chars[nearest], self.series[nearest])
 
