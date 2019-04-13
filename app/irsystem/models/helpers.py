@@ -16,6 +16,7 @@ DATA_PATH = 'data/personality/char_big_five/'
 sanitize = lambda s: s[:s.find(' ')] if ' ' in s else s
 capt = lambda s: ' '.join(map(lambda a: a.capitalize(), s.split('_')))
 
+
 # name: path for the csv file containing big 5 information
 # returns: parsed movie / TV name, character names, big-five matrix
 
