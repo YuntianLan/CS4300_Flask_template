@@ -5,10 +5,11 @@ import json
 import numpy as np
 import os
 import csv
+from collections import defaultdict
 
 
 # Number of best match characters returned (besides the best match)
-NUM_MATCH = 5
+NUM_MATCH = 1
 
 DATA_PATH = 'data/personality/char_big_five/'
 
@@ -45,6 +46,7 @@ class Matcher(object):
 		self.chars = {} # character id to char name
 		self.series = {} # char id to movie / TV name
 		self.bigfive = None
+		self.quotes = defaultdict(str)
 		files = os.listdir(DATA_PATH)
 		for file in files:
 			if file[0] == '.': continue
@@ -71,12 +73,23 @@ class Matcher(object):
 
 	# Returns the information for best matching characters
 	# results is an array of 10 numbers ranging 1-7 for the personality test
+	# Returns (for now): 
+	# 		Char name list
+	#		Movie/TV name list
+	# 		Quote list
+	# 		Char bigfive vec list
+	#		User bigfive vector
+	# Each list has a length of NUM_MATCH, ranking from most to least similar
 	def match(self, results):
 		vec = self.__calc_bigfive(results)
 		indices = np.linalg.norm(vec - self.bigfive, axis = 1).argsort()
-		nearest = indices[0]
-		return 'You are most similar to %s in %s' % \
-			(self.chars[nearest], self.series[nearest])
+		nearest = indices[:NUM_MATCH]
+		cnames, mnames, quotes = [], [], []
+		for i in nearest:
+			cnames.append(self.chars[i])
+			mnames.append(self.series[i])
+			quotes.append(self.quotes[i])
+		return cnames, mnames, quotes, self.bigfive[nearest], vec
 
 
 def http_json(result, bool):
