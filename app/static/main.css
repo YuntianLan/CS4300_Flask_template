@@ -47,7 +47,7 @@
         width: 100%;
     }
     .form-check-label{
-        font-weight: normal;
+        font-weight: normal !important;
     }
 
     
