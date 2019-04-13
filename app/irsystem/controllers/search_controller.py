@@ -11,7 +11,6 @@ matcher = Matcher()
 
 @irsystem.route('/', methods=['GET'])
 def search():
-	# print(request.args)
 	if not request.args.get('questionOne'):
 		return render_template('search.html', \
 			name = project_name, netid = net_id)
