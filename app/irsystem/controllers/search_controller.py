@@ -4,16 +4,15 @@ from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 from app.irsystem.models.helpers import Matcher
 import numpy as np
 
-project_name = "Who are you on screen?"
+pname = "Who are you on screen?"
 net_id = ""
 
 matcher = Matcher()
 
 @irsystem.route('/', methods=['GET', 'POST'])
 def search():
-	if not request.args.get('questionOne'):
-		return render_template('search.html', \
-			name = project_name, netid = net_id)
+
+	return render_template('search.html', name=pname, netid=net_id)
 
 	query = [
 		int(request.args.get('questionOne')),
@@ -33,8 +32,9 @@ def search():
 		char1 = cnames[0], movie1 = mnames[0], quote1 = quotes[0],\
 		vec1 = vecs[0], user_vec = user_vec)
 
-@irsystem.route('/result', methods=['GET'])
+@irsystem.route('/result.html', methods=['GET'])
 def result():
+	print(request.args)
 	query = [
 		int(request.args.get('group0')),
 		int(request.args.get('group1')),

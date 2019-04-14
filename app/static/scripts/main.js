@@ -54,11 +54,22 @@ $.ajax({
 
 
 $('#submit-btn').click(function () {
+	document.data = returnDict;
+	var url = "result?group0=" + returnDict["group0"] + 
+			"&group1=" + returnDict["group1"] + 
+			"&group2=" + returnDict["group2"] + 
+			"&group3=" + returnDict["group3"] + 
+			"&group4=" + returnDict["group4"] + 
+			"&group5=" + returnDict["group5"] + 
+			"&group6=" + returnDict["group6"] + 
+			"&group7=" + returnDict["group7"] + 
+			"&group8=" + returnDict["group8"] + 
+			"&group9=" + returnDict["group9"];
+	document.location.href = url;
 
-	document.location.href = "result";
 });
 
 // Refresh the screen to show a new quiz if they click the retake quiz button
 $('#retake-btn').click(function () {
-	document.location.href = "search.html";
+	document.location.href = "";
 });
