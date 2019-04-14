@@ -32,7 +32,7 @@ def search():
 		char1 = cnames[0], movie1 = mnames[0], quote1 = quotes[0],\
 		vec1 = vecs[0], user_vec = user_vec)
 
-@irsystem.route('/result.html', methods=['GET'])
+@irsystem.route('/result', methods=['GET'])
 def result():
 	print(request.args)
 	query = [
