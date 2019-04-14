@@ -1,689 +1,512 @@
+<!DOCTYPE html>
 <html>
     <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Who are you on Screen?</title>
+      <!-- FONTAWESOME -->
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    	<!-- Latest compiled and minified CSS -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="/static/bootstrap.min.css">
         <link rel="stylesheet" href="/static/main.css">
+		<link rel="stylesheet" href="/static/all.css">
     </head>
-    <body>
-        <div class="topcorner">
+
+	<body>
+        <!-- <div class="topcorner">
             <p>Project Name: {{ name }}</p>
             <p>Student Name: ({{ netid }})</p>
+        </div> -->
+        <div id="title", class="text-center">
+          <h1 style="font-size: 40px; font-family:Futura; color: white">Who Are You on Screen</h1>
+          <h2 style="font-size: 15px; font-family:Futura; color: white">Fictional Characters Match-Up</h2>
         </div>
-        <form class="form-inline global-search">
-            <h1 style="font-size: 55px; font-family:Futura; color: #4285F4">
-                C
-                <font color=#EA4335>S</font>
-                <font color=#FBBC05>4</font>
-                3
-                <font color=#34A853>0</font>
-                <font color=#EA4335>0</font>
-            </h1>
-            
-            
+
             <br><br>
-            
-            <!-- <div class="form-group">
-                <input id="input" type="text" name="search" class="form-control" placeholder="Your Input">
-            </div> -->
-            <div class="Question"><b>Question One: I see myself as extraverted, enthusiastic</b></div>
-            <br>
-<div class="form-check">
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios1">
-        <p>Agree Strongly</p> 
-        <!--normal font, unimportant-->
-    <br>    
-    <input class="form-check-input" type="radio" name="questionOne" id="exampleRadios1" value=7 unchecked required="required">
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Agree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionOne" id="exampleRadios1" value=6 unchecked>
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios3">
-        Agree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionOne" id="exampleRadios1" value=5 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Neither Agree Nor Disagree
-        <br>    
-    <input class="form-check-input" type="radio" name="questionOne" id="exampleRadios1" value=4 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Disagree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionOne" id="exampleRadios1" value=3 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Disagree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionOne" id="exampleRadios1" value=2 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Disagree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionOne" id="exampleRadios1" value=1 unchecked>
-    </label>
-</div>
-  </div>
-
-<br>
-<br>
-<br>
-<div class="Question">
-<b>Question Two: I see myself as critical, quarrelsome</b>
-
-</div>
-<br>
-
-<div class="form-check">
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios1">
-        Agree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionTwo" id="exampleRadios1" value=7 unchecked required="required">
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Agree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionTwo" id="exampleRadios1" value=6 unchecked>
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios3">
-        Agree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionTwo" id="exampleRadios1" value=5 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Neither Agree Nor Disagree    <br>    
-    <input class="form-check-input" type="radio" name="questionTwo" id="exampleRadios1" value=4 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree A Little
-            <br>    
-    <input class="form-check-input" type="radio" name="questionTwo" id="exampleRadios1" value=3 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Moderately
-            <br>    
-    <input class="form-check-input" type="radio" name="questionTwo" id="exampleRadios1" value=2 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionTwo" id="exampleRadios1" value=1 unchecked>
-    </label>
-</div>
-  </div>
-
-  <br>
-  <br>
-  <br>
-  
-  <div class="Question">
-  <b>Question Three: I see myself as dependable, self-disciplined</b>
-</div>
-<br>
-
-<div class="form-check">
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios1">
-        Agree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionThree" id="exampleRadios1" value=7 unchecked required="required">
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Agree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionThree" id="exampleRadios1" value=6 unchecked>
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios3">
-        Agree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionThree" id="exampleRadios1" value=5 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Neither Agree Nor Disagree
-                <br>    
-    <input class="form-check-input" type="radio" name="questionThree" id="exampleRadios1" value=4 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree A Little
-            <br>    
-    <input class="form-check-input" type="radio" name="questionThree" id="exampleRadios1" value=3 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Moderately
-            <br>    
-    <input class="form-check-input" type="radio" name="questionThree" id="exampleRadios1" value=2 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionThree" id="exampleRadios1" value=1 unchecked>
-    </label>
-</div>
-  </div>
-
-  <br>
-  <br>
-  <br>
-
-  <div class="Question">
-  <b>Question Four: I see myself as anxious, easily upset</b></div>
-  <br>
-
-<div class="form-check">
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios1">
-        Agree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionFour" id="exampleRadios1" value=7 unchecked required="required">
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Agree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionFour" id="exampleRadios1" value=6 unchecked>
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios3">
-        Agree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionFour" id="exampleRadios1" value=5 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Neither Agree Nor Disagree    <br>    
-    <input class="form-check-input" type="radio" name="questionFour" id="exampleRadios1" value=4 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree A Little
-            <br>    
-    <input class="form-check-input" type="radio" name="questionFour" id="exampleRadios1" value=3 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Moderately
-            <br>    
-    <input class="form-check-input" type="radio" name="questionFour" id="exampleRadios1" value=2 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionFour" id="exampleRadios1" value=1 unchecked>
-    </label>
-</div>
-  </div>
-
-  <br>
-  <br>
-  <br>
-
-  <div class="Question">
-
-  <b>Question Five: I see myself as open to new experiences, complex</b>
-</div>
-
-<br>
-
-<div class="form-check">
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios1">
-        Agree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionFive" id="exampleRadios1" value=7 unchecked required="required">
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Agree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionFive" id="exampleRadios1" value=6 unchecked>
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios3">
-        Agree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionFive" id="exampleRadios1" value=5 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Neither Agree Nor Disagree    <br>    
-    <input class="form-check-input" type="radio" name="questionFive" id="exampleRadios1" value=4 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree A Little
-            <br>    
-    <input class="form-check-input" type="radio" name="questionFive" id="exampleRadios1" value=3 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Moderately
-            <br>    
-    <input class="form-check-input" type="radio" name="questionFive" id="exampleRadios1" value=2 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionFive" id="exampleRadios1" value=1 unchecked>
-    </label>
-</div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="Question">
-
-  <b>Question Six: I see myself as reserved, quiet</b>
-</div>
-<br>
-
-
-<div class="form-check">
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios1">
-        Agree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionSix" id="exampleRadios1" value=7 unchecked required="required">
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Agree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionSix" id="exampleRadios1" value=6 unchecked>
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios3">
-        Agree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionSix" id="exampleRadios1" value=5 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Neither Agree Nor Disagree    <br>    
-    <input class="form-check-input" type="radio" name="questionSix" id="exampleRadios1" value=4 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree A Little
-            <br>    
-    <input class="form-check-input" type="radio" name="questionSix" id="exampleRadios1" value=3 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Moderately
-            <br>    
-    <input class="form-check-input" type="radio" name="questionSix" id="exampleRadios1" value=2 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionSix" id="exampleRadios1" value=1 unchecked>
-    </label>
-</div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="Question">
-
-  <b>Question Seven: I see myself as sympathetic, warm</b>
-</div>
-<br>
-
-
-<div class="form-check">
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios1">
-        Agree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionSeven" id="exampleRadios1" value=7 unchecked required="required">
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Agree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionSeven" id="exampleRadios1" value=6 unchecked>
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios3">
-        Agree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionSeven" id="exampleRadios1" value=5 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Neither Agree Nor Disagree    <br>    
-    <input class="form-check-input" type="radio" name="questionSeven" id="exampleRadios1" value=4 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree A Little
-            <br>    
-    <input class="form-check-input" type="radio" name="questionSeven" id="exampleRadios1" value=3 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Moderately
-            <br>    
-    <input class="form-check-input" type="radio" name="questionSeven" id="exampleRadios1" value=2 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionSeven" id="exampleRadios1" value=1 unchecked>
-    </label>
-</div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="Question">
-
-  <b>Question Eight: I see myself as disorganized, careless</b>
-  </div>
-  <br>
-
-
-<div class="form-check">
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios1">
-        Agree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionEight" id="exampleRadios1" value=7 unchecked required="required">
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Agree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionEight" id="exampleRadios1" value=6 unchecked>
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios3">
-        Agree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionEight" id="exampleRadios1" value=5 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Neither Agree Nor Disagree    <br>    
-    <input class="form-check-input" type="radio" name="questionEight" id="exampleRadios1" value=4 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree A Little
-            <br>    
-    <input class="form-check-input" type="radio" name="questionEight" id="exampleRadios1" value=3 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Moderately
-            <br>    
-    <input class="form-check-input" type="radio" name="questionEight" id="exampleRadios1" value=2 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionEight" id="exampleRadios1" value=1 unchecked>
-    </label>
-</div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="Question">
-
-  <b>Question Nine: I see myself as calm, emotioanlly stable</b>
-  </div>
-  <br>
-
-<div class="form-check">
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios1">
-        Agree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionNine" id="exampleRadios1" value=7 unchecked required="required">
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Agree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionNine" id="exampleRadios1" value=6 unchecked>
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios3">
-        Agree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionNine" id="exampleRadios1" value=5 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Neither Agree Nor Disagree    <br>    
-    <input class="form-check-input" type="radio" name="questionNine" id="exampleRadios1" value=4 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree A Little
-            <br>    
-    <input class="form-check-input" type="radio" name="questionNine" id="exampleRadios1" value=3 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Moderately
-            <br>    
-    <input class="form-check-input" type="radio" name="questionNine" id="exampleRadios1" value=2 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionNine" id="exampleRadios1" value=1 unchecked>
-    </label>
-</div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="Question">
-
-  <b>Question Ten: I see myself as conventional, uncreative</b>
-  </div>
-  <br>
-
-<div class="form-check">
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios1">
-        Agree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionTen" id="exampleRadios1" value=7 unchecked required="required">
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-        Agree Moderately
-    <br>    
-    <input class="form-check-input" type="radio" name="questionTen" id="exampleRadios1" value=6 unchecked>
-    </label>
-    </div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios3">
-        Agree A Little
-    <br>    
-    <input class="form-check-input" type="radio" name="questionTen" id="exampleRadios1" value=5 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Neither Agree Nor Disagree    <br>    
-    <input class="form-check-input" type="radio" name="questionTen" id="exampleRadios1" value=4 unchecked>
-    </label>
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree A Little
-            <br>    
-    <input class="form-check-input" type="radio" name="questionTen" id="exampleRadios1" value=3 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Moderately
-            <br>    
-    <input class="form-check-input" type="radio" name="questionTen" id="exampleRadios1" value=2 unchecked>
-    </label> 
-</div>
-
-    <div class="choices">
-    <label class="form-check-label" for="exampleRadios2">
-            Disagree Strongly
-    <br>    
-    <input class="form-check-input" type="radio" name="questionTen" id="exampleRadios1" value=1 unchecked>
-    </label>
-</div>
-  </div>
-
-
-            <button type="submit" class="btn btn-info"> Go! </button>
-        </form>
-        <form class="form-inline global-search">
-        </form>
+			
+<!--		<div class="container text-center">
+			<ul id="quiz" class="list-group"></ul>
+			</div>
+-->
+       <div id="quiz" class="test-question comp">
+              <div class="question">
+                <div class="statement">
+                  I see myself as extraverted, enthusiastic.
+                </div>
+                <div class="decision">
+                  <div class="caption agree">agree</div>
+                <div class="options">
+                  <div class="group0 option agree max 7">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group0 option agree med 6">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group0 option agree min 5">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group0 option neutral 4">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group0 option disagree min 3">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group0 option disagree med 2">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group0 option disagree max 1">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                </div>
+                <div class="caption disagree">Disagree</div>
+                </div>
+				</div>
+              <div class="question">
+                <div class="statement">
+                  I see myself as critical, quarrelsome.
+                </div>
+                <div class="decision">
+                <div class="caption agree">agree</div>
+                <div class="options">
+                  <div class="group1 option agree max 7">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group1 option agree med 6">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group1 option agree min 5">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group1 option neutral 4">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group1 option disagree min 3">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group1 option disagree med 2">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group1 option disagree max 1">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                </div>
+				<div class="caption disagree">Disagree</div>
+				</div>
+				</div>
+              <div class="question">
+                <div class="statement">
+                  I see myself as dependable, self-disciplined.
+                </div>
+                <div class="decision">
+                <div class="caption agree">agree</div>
+                <div class="options">
+                  <div class="group2 option agree max 7">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group2 option agree med 6">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group2 option agree min 5">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group2 option neutral 4">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group2 option disagree min 3">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group2 option disagree med 2">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group2 option disagree max 1">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                </div>
+                <div class="caption disagree">Disagree</div>
+              </div>
+				</div>
+              <div class="question">
+                <div class="statement">
+                  I see myself as anxious, easily upset.
+                </div>
+                <div class="decision">
+                <div class="caption agree">agree</div>
+                <div class="options">
+                  <div class="group3 option agree max 7">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group3 option agree med 6">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group3 option agree min 5">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group3 option neutral 4">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group3 option disagree min 3">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group3 option disagree med 2">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group3 option disagree max 1">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                </div>
+                <div class="group3 caption disagree">Disagree</div>
+              </div>
+				</div>
+              <div class="question">
+                <div class="statement">
+                  I see myself as open to new experiences, complex.
+                </div>
+                <div class="decision">
+                <div class="caption agree">agree</div>
+                <div class="options">
+                  <div class="group4 option agree max 7">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group4 option agree med 6">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group4 option agree min 5">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group4 option neutral 4">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group4 option disagree min 3">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group4 option disagree med 2">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group4 option disagree max 1">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                </div>
+                <div class="caption disagree">Disagree</div>
+              </div>
+				</div>
+              <div class="question">
+                <div class="statement">
+                  I see myself as reserved, quiet.
+                </div>
+                <div class="decision">
+                <div class="caption agree">agree</div>
+                <div class="options">
+                  <div class="group5 option agree max 7">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group5 option agree med 6">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group5 option agree min 5">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group5 option neutral 4">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group5 option disagree min 3">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group5 option disagree med 2">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group5 option disagree max 1">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                </div>
+                <div class="caption disagree">Disagree</div>
+              </div>
+				</div>
+              <div class="question">
+                <div class="statement">
+                  I see myself as sympathetic, warm.
+                </div>
+                <div class="decision">
+                <div class="caption agree">agree</div>
+                <div class="options">
+                  <div class="group6 option agree max 7">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group6 option agree med 6">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group6 option agree min 5">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group6 option neutral 4">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group6 option disagree min 3">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group6 option disagree med 2">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group6 option disagree max 1">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                </div>
+                <div class="caption disagree">Disagree</div>
+              </div>
+				</div>
+              <div class="question">
+                <div class="statement">
+                  I see myself as disorganized, careless.
+                </div>
+                <div class="decision">
+                <div class="caption agree">agree</div>
+                <div class="options">
+                  <div class="group7 option agree max 7">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group7 option agree med 6">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group7 option agree min 5">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group7 option neutral 4">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group7 option disagree min 3">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group7 option disagree med 2">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group7 option disagree max 1">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                </div>
+                <div class="caption disagree">Disagree</div>
+              </div>
+				</div>
+              <div class="question">
+                <div class="statement">
+                  I see myself as calm, emotionally stable.
+                </div>
+                <div class="decision">
+                <div class="caption agree">agree</div>
+                <div class="options">
+                  <div class="group8 option agree max 7">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group8 option agree med 6">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group8 option agree min 5">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group8 option neutral 4">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group8 option disagree min 3">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group8 option disagree med 2">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group8 option disagree max 1">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                </div>
+                <div class="caption disagree">Disagree</div>
+              </div>
+				</div>
+              <div class="question">
+                <div class="statement">
+                  I see myself as conventional, uncreative.
+                </div>
+                <div class="decision">
+                <div class="caption agree">agree</div>
+                <div class="options">
+                  <div class="group9 option agree max 7">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group9 option agree med 6">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group9 option agree min 5">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group9 option neutral 4">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group9 option disagree min 3">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group9 option disagree med 2">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                  <div class="group9 option disagree max 1">
+                    <span class="far fa-check">
+                      ::before
+                    </span>
+                  </div>
+                </div>
+                <div class="caption disagree">Disagree</div>
+              </div>
+				</div>
+			</div>
+		<div class="container text-center results hide">
+			<p id="results"></p>
+		</div>
+        <!-- SCRIPTS -->
+        <div class="container text-center bottom">
+      		<button id="submit-btn" class="btn btn-primary btn-lg">Submit</button>
+
+      		<button id="retake-btn" class="hide btn btn-primary btn-lg">Retake Quiz</button>
+      	</div>
+      	<!-- JQUERY -->
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      	<!-- BOOTSTRAP -->
+      	<!-- Latest compiled and minified JavaScript -->
+      	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      	<!-- CUSTOM -->
+      	<script type="text/javascript" src="/static/scripts/main.js"></script>
     </body>
 
 </html>
