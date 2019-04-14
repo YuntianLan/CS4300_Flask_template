@@ -39,7 +39,7 @@ $('.option').mousedown(function () {
 });
 
 $.ajax({
-	type: "POST",
+	type: "GET",
 	contentType: "application/json",
 	url: "/",
 	data: JSON.stringify(returnDict),
@@ -55,7 +55,7 @@ $.ajax({
 
 $('#submit-btn').click(function () {
 
-	document.location.href = "result.html";
+	document.location.href = "result";
 });
 
 // Refresh the screen to show a new quiz if they click the retake quiz button
