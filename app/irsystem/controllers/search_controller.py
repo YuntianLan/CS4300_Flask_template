@@ -9,23 +9,23 @@ net_id = ""
 
 matcher = Matcher()
 
-@irsystem.route('/', methods=['POST'])
+@irsystem.route('/', methods=['GET'])
 def search():
-	# if not request.args.get('questionOne'):
-	# 	return render_template('search.html', \
-	# 		name = project_name, netid = net_id)
+	if not request.args.get('questionOne'):
+		return render_template('search.html', \
+			name = project_name, netid = net_id)
 
 	query = [
-		int(request.get_json('group0')),
-		int(request.get_json('group1')),
-		int(request.get_json('group2')),
-		int(request.get_json('group3')),
-		int(request.get_json('group4')),
-		int(request.get_json('group5')),
-		int(request.get_json('group6')),
-		int(request.get_json('group7')),
-		int(request.get_json('group8')),
-		int(request.get_json('group9')),
+		int(request.args.get('questionOne')),
+		int(request.args.get('questionTwo')),
+		int(request.args.get('questionThree')),
+		int(request.args.get('questionFour')),
+		int(request.args.get('questionFive')),
+		int(request.args.get('questionSix')),
+		int(request.args.get('questionSeven')),
+		int(request.args.get('questionEight')),
+		int(request.args.get('questionNine')),
+		int(request.args.get('questionTen')),
 	]
 	cnames, mnames, quotes, vecs, user_vec = matcher.match(query)
 
