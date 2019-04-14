@@ -12,6 +12,7 @@ from collections import defaultdict
 NUM_MATCH = 1
 
 DATA_PATH = 'data/personality/char_big_five/'
+QUOTE_PATH = 'data/personality/all_characters.json'
 
 
 sanitize = lambda s: s[:s.find(' ')] if ' ' in s else s
@@ -25,6 +26,7 @@ capt = lambda s: ' '.join(s.split('_'))
 # aggreableness, extraversion, conscientious, neuroticism, openess
 def read_csv(name):
 	series_name = capt(name[name.rfind('/')+1:-4])
+	series_name = ' '.join(list(map(lambda s: s.capitalize(), series_name.split(' '))))
 	char_names, char_vecs = [], []
 	lst = []
 	with open(name) as f:
@@ -44,6 +46,7 @@ class Matcher(object):
 	def __init__(self):
 		cur_id = 0
 		self.chars = {} # character id to char name
+		self.ids = {} # character name to id
 		self.series = {} # char id to movie / TV name
 		self.bigfive = None
 		self.quotes = defaultdict(str)
@@ -53,12 +56,23 @@ class Matcher(object):
 			sname, names, vecs = read_csv(DATA_PATH + file)
 			for nm in names:
 				self.chars[cur_id] = nm
+				self.ids[nm] = cur_id
 				self.series[cur_id] = sname
 				cur_id += 1
 			if self.bigfive is None:
 				self.bigfive = vecs
 			else:
 				self.bigfive = np.concatenate((self.bigfive, vecs))
+		with open(QUOTE_PATH) as f:
+			j = json.load(f)
+		for char in j:
+			nm = char.replace('_', ' ')
+			if nm in self.ids:
+				cid = self.ids[nm]
+				quote = ' '.join(j[char].get('quote', []))
+				if quote and quote[0] == '"': quote = quote[1:]
+				if quote and quote[-1] == '"': quote = quote[:-1]
+				self.quotes[cid] = quote
 
 
 	def __calc_bigfive(self, results):
@@ -70,6 +84,8 @@ class Matcher(object):
 		ans[3] = results[8] - results[3]
 		ans[4] = results[4] - results[9]
 		return ans / 6
+
+
 	'''
 	Returns the information for best matching characters
 	results is an array of 10 numbers ranging 1-7 for the personality test
