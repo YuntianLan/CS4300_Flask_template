@@ -1,0 +1,64 @@
+var returnDict = {
+	"group0": 0,
+	"group1": 0,
+	"group2": 0,
+	"group3": 0,
+	"group4": 0,
+	"group5": 0,
+	"group6": 0,
+	"group7": 0,
+	"group8": 0,
+	"group9": 0,
+};
+
+// When user clicks a value to agree/disagree with the prompt, display to the user what they selected
+$('.option').mousedown(function () {
+	var classList = $(this).attr('class');
+	// console.log(classList);
+	var classArr = classList.split(" ");
+	// console.log(classArr);
+	var this_group = classArr[0];
+	var value = parseInt(classArr[classArr.length-1]);
+	//console.log(this_group);
+
+	// If button is already selected, de-select it when clicked and subtract any previously added values to the total
+	// Otherwise, de-select any selected buttons in group and select the one just clicked
+	if($(this).hasClass('active')) {
+		$(this).removeClass('active');
+	} else {
+		 //$('class='thisgroup).prop('checked', false);
+		 //console.log($('.'+this_group+'.active').text());
+		$('.'+this_group).removeClass('active');
+		returnDict[this_group] = value;
+
+		 //$(this).prop('checked', true);
+		$(this).addClass('active');
+	}
+
+	console.log(Object.values(returnDict)); // THIS IS WHAT WE WANT TO PASS TO THE BACKEND!!
+});
+
+$.ajax({
+	type: "POST",
+	contentType: "application/json",
+	url: "/",
+	data: JSON.stringify(returnDict),
+	dataType: "json",
+	success: function(response) {
+		console.log(response);
+	},
+	error: function(err) {
+		console.log(err);
+	}
+});
+
+
+$('#submit-btn').click(function () {
+
+	document.location.href = "result.html";
+});
+
+// Refresh the screen to show a new quiz if they click the retake quiz button
+$('#retake-btn').click(function () {
+	document.location.href = "search.html";
+});
