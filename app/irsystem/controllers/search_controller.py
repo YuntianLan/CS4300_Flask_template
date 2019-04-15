@@ -11,7 +11,7 @@ matcher = Matcher()
 
 @irsystem.route('/', methods=['GET', 'POST'])
 def search():
-	return render_template('search.html', name=pname, netid=net_id)
+	return render_template('index.html', name=pname, netid=net_id)
 
 
 @irsystem.route('/result', methods=['GET'])
