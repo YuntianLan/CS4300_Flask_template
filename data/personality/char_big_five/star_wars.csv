@@ -1,1 +1,39 @@
-Character	Original Adjs	Added Ajds	To Be Added	Agreeableness	Extraversion	Conscientiousness	Neuroticism	Openness to ExperienceMace_Windu	"rebellious:0.5,emotional:0.5,wise:0.5,diplomatic:0.5,suspicious:0.5,decisive:0.5"			0.06	0.42	0.57	0.31	0.92Chewbacca	emotional:0.5	"independent:1,adventurous:1,quiet:1,reserved:1,adaptable:1,spontaneous:1,loyal:1"		0.74	-0.09	0.39	-0.38	0.67Orson_Krennic	"unpredictable:0.5,volatile:0.5,direct:0.5,sarcastic:0.5"			-0.57	0.83	-0.29	0.54	0.82Darth_Vader	"deep:0.5,confident:0.5,bold:0.5,mature:0.5,responsible:0.5,emotional:0.5,informal:0.5,passionate:0.5,reckless:0.5,wary:0.5,loyal:0.5,fear:0.5,ruthless:0.5,tenacious:0.5,quiet:0.5,impatient:0.5,compassionate:0.5,jealous:0.5"	"natural:1,strict:1,efficient:1,serious:1,cruel:1,cold:1,intolerant:1,condescending:1,pompous:1,ruthless:1,antagonistic:1,combative:1,cynical:1,callous:1,obsessive:1,patronizing:1,intrusive:1,abusive:1,rough:1,belligerent:1,stubborn:1,coarse:1,vindictive:1,surly:1"		-0.83	0.06	0.25	0.23	-0.13Qi'ra	complex:0.5			0	-0.58	-0.23	0.82	1Qui-Gon_Jinn	"independent:0.5,compassionate:0.5,spirit:0.5"	"enthusiastic:1,idealistic:1"		1	1	0.09	0.13	0.84Cassian_Andor	"steady:0.5,practical:0.5"	"brave:1,practical:1,quiet:1,reserved:1,tough:1,cynical:1,clever:1,devious:1"		-0.4	-0.42	0.8	-0.69	0.38Asajj_Ventress	"inconsiderate:0.5,compassionate:0.5"			0.26	0.18	-0.79	0.29	0.67Wedge_Antilles	"alert:0.5,argumentative:0.5,friendly:0.5,courageous:0.5"			0.12	1	0.6	-0.57	0.18Kylo_Ren	"deep:0.5,sarcastic:0.5,kind:0.5,emotional:0.5,intense:0.5,confident:0.5,loyal:0.5"	"cruel:1,cold:1,sensitive:1,sarcastic:1,reserved:1,emotional:1,irritable:1,obsessive:1,cynical:1,ignorant:1,condescending:1"		-0.18	-0.35	0.01	0.59	0.26Lando_Calrissian	"warm:0.5,witty:0.5,bright:0.5"			1	1	0.29	-0.33	1Finn	"brave:0.5,intelligent:0.5,fear:0.5"	"loyal:1,courageous:1,friendly:1,compassionate:1,unadventurous:1,unambitious:1,simple:1,brave:1"		0.78	0.19	0.09	-0.39	-0.01Poe_Dameron	"direct:0.5,proud:0.5,selfless:0.5,cold:0.5,courageous:0.5"	"reckless:1,brave:1,rebellious:1,passionate:1,idealistic:1,impulsive:1,outspoken:1,warm:1,friendly:1,sociable:1,loyal:1,playful:1,individualistic:1,nonconforming:1"		0.31	1	-0.29	-0.17	0.58Grand_Admiral_Thrawn	"sophisticated:0.5,emotional:0.5,polite:0.5,respectful:0.5,mannerly:0.5,antagonistic:0.5,alert:0.5,ambitious:0.5,moral:0.5"			1	0.2	1	0.51	0.12Captain_Phasma	"loyal:0.5,proud:0.5,direct:0.5,aggressive:0.5"	"dogmatic:1,cold:1,scornful:1,organized:1,loyal:1,belligerent:1,patronizing:1"		-0.69	0.19	0.63	0.19	-0.11Padm̩_Amidala	responsible:0.5	"warm:1,sensitive:1,brave:1,patient:1"		1	0.35	0.72	-0.42	0.54Grand_Moff_Tarkin	"intelligent:0.5,traditional:0.5,loyal:0.5,ruthless:0.5,simple:0.5,ambitious:0.5,kind:0.5"			0.79	0.22	0.83	-0.28	-0.18Saw_Gerrera	"ruthless:0.5,cunning:0.5,harsh:0.5,aggressive:0.5,indecisive:0.5"			-1	0.8	-0.19	0.18	-0.3Jyn_Erso	"rebellious:0.5,cold:0.5,aggressive:0.5,selfless:0.5,respectful:0.5"	"rebellious:1,brave:1,compassionate:1,loyal:1,enthusiastic:1,selfless:1,quiet:1,aggressive:1,cold:1,nonconforming:1"		0.26	0.32	0.16	-0.29	0.56Palpatine	"careful:0.5,manipulative:0.5,polite:0.5,benevolent:0.5,conservative:0.5"	"thorough:1,cold:1,shrewd:1,condescending:1,deceitful:1,dishonest:1,antagonistic:1,sarcastic:1,manipulative:1"		-0.82	-0.26	0.36	0.18	0.22Admiral_Piett	ambitious:0.5			0.23	1	1	0.18	0.64Luke_Skywalker	"impatient:0.5,impulsive:0.5,reckless:0.5,patient:0.5,idealistic:0.5,cautious:0.5"	"introspective:1,creative:1,idealistic:1,adaptable:1,imaginative:1,reserved:1,moral:1,brave:1"		0.54	-0.16	0.16	-0.22	0.77Nien_Nunb	"optimistic:0.5,sarcastic:0.5"			0.03	0.97	0	-0.23	0.47Ahsoka_Tano	"stubborn:0.5,reckless:0.5,impulsive:0.5,loyal:0.5,brave:0.5,generous:0.5,kind:0.5,aggressive:0.5,worldly:0.5,confident:0.5,moralistic:0.5,firm:0.5,sensitive:0.5,emotional:0.5,discreet:0.5,ruthless:0.5,moral:0.5"			0.52	0.76	0.34	0.04	0.28Princess_Leia	"outspoken:0.5,stubborn:0.5,smart:0.5,daring:0.5"	"assertive:1,decisive:1,natural:1,intelligent:1,confident:1,social:1,diplomatic:1,self-disciplined:1,brave:1"		0.08	1	0.83	-0.72	0.86Iden_Versio	"intense:0.5,friendly:0.5,suspicious:0.5,secretive:0.5"			-0.01	0.07	0.22	0.44	0.1Bail_Organa	deep:0.5	"quiet:1,serious:1,sensitive:1,kind:1,loyal:1,affectionate:1,peaceful:1"		1	-0.55	0.51	0.12	0.62Rey	"harsh:0.5,cynical:0.5,sensitive:0.5,empathy:0.5"	"optimistic:1,generous:1,impatient:1,reckless:1,courageous:1,quiet:1,unconventional:1,persistent:1,introspective:1,brave:1,introverted:1"		0.18	-0.03	-0.03	-0.15	0.66General_Hux	"understanding:0.5,emotional:0.5,ambitious:0.5,direct:0.5,smart:0.5,reliable:0.5"	"condescending:1,patronizing:1,cold:1,scornful:1,organized:1,cruel:1,ruthless:1,pompous:1,conventional:1,unemotional:1,belligerent:1,bigoted:1,intolerant:1,dogmatic:1,ignorant:1"		-0.7	-0.06	0.47	0.09	-0.38Obi-Wan_Kenobi	"sarcastic:0.5,wise:0.5,humble:0.5,selfless:0.5,modest:0.5,cautious:0.5,conservative:0.5"	"introspective:1,sensitive:1,complex:1,patient:1"		1	-0.8	0.49	-0.05	0.79Darth_Maul	"obsessive:0.5,ruthless:0.5,vindictive:0.5,bitter:0.5"			-1	-0.2	-0.18	0.82	-0.61Han_Solo	"cynical:0.5,suspicious:0.5,cunning:0.5,emotional:0.5"	"friendly:1,adaptable:1,informal:1,straightforward:1,practical:1,playful:1,social:1,unconventional:1,egocentric:1,ambitious:1,masculine:1,nonconforming:1"		0.08	0.74	0.02	-0.44	0.55Jango_Fett	"careful:0.5,loyal:0.5"			1	-0.47	1	-0.06	0.29
+Character,Agreeableness,Extraversion,Conscientiousness,Neuroticism,Openness to Experience
+Mace_Windu,0.06,0.42,0.57,0.31,0.92
+Chewbacca,0.74,-0.09,0.39,-0.38,0.67
+Orson_Krennic,-0.57,0.83,-0.29,0.54,0.82
+Darth_Vader,-0.83,0.06,0.25,0.23,-0.13
+Qi'ra,0.0,-0.58,-0.23,0.82,1.0
+Yoda,0.73,-0.44,0.99,-0.21,0.74
+Qui-Gon_Jinn,1.0,1.0,0.09,0.13,0.84
+Cassian_Andor,-0.4,-0.42,0.8,-0.69,0.38
+Asajj_Ventress,0.26,0.18,-0.79,0.29,0.67
+Wedge_Antilles,0.12,1.0,0.6,-0.57,0.18
+Kylo_Ren,-0.18,-0.35,0.01,0.59,0.26
+Lando_Calrissian,1.0,1.0,0.29,-0.33,1.0
+Finn,0.78,0.19,0.09,-0.39,-0.01
+Poe_Dameron,0.31,1.0,-0.29,-0.17,0.58
+Grand_Admiral_Thrawn,1.0,0.2,1.0,0.51,0.12
+Captain_Phasma,-0.69,0.19,0.63,0.19,-0.11
+Padmé_Amidala,1.0,0.35,0.72,-0.42,0.54
+Rose_Tico,1.0,-0.25,0.49,-0.22,0.38
+Grand_Moff_Tarkin,0.79,0.22,0.83,-0.28,-0.18
+Saw_Gerrera,-1.0,0.8,-0.19,0.18,-0.3
+Jyn_Erso,0.26,0.32,0.16,-0.29,0.56
+Palpatine,-0.82,-0.26,0.36,0.18,0.22
+Admiral_Piett,0.23,1.0,1.0,0.18,0.64
+Luke_Skywalker,0.54,-0.16,0.16,-0.22,0.77
+Nien_Nunb,0.03,0.97,0.0,-0.23,0.47
+Ahsoka_Tano,0.52,0.76,0.34,0.04,0.28
+Boba_Fett,-1.0,-0.25,-0.25,0.27,0.28
+Princess_Leia,0.08,1.0,0.83,-0.72,0.86
+Iden_Versio,-0.01,0.07,0.22,0.44,0.1
+C-3PO,1.0,-0.73,0.62,0.42,-0.6
+Bail_Organa,1.0,-0.55,0.51,0.12,0.62
+R2-D2,0.23,0.59,-0.61,0.09,0.64
+Rey,0.18,-0.03,-0.03,-0.15,0.66
+General_Hux,-0.7,-0.06,0.47,0.09,-0.38
+Obi-Wan_Kenobi,1.0,-0.8,0.49,-0.05,0.79
+Darth_Maul,-1.0,-0.2,-0.18,0.82,-0.61
+Han_Solo,0.08,0.74,0.02,-0.44,0.55
+Jango_Fett,1.0,-0.47,1.0,-0.06,0.29

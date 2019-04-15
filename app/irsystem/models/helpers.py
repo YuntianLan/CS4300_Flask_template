@@ -1,4 +1,4 @@
-# Methods to compose HTTP response JSON 
+# Methods to compose HTTP response JSON
 from flask import jsonify
 import base64
 import json
@@ -22,7 +22,7 @@ capt = lambda s: ' '.join(s.split('_'))
 # name: path for the csv file containing big 5 information
 # returns: parsed movie / TV name, character names, big-five matrix
 
-# Bigfive order: 
+# Bigfive order:
 # aggreableness, extraversion, conscientious, neuroticism, openess
 def read_csv(name):
 	series_name = capt(name[name.rfind('/')+1:-4])
@@ -30,7 +30,7 @@ def read_csv(name):
 	char_names, char_vecs = [], []
 	lst = []
 	with open(name) as f:
-		reader = csv.reader(f, delimiter = '\t')
+		reader = csv.reader(f)
 		for row in reader:
 			lst.append(row)
 	for item in lst[1:]:
@@ -89,7 +89,7 @@ class Matcher(object):
 	'''
 	Returns the information for best matching characters
 	results is an array of 10 numbers ranging 1-7 for the personality test
-	Returns (for now): 
+	Returns (for now):
 			Char name list
 			Movie/TV name list
 			Quote list
@@ -117,14 +117,14 @@ def http_resource(result, name, bool=True):
 	resp = { "data": { name : result }}
 	return http_json(resp, bool)
 
-def http_errors(result): 
+def http_errors(result):
 	errors = { "data" : { "errors" : result.errors["_schema"] }}
 	return http_json(errors, False)
 
 class NumpyEncoder(json.JSONEncoder):
 
 	def default(self, obj):
-		"""If input object is an ndarray it will be converted into a dict 
+		"""If input object is an ndarray it will be converted into a dict
 		holding dtype, shape and the data, base64 encoded.
 		"""
 		if isinstance(obj, np.ndarray):
@@ -140,7 +140,7 @@ class NumpyEncoder(json.JSONEncoder):
 						shape=obj.shape)
 		# Let the base class default method raise the TypeError
 		return json.JSONEncoder(self, obj)
-		
+
 def json_numpy_obj_hook(dct):
 	"""Decodes a previously encoded numpy ndarray with proper shape and dtype.
 	:param dct: (dict) json encoded ndarray

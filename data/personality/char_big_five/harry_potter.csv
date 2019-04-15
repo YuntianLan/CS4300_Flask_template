@@ -1,1 +1,131 @@
-Character	Original Adjs	Added Ajds	To Be Added	Agreeableness	Extraversion	Conscientiousness	Neuroticism	Openness to ExperienceAnthony_Goldstein	friendly:0.5			1	1	-0.18	-0.99	-0.94Xenophilius_Lovegood	ignorant:0.5			0.23	-0.41	-1	0.12	-1Newt_Scamander	"confident:0.5,compassionate:0.5,volatile:0.5,bitter:0.5,cordial:0.5,social:0.5,consistent:0.5,courteous:0.5,outspoken:0.5"	"compassionate:1,outspoken:1,consistent:1,introverted:1,kind:1,quiet:1,intelligent:1,unassuming:1,nonconforming:1,shy:1,unaggressive:1,unsociable:1,empathic:1"		0.73	-0.64	0.18	-0.24	0.71Jacob_Kowalski	"compassionate:0.5,friendly:0.5,fear:0.5,unintelligent:0.5,timid:0.5,shy:0.5"	"compassionate:1,simple:1,timid:1,shy:1,adventurous:1,curious:1"		0.92	-0.44	-0.03	0.09	-0.25Katie_Bell	friendly:0.5			1	1	-0.18	-0.99	-0.94Ginny_Weasley	"forceful:0.5,independent:0.5,energetic:0.5,shy:0.5,relaxed:0.5,harsh:0.5,responsible:0.5,courageous:0.5"	"extroverted:1,flexible:1,tolerant:1,spirited:1,brave:1,loyal:1"		0.67	0.96	0.43	-0.81	0.44Ignotus_Peverell	"wise:0.5,modest:0.5,humble:0.5,peaceful:0.5"			1	-0.73	1	-1	0.19Hermione_Granger	"intellectual:0.5,curious:0.5,efficiency:0.5,social:0.5,logic:0.5,tactless:0.5,serious:0.5,prompt:0.5,perfectionistic:0.5,impulsive:0.5,practical:0.5,opinionated:0.5,bossy:0.5,deep:0.5,conceited:0.5,argumentative:0.5"	"reserved:1,analytical:1,logical:1,clever:1,compassionate:1,inquisitive:1,articulate:1,efficient:1,independent:1,competitive:1,aloof:1,empathic:1,reasonable:1,unimaginative:1,controlled:1,unsociable:1,patient:1,conventional:1"		0.15	-0.14	0.9	-0.24	0.67Dean_Thomas	"loyal:0.5,tough:0.5"			0.29	0.61	0.76	-0.79	0.12Ernie_Macmillan	"pompous:0.5,loyal:0.5,honest:0.5,proud:0.5"			0.73	0.57	0.85	-0.16	-0.16Auntie_Muriel	"impolite:0.5,rude:0.5"			-1	0.23	-1	-0.5	0.61Cuthbert_Binns	firm:0.5			-0.99	0.99	1	-0.88	0.47Argus_Filch	"domineering:0.5,suspicious:0.5,bitter:0.5"			-1	0.02	0.27	1	0Amycus_Carrow	bright:0.5			0.53	0.7	0.7	-0.7	1Bill_Weasley	"serious:0.5,dull:0.5,knowledgeable:0.5,brave:0.5"			-0.1	-0.61	0.95	-0.72	0.91Luna_Lovegood	"perceptive:0.5,kind:0.5,honest:0.5,anxious:0.5,artistic:0.5"	"idealistic:1,loyal:1,curious:1,adaptable:1,flexible:1,friendly:1,unconventional:1,artistic:1,unpredictable:1,natural:1,casual:1,carefree:1,philosophical:1,unsociable:1,reserved:1,vague:1,unaggressive:1,unassuming:1,nonconforming:1,imaginative:1,contemplative:1"		0.78	-0.18	-0.21	-0.33	0.81Barty_Crouch_Sr	"serious:0.5,strict:0.5,loyal:0.5,cruel:0.5,unreliable:0.5,simple:0.5,tough:0.5,ruthless:0.5,selfish:0.5"			-0.73	-0.21	0.18	-0.07	-0.19Vernon_Dursley	"surly:0.5,intolerant:0.5,unsympathetic:0.5,moody:0.5,conservative:0.5,harsh:0.5,dominant:0.5"			-1	0.03	0.56	0.62	-0.48Pansy_Parkinson	"rational:0.5,selfish:0.5,rude:0.5,prejudiced:0.5"			-1	-0.25	0.04	0.2	0.75Aurora_Sinistra	"serious:0.5,strict:0.5"			-0.32	-1	1	0.47	0.18Magorian	"traditional:0.5,selfless:0.5"			0.79	-0.76	0.82	-0.29	-1Barty_Crouch_Jr	"intelligent:0.5,cunning:0.5,manipulative:0.5,moody:0.5,cynical:0.5,harsh:0.5,leniency:0.5,brave:0.5,loyal:0.5"			-0.34	0.18	0.24	-0.02	0.49Scabbers	"courageous:0.5,bitter:0.5,cowardly:0.5,brave:0.5,unintelligent:0.5,prompt:0.5"			-0.04	-0.06	0.31	-0.14	-0.21Pius_Thicknesse	responsible:0.5			1	-0.12	1	-0.35	0.47Buckbeak	"proud:0.5,aggressive:0.5,loyal:0.5"			0.08	1	0.74	-0.04	0.35Vincent_Crabbe	cunning:0.5			-1	1	0.53	-0.35	0.12George_Weasley	"harsh:0.5,moral:0.5,vindictive:0.5,immature:0.5,loyal:0.5,brave:0.5"	"friendly:1,flexible:1,spontaneous:1,social:1,adventurous:1,unconventional:1,playful:1"		0.59	1	-0.28	-0.37	0.21Ollivander	intelligent:0.5			0.18	0.18	0.94	-0.76	1Wilhelmina_Grubbly-Plank	"cheerful:0.5,efficient:0.5,kind:0.5,respectful:0.5"			1	0.61	1	-0.32	-0.22Rita_Skeeter	"dishonest:0.5,cunning:0.5,critical:0.5,vindictive:0.5,ambitious:0.5"			-1	0.62	0.34	0.51	0.08Arabella_Figg	"clever:0.5,sarcastic:0.5,nervous:0.5,timid:0.5,brave:0.5,vigorous:0.5"			-0.06	0.08	0.17	-0.05	0.49Lavender_Brown	"sentimental:0.5,gullible:0.5"			1	-0.06	-0.79	1	-0.79Lee_Jordan	"friendly:0.5,serious:0.5,strict:0.5,courage:0.5"			0.32	0.64	1	-0.63	0Stan_Shunpike	"friendly:0.5,vain:0.5"			0.41	1	-0.47	0.12	0Aberforth_Dumbledore	"cynical:0.5,cordial:0.5,responsible:0.5,courageous:0.5,underhanded:0.5"			0.02	0.34	0.6	-0.47	0.4Augusta_Longbottom	"honest:0.5,dishonest:0.5,logical:0.5"			0.18	-0.04	0.84	-0.66	0.7Albus_Dumbledore	"wise:0.5,relaxed:0.5,intense:0.5,firm:0.5,reasonable:0.5,kind:0.5,flamboyant:0.5,philosophical:0.5,understanding:0.5,cunning:0.5,moody:0.5,humorous:0.5,fear:0.5,deep:0.5,cruel:0.5,careful:0.5,vain:0.5,intelligent:0.5,complex:0.5,emotional:0.5,natural:0.5,serious:0.5,cold:0.5,stern:0.5,selfishness:0.5,moral:0.5"	"warm:1,intellectual:1,knowledgeable:1,introspective:1,controlled:1,quiet:1,reserved:1,organized:1,kind:1,wise:1,somber:1"		0.37	-0.33	0.75	-0.03	0.74Nearly_Headless_Nick	"kind:0.5,indiscreet:0.5,cordial:0.5"			1	0.55	-0.27	0.02	0Quirinus_Quirrell	"timid:0.5,cynical:0.5,naive:0.5,ambitious:0.5"			0.35	-1	0.01	0.39	0.01Thorfinn_Rowle	"reckless:0.5,disrespectful:0.5,impatient:0.5"			-1	0.35	-1	0.53	0.6Antonin_Dolohov	"moody:0.5,confident:0.5,friendly:0.5"			0.33	1	0.31	0.08	-0.04Sybill_Trelawney	"defensive:0.5,sensitive:0.5,emotional:0.5,loyal:0.5"			1	-0.13	0	1	0.37Albert_Runcorn	underhanded:0.5			-1	0.47	-0.47	-0.29	-0.94Severus_Snape	"complex:0.5,cynical:0.5,bitter:0.5,sarcastic:0.5,quiet:0.5,social:0.5,prejudiced:0.5,explosive:0.5,emotional:0.5,cold:0.5,analytical:0.5,cunning:0.5,vindictive:0.5,brave:0.5,deep:0.5,reliable:0.5,silent:0.5,unrestrained:0.5,wise:0.5"	"reserved:1,serious:1,cold:1,loyal:1,introverted:1,sensitive:1,meticulous:1,secretive:1,scornful:1,strict:1,cynical:1,bitter:1,sarcastic:1,quiet:1,prejudiced:1,vindictive:1,silent:1,condescending:1,bigoted:1"		-0.32	-0.64	0.41	0.29	0.26Mundungus_Fletcher	"unscrupulous:0.5,cowardly:0.5,moody:0.5"			0.12	-0.88	-0.55	1	-0.49Kingsley_Shacklebolt	"deep:0.5,quiet:0.5,moody:0.5,loyal:0.5,friendly:0.5"			1	-0.5	0.25	0.29	0.61Rubeus_Hagrid	"warm:0.5,kind:0.5,loyal:0.5,rough:0.5,understanding:0.5,affectionate:0.5,aggressive:0.5,sensitive:0.5,courage:0.5,deep:0.5"	"quiet:1,friendly:1,sensitive:1,kind:1,loyal:1,peaceful:1,introverted:1,natural:1,reserved:1,unsociable:1,nonconforming:1,disorganized:1,insecure:1"		0.96	-0.43	-0.06	-0.16	0.49Crookshanks	"intelligent:0.5,playful:0.5,affectionate:0.5,moody:0.5,deliberate:0.5"			0.62	0.56	0.28	0.58	0.83Marietta_Edgecombe	"loyal:0.5,cynical:0.5,fear:0.5,practical:0.5,sensitive:0.5"			0.69	-0.51	0.67	0.88	0.58The_Fat_Friar	sociable:0.5			1	1	-0.06	-0.23	-0.41Ludo_Bagman	"unreliable:0.5,moody:0.5"			-0.91	-0.44	-1	1	0.15Frank_Longbottom	frank:0.5			-0.47	1	0.12	-0.53	1Igor_Karkaroff	"ruthless:0.5,brave:0.5,loyal:0.5,egotistical:0.5,warm:0.5,secretive:0.5"			0	0.54	0.25	-0.06	0.12Narcissa_Malfoy	"proud:0.5,ruthless:0.5"			-1	0.85	0.5	-0.18	-0.26Bathilda_Bagshot	"friendly:0.5,amiable:0.5"			1	1	-0.32	-0.73	0.32Gellert_Grindelwald	"idealistic:0.5,ambitious:0.5,prompt:0.5,stern:0.5,peaceful:0.5,manipulative:0.5,intelligent:0.5,understanding:0.5,simple:0.5,complex:0.5,cruel:0.5,traditional:0.5,loyal:0.5,kind:0.5,intense:0.5,cautious:0.5,volatile:0.5,merry:0.5,enthusiastic:0.5"	"ambitious:1,ruthless:1,idealistic:1,volatile:1,cold:1,bigoted:1,callous:1,manipulative:1,intelligent:1,cruel:1,articulate:1,ignorant:1,obsessive:1,sarcastic:1,stubborn:1,social:1"		-0.2	0.28	0.27	0.15	0.13Porpentina_Goldstein	"practical:0.5,ambitious:0.5,bossy:0.5,forceful:0.5"	"reserved:1,independent:1,smart:1,modest:1,patient:1,conventional:1,somber:1,practical:1,ambitious:1,bossy:1,persistent:1"		0.17	-0.17	1	-0.38	0.29Silvanus_Kettleburn	recklessness:0.5			-1	1	-1	-0.06	-0.82Justin_Finch-Fletchley	"talkative:0.5,cheerful:0.5,friendly:0.5,naive:0.5,loyal:0.5"			1	1	-0.27	-0.2	-0.44Irma_Pince	"strict:0.5,stern:0.5"			-1	-0.06	1	0.38	-0.76Oliver_Wood	"competitive:0.5,ambition:0.5"			-0.91	1	1	-0.94	0.23Mafalda_Hopkirk	pleasant:0.5			1	1	0.18	-1	-0.35Seamus_Finnigan	enthusiastic:0.5			1	1	0.12	-0.18	-0.06Dobby	brave:0.5			-0.53	1	0.76	-1	0.41Fred_Weasley	"daring:0.5,sarcastic:0.5,compassionate:0.5,loyal:0.5"	"friendly:1,flexible:1,spontaneous:1,social:1,adventurous:1,unconventional:1,playful:1"		0.88	1	-0.36	-0.38	0.47Nagini	"shy:0.5,benevolent:0.5,quiet:0.5,kind:0.5,insecure:0.5,loyal:0.5,aloof:0.5,intelligent:0.5,cunning:0.5"			0.83	-1	0.19	0.03	0.7Cornelius_Fudge	"tactless:0.5,indecisive:0.5,critical:0.5,smart:0.5,friendly:0.5,helpful:0.5,compassionate:0.5,ruthless:0.5,aimless:0.5"			0.29	0.17	-0.37	-0.08	0.21Rolanda_Hooch	kind:0.5			1	0.41	0.35	0.12	0Alastor_Moody	"moody:0.5,brave:0.5,surly:0.5,careful:0.5,proud:0.5,loyal:0.5,reliable:0.5"			0.33	0.15	1	0.05	0Rufus_Scrimgeour	"shrewd:0.5,decisive:0.5,forceful:0.5,impulsive:0.5,moody:0.5,conceited:0.5"			-1	0.76	0.04	0.58	0.83Remus_Lupin	"intelligent:0.5,tolerant:0.5,peaceful:0.5,selfless:0.5,brave:0.5,kind:0.5,mature:0.5,responsible:0.5,understanding:0.5,deep:0.5,honest:0.5,cowardly:0.5,critical:0.5,social:0.5,competitive:0.5,combative:0.5,reserved:0.5,loyal:0.5"	"natural:1,insightful:1,organized:1,decisive:1,complex:1,quiet:1,reserved:1,introverted:1,loyal:1,brave:1,tolerant:1,peaceful:1,selfless:1,kind:1,mature:1,understanding:1,honest:1,responsible:1,silent:1,unsociable:1"		0.78	-0.55	0.72	-0.4	0.59Cedric_Diggory	"silent:0.5,spirit:0.5"	"brave:1,kind:1,principled:1,moral:1,modest:1"		1	-0.06	0.81	-0.45	0.2Gregory_Goyle	independent:0.5			-0.82	1	1	-1	1Arthur_Weasley	compulsive:0.5	"kind:1,friendly:1,curious:1,unassuming:1,idealistic:1"		1	0.45	-0.31	-0.08	0.46Amelia_Bones	"serious:0.5,firm:0.5,courageous:0.5,kind:0.5"			0.56	0.38	1	-0.64	0.47Myrtle_Warren	warm:0.5			1	1	0.35	0.58	0.41Lucius_Malfoy	"shrewd:0.5,opportunistic:0.5,social:0.5,manipulative:0.5,alert:0.5,ruthless:0.5,prejudiced:0.5,bigoted:0.5"			-0.99	0.97	0.36	-0.03	0.05Cho_Chang	"brave:0.5,emotional:0.5,loyal:0.5"			1	0.94	0.33	0.21	0.27Poppy_Pomfrey	"kind:0.5,obsessive:0.5,patient:0.5,cowardly:0.5"			1	-0.69	-0.15	0.13	-0.03Marge_Dursley	"ignorant:0.5,abusive:0.5,selfish:0.5,cruel:0.5,dominant:0.5"			-1	0.26	-0.32	0.34	-0.09Minerva_McGonagall	"cold:0.5,stern:0.5,tough:0.5,emotional:0.5,complex:0.5,sophisticated:0.5,reserved:0.5,direct:0.5"	"practical:1,efficient:1,forceful:1,intellectual:1,organized:1,decisive:1,kind:1,somber:1"		0.04	-0.01	1	-0.1	0.49Nymphadora_Tonks	"enthusiastic:0.5,verbal:0.5,dependable:0.5,selfless:0.5"			1	1	0.66	-0.23	0.13Molly_Weasley	mature:0.5	"kind:1,friendly:1,warm:1,brave:1"		1	1	0.48	-0.58	0.11Fleur_Delacour	"rude:0.5,snobbish:0.5,warm:0.5,shallow:0.5"			-0.42	0.32	-0.34	0.58	-0.12Morfin_Gaunt	"abusive:0.5,social:0.5,proud:0.5"			-0.58	1	0.02	-0.04	-0.23Frank_Bryce	frank:0.5			-0.47	1	0.12	-0.53	1Elphias_Doge	"friendly:0.5,loyal:0.5,intelligent:0.5,knowledgeable:0.5,wise:0.5"			1	0.71	0.96	-0.82	1Ron_Weasley	"loyal:0.5,brave:0.5,immature:0.5,mature:0.5,argumentative:0.5,critical:0.5,deep:0.5,sensitive:0.5,insecure:0.5,passionate:0.5,intelligent:0.5,tough:0.5"	"warm:1,enthusiastic:1,energetic:1,adaptable:1,impatient:1,kind:1,friendly:1,loyal:1,conventional:1,nervous:1,unadventurous:1,simple:1,insecure:1,immature:1,jealous:1,dependent:1"		0.75	0.19	0.09	0.38	-0.07Zacharias_Smith	"critical:0.5,insensitive:0.5,rude:0.5,pessimistic:0.5,hypocritical:0.5"			-1	-0.54	-0.44	0.63	0.11Alicia_Spinnet	friendly:0.5			1	1	-0.18	-0.99	-0.94Phineas_Nigellus_Black	sarcastic:0.5			-1	0.18	-0.53	0.94	0.82George_Weasley#Fred_and_George_Weasley	"harsh:0.5,moral:0.5,vindictive:0.5,immature:0.5,loyal:0.5,brave:0.5"			-0.17	0.32	0.19	-0.05	-0.27Dolores_Jane_Umbridge	"ruthless:0.5,cruel:0.5,moral:0.5,ethical:0.5,quiet:0.5,prejudice:0.5,rude:0.5,social:0.5,uncharitable:0.5,cruelty:0.5,loyal:0.5,passive:0.5,aggressive:0.5,dull:0.5,ignorant:0.5,hypocritical:0.5,tolerant:0.5,intelligent:0.5,practical:0.5"			-0.3	-0.3	0.2	-0.31	-0.03The_Bloody_Baron	"cordial:0.5,friendly:0.5,intolerant:0.5"			0.97	0.97	0.04	0.25	-0.16Horace_Slughorn	"jovial:0.5,helpful:0.5,friendly:0.5,excitable:0.5,kind:0.5,earnest:0.5,moral:0.5,courageous:0.5,analytical:0.5,compliant:0.5,cunning:0.5,social:0.5"			1	0.96	0.4	-0.31	0.25Viktor_Krum	"kind:0.5,polite:0.5"			1	0	1	0.18	-0.2Firenze	"courageous:0.5,traditional:0.5,proud:0.5,kind:0.5,friendly:0.5"			1	0.99	0.67	-0.55	-0.44Harry_Potter	"brave:0.5,loyal:0.5,selfless:0.5,simple:0.5,impulsive:0.5,rude:0.5,modest:0.5,unkind:0.5,emotional:0.5,intellectual:0.5,logical:0.5,clever:0.5,practical:0.5,moody:0.5,obsessive:0.5,direct:0.5,kind:0.5,compassionate:0.5,cruel:0.5,argumentative:0.5,wary:0.5,warm:0.5,intelligent:0.5,intense:0.5"	"independent:1,logical:1,quiet:1,unsociable:1,principled:1,reckless:1,brave:1,selfless:1,sensitive:1,compassionate:1,loyal:1,wary:1,shy:1"		0.33	-0.26	0.33	-0.03	0.63Augustus_Rookwood	fearful:0.5			1	-1	-0.35	1	-0.7Pomona_Sprout	"cheerful:0.5,anxious:0.5"			1	1	0.09	0.47	-0.56Gilderoy_Lockhart	"proud:0.5,impractical:0.5,reckless:0.5,complex:0.5,vain:0.5,clever:0.5,dull:0.5,lazy:0.5,direct:0.5,insincere:0.5,cowardly:0.5,cunning:0.5,egotistical:0.5"			-0.74	0.01	-0.63	0.26	0.56Lord_Voldemort	"kind:0.5,social:0.5,intelligent:0.5,serious:0.5,ruthless:0.5,cruel:0.5,ignorant:0.5,independent:0.5,cowardly:0.5,versatile:0.5,sentimental:0.5,loyal:0.5,cold:0.5,callous:0.5,polite:0.5,brave:0.5,manipulative:0.5,direct:0.5,discreet:0.5,obsessive:0.5,merry:0.5,compulsive:0.5,unpredictable:0.5,understanding:0.5,deep:0.5,unstable:0.5,bold:0.5,vague:0.5,reserved:0.5,sophisticated:0.5,explosive:0.5,selfish:0.5,proud:0.5,courageous:0.5,humble:0.5,sympathetic:0.5,natural:0.5,responsible:0.5,possessive:0.5,egotistical:0.5"	"ruthless:1,serious:1,introverted:1,cruel:1,ignorant:1,cold:1,callous:1,manipulative:1,obsessive:1,compulsive:1,reserved:1,selfish:1,possessive:1,egotistical:1,condescending:1,patronizing:1,unsociable:1,aloof:1,apathetic:1,unemotional:1,prejudiced:1,devious:1,vindictive:1,bigoted:1,intolerant:1,belligerent:1,unsympathetic:1,antagonistic:1,abusive:1,silent:1,harsh:1,cynical:1,bitter:1,unkind:1"		-0.6	-0.29	0.07	0.15	0.04Percy_Weasley	"dignified:0.5,sophisticated:0.5,bossy:0.5,intelligent:0.5,coarse:0.5,insensitive:0.5,social:0.5"	"condescending:1,bossy:1,intelligent:1,insensitive:1"		-0.63	0.53	0.43	-0.03	0.29Fawkes	"loyal:0.5,courageous:0.5,intelligent:0.5"			0.74	0.82	0.76	-0.99	1Katie_Bell#Katie_Bell	friendly:0.5			1	1	-0.18	-0.99	-0.94Filius_Flitwick	"emotional:0.5,sly:0.5,sensitive:0.5"			0.99	0.35	-0.1	1	0.41Bellatrix_Lestrange	"loyal:0.5,natural:0.5,decisiveness:0.5,cruel:0.5"			0.25	0.48	0.99	-0.95	0.5Hedwig	"dignified:0.5,proud:0.5,mature:0.5"			0.33	0.51	1	-0.39	0.6Dudley_Dursley	"selfish:0.5,manipulative:0.5,fear:0.5,cruel:0.5"			-1	-0.22	-0.13	1	0.26Grawp	"compassionate:0.5,understanding:0.5"			1	0.44	0.35	0.26	0.91Neville_Longbottom	"forgetful:0.5,shy:0.5,timid:0.5,insecurity:0.5,courageous:0.5,moody:0.5,nervous:0.5"	"traditional:1,loyal:1,kind:1,consistent:1,orderly:1,modest:1,honest:1,inarticulate:1,brave:1,reserved:1,quiet:1,forgetful:1,timid:1,shy:1,nervous:1,conventional:1"		0.73	-0.95	0.61	-0.03	-0.25Parvati_Patil	"serious:0.5,insensitive:0.5,courage:0.5"			-0.78	0	0.64	-1	0.49Hannah_Abbott	"naive:0.5,loyal:0.5"			1	-0.41	-0.23	0.26	-0.26Sirius_Black	"brave:0.5,loyal:0.5,witty:0.5,mischievous:0.5,explosive:0.5,reckless:0.5,immature:0.5,rash:0.5,emotional:0.5,passionate:0.5,impulsive:0.5,selfless:0.5"	"ingenious:1,alert:1,outspoken:1,unconventional:1,playful:1,loyal:1,rebellious:1,callous:1"		-0.06	0.9	-0.47	0	0.6Dedalus_Diggle	"cheerful:0.5,enthusiastic:0.5,friendly:0.5,clever:0.5,naive:0.5,careless:0.5,responsible:0.5"			1	1	-0.03	-0.48	-0.03Charlie_Weasley	"friendly:0.5,brave:0.5"			0.82	1	0.29	-1	-0.26Olympe_Maxime	moral:0.5			1	-0.53	1	-0.12	-0.12Draco_Malfoy	"social:0.5,reckless:0.5,intelligent:0.5,clever:0.5,ignorant:0.5,friendly:0.5,ambition:0.5"	"adaptable:1,skeptical:1,independent:1,proud:1,scornful:1,impolite:1,bigoted:1,condescending:1,ignorant:1,conventional:1"		-0.43	0.35	0.16	-0.28	0.15Antioch_Peverell	"indulgent:0.5,recklessness:0.5,cunning:0.5,selfless:0.5"			-0.45	0.6	-0.94	-0.13	-0.04Regulus_Black	moral:0.5			1	-0.53	1	-0.12	-0.12Petunia_Dursley	"envious:0.5,clever:0.5,deep:0.5,ignorant:0.5"			0.16	-0.12	-0.16	0.42	0.6
+Character,Agreeableness,Extraversion,Conscientiousness,Neuroticism,Openness to Experience
+Anthony_Goldstein,1.0,1.0,-0.18,-0.99,-0.94
+Xenophilius_Lovegood,0.23,-0.41,-1.0,0.12,-1.0
+Newt_Scamander,0.73,-0.64,0.18,-0.24,0.71
+Jacob_Kowalski,0.92,-0.44,-0.03,0.09,-0.25
+Katie_Bell,1.0,1.0,-0.18,-0.99,-0.94
+Ginny_Weasley,0.67,0.96,0.43,-0.81,0.44
+Ignotus_Peverell,1.0,-0.73,1.0,-1.0,0.19
+Hermione_Granger,0.15,-0.14,0.9,-0.24,0.67
+Dean_Thomas,0.29,0.61,0.76,-0.79,0.12
+Ernie_Macmillan,0.73,0.57,0.85,-0.16,-0.16
+Auntie_Muriel,-1.0,0.23,-1.0,-0.5,0.61
+Cuthbert_Binns,-0.99,0.99,1.0,-0.88,0.47
+Argus_Filch,-1.0,0.02,0.27,1.0,0.0
+Amycus_Carrow,0.53,0.7,0.7,-0.7,1.0
+Bill_Weasley,-0.1,-0.61,0.95,-0.72,0.91
+Luna_Lovegood,0.78,-0.18,-0.21,-0.33,0.81
+Barty_Crouch_Sr,-0.73,-0.21,0.18,-0.07,-0.19
+Vernon_Dursley,-1.0,0.03,0.56,0.62,-0.48
+Pansy_Parkinson,-1.0,-0.25,0.04,0.2,0.75
+Aurora_Sinistra,-0.32,-1.0,1.0,0.47,0.18
+Magorian,0.79,-0.76,0.82,-0.29,-1.0
+Barty_Crouch_Jr,-0.34,0.18,0.24,-0.02,0.49
+Fenrir_Greyback,-0.98,-0.75,-0.12,0.9,0.45
+Scabbers,-0.04,-0.06,0.31,-0.14,-0.21
+Pius_Thicknesse,1.0,-0.12,1.0,-0.35,0.47
+Buckbeak,0.08,1.0,0.74,-0.04,0.35
+Vincent_Crabbe,-1.0,1.0,0.53,-0.35,0.12
+George_Weasley,0.59,1.0,-0.28,-0.37,0.21
+Ollivander,0.18,0.18,0.94,-0.76,1.0
+Wilhelmina_Grubbly-Plank,1.0,0.61,1.0,-0.32,-0.22
+Rita_Skeeter,-1.0,0.62,0.34,0.51,0.08
+Arabella_Figg,-0.06,0.08,0.17,-0.05,0.49
+Lavender_Brown,1.0,-0.06,-0.79,1.0,-0.79
+Ariana_Dumbledore,1.0,0.92,0.48,-0.82,0.18
+Lee_Jordan,0.32,0.64,1.0,-0.63,0.0
+Stan_Shunpike,0.41,1.0,-0.47,0.12,0.0
+Aberforth_Dumbledore,0.02,0.34,0.6,-0.47,0.4
+Augusta_Longbottom,0.18,-0.04,0.84,-0.66,0.7
+Albus_Dumbledore,0.37,-0.33,0.75,-0.03,0.74
+Nearly_Headless_Nick,1.0,0.55,-0.27,0.02,0.0
+Quirinus_Quirrell,0.35,-1.0,0.01,0.39,0.01
+Thorfinn_Rowle,-1.0,0.35,-1.0,0.53,0.6
+Antonin_Dolohov,0.33,1.0,0.31,0.08,-0.04
+Tom_Marvolo_Riddle,-0.6,-0.29,0.07,0.15,0.04
+Sybill_Trelawney,1.0,-0.13,0.0,1.0,0.37
+Albert_Runcorn,-1.0,0.47,-0.47,-0.29,-0.94
+Severus_Snape,-0.32,-0.64,0.41,0.29,0.26
+Mundungus_Fletcher,0.12,-0.88,-0.55,1.0,-0.49
+Kingsley_Shacklebolt,1.0,-0.5,0.25,0.29,0.61
+Rubeus_Hagrid,0.96,-0.43,-0.06,-0.16,0.49
+Crookshanks,0.62,0.56,0.28,0.58,0.83
+Marietta_Edgecombe,0.69,-0.51,0.67,0.88,0.58
+The_Fat_Friar,1.0,1.0,-0.06,-0.23,-0.41
+Ludo_Bagman,-0.91,-0.44,-1.0,1.0,0.15
+Frank_Longbottom,-0.47,1.0,0.12,-0.53,1.0
+Igor_Karkaroff,0.0,0.54,0.25,-0.06,0.12
+Narcissa_Malfoy,-1.0,0.85,0.5,-0.18,-0.26
+Bathilda_Bagshot,1.0,1.0,-0.32,-0.73,0.32
+Angelina_Johnson,-0.45,1.0,0.65,-1.0,0.35
+Gellert_Grindelwald,-0.2,0.28,0.27,0.15,0.13
+Porpentina_Goldstein,0.17,-0.17,1.0,-0.38,0.29
+Silvanus_Kettleburn,-1.0,1.0,-1.0,-0.06,-0.82
+Justin_Finch-Fletchley,1.0,1.0,-0.27,-0.2,-0.44
+Irma_Pince,-1.0,-0.06,1.0,0.38,-0.76
+Oliver_Wood,-0.91,1.0,1.0,-0.94,0.23
+Mafalda_Hopkirk,1.0,1.0,0.18,-1.0,-0.35
+Seamus_Finnigan,1.0,1.0,0.12,-0.18,-0.06
+Dobby,-0.53,1.0,0.76,-1.0,0.41
+Fred_Weasley,0.88,1.0,-0.36,-0.38,0.47
+Nagini,0.83,-1.0,0.19,0.03,0.7
+James_Potter,0.45,1.0,0.38,-0.47,0.07
+Cornelius_Fudge,0.29,0.17,-0.37,-0.08,0.21
+Rolanda_Hooch,1.0,0.41,0.35,0.12,0.0
+Alastor_Moody,0.33,0.15,1.0,0.05,0.0
+Rufus_Scrimgeour,-1.0,0.76,0.04,0.58,0.83
+Remus_Lupin,0.78,-0.55,0.72,-0.4,0.59
+Cedric_Diggory,1.0,-0.06,0.81,-0.45,0.2
+Gregory_Goyle,-0.82,1.0,1.0,-1.0,1.0
+Arthur_Weasley,1.0,0.45,-0.31,-0.08,0.46
+Amelia_Bones,0.56,0.38,1.0,-0.64,0.47
+Myrtle_Warren,1.0,1.0,0.35,0.58,0.41
+Lucius_Malfoy,-0.99,0.97,0.36,-0.03,0.05
+Cho_Chang,1.0,0.94,0.33,0.21,0.27
+Poppy_Pomfrey,1.0,-0.69,-0.15,0.13,-0.03
+Marge_Dursley,-1.0,0.26,-0.32,0.34,-0.09
+Minerva_McGonagall,0.04,-0.01,1.0,-0.1,0.49
+Nymphadora_Tonks,1.0,1.0,0.66,-0.23,0.13
+Peeves,1.0,0.3,0.65,-0.15,0.45
+Molly_Weasley,1.0,1.0,0.48,-0.58,0.11
+Fleur_Delacour,-0.42,0.32,-0.34,0.58,-0.12
+Morfin_Gaunt,-0.58,1.0,0.02,-0.04,-0.23
+Frank_Bryce,-0.47,1.0,0.12,-0.53,1.0
+Elphias_Doge,1.0,0.71,0.96,-0.82,1.0
+Ron_Weasley,0.75,0.19,0.09,0.38,-0.07
+Zacharias_Smith,-1.0,-0.54,-0.44,0.63,0.11
+Alicia_Spinnet,1.0,1.0,-0.18,-0.99,-0.94
+Phineas_Nigellus_Black,-1.0,0.18,-0.53,0.94,0.82
+George_Weasley#Fred_and_George_Weasley,-0.17,0.32,0.19,-0.05,-0.27
+Dolores_Jane_Umbridge,-0.3,-0.3,0.2,-0.31,-0.03
+The_Bloody_Baron,0.97,0.97,0.04,0.25,-0.16
+Horace_Slughorn,1.0,0.96,0.4,-0.31,0.25
+Viktor_Krum,1.0,0.0,1.0,0.18,-0.2
+Firenze,1.0,0.99,0.67,-0.55,-0.44
+Harry_Potter,0.33,-0.26,0.33,-0.03,0.63
+Augustus_Rookwood,1.0,-1.0,-0.35,1.0,-0.7
+Pomona_Sprout,1.0,1.0,0.09,0.47,-0.56
+Gilderoy_Lockhart,-0.74,0.01,-0.63,0.26,0.56
+Lord_Voldemort,-0.6,-0.29,0.07,0.15,0.04
+Percy_Weasley,-0.63,0.53,0.43,-0.03,0.29
+Fawkes,0.74,0.82,0.76,-0.99,1.0
+Katie_Bell#Katie_Bell,1.0,1.0,-0.18,-0.99,-0.94
+Filius_Flitwick,0.99,0.35,-0.1,1.0,0.41
+Bellatrix_Lestrange,0.25,0.48,0.99,-0.95,0.5
+Hedwig,0.33,0.51,1.0,-0.39,0.6
+Dudley_Dursley,-1.0,-0.22,-0.13,1.0,0.26
+Lily_Evans-Potter,1.0,0.29,0.68,-0.51,0.56
+Grawp,1.0,0.44,0.35,0.26,0.91
+Alecto_Carrow,0.3,0.37,0.7,-0.62,1.0
+Neville_Longbottom,0.73,-0.95,0.61,-0.03,-0.25
+Parvati_Patil,-0.78,0.0,0.64,-1.0,0.49
+Hannah_Abbott,1.0,-0.41,-0.23,0.26,-0.26
+Sirius_Black,-0.06,0.9,-0.47,0.0,0.6
+Dedalus_Diggle,1.0,1.0,-0.03,-0.48,-0.03
+Charlie_Weasley,0.82,1.0,0.29,-1.0,-0.26
+Olympe_Maxime,1.0,-0.53,1.0,-0.12,-0.12
+Draco_Malfoy,-0.43,0.35,0.16,-0.28,0.15
+Colin_Creevey,-0.45,1.0,0.65,-1.0,0.35
+Antioch_Peverell,-0.45,0.6,-0.94,-0.13,-0.04
+Regulus_Black,1.0,-0.53,1.0,-0.12,-0.12
+Petunia_Dursley,0.16,-0.12,-0.16,0.42,0.6

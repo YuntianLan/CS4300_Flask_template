@@ -1,1 +1,66 @@
-Character	Original Adjs	Added Ajds	To Be Added	Agreeableness	Extraversion	Conscientiousness	Neuroticism	Openness to ExperienceIron_Man	"egocentric:0.5,apathetic:0.5,callous:0.5,natural:0.5,carefree:0.5,confident:0.5,moral:0.5,peaceful:0.5,mature:0.5,cynical:0.5,responsible:0.5,considerate:0.5,brave:0.5,selfless:0.5,ruthless:0.5,sarcastic:0.5,enthusiastic:0.5,ignorant:0.5,detached:0.5,intelligent:0.5,innovative:0.5,efficient:0.5,combative:0.5,reliable:0.5,harsh:0.5,magnetic:0.5,serious:0.5,mischievous:0.5,wise:0.5,dominant:0.5,intolerant:0.5,intellectual:0.5,cold:0.5,strict:0.5,imaginative:0.5,aloof:0.5"	"enterprising:1,adaptable:1,intelligent:1,enthusiastic:1,intellectual:1,proud:1,selfish:1,sociable:1,inventive:1,individualistic:1,callous:1,playful:1,flirtatious:1,kind:1,brave:1,sarcastic:1,practical:1,egocentric:1,stubborn:1"		-0.08	0.51	0.46	-0.22	0.51Karen_Page	"cunning:0.5,optimistic:0.5,humorous:0.5,kind:0.5,cold:0.5,frank:0.5,firm:0.5"			0.03	0.88	0.5	-0.56	0.38Groot	"warm:0.5,simple:0.5,intense:0.5,serious:0.5,rude:0.5"			0.22	0.02	0.4	0.11	0.19Claire_Temple	"compassionate:0.5,sarcastic:0.5,moral:0.5,indirect:0.5,responsible:0.5,serious:0.5"			0.95	-0.6	0.93	0.3	0.55Mockingbird	"warm:0.5,friendly:0.5,loyal:0.5,moral:0.5,stubborn:0.5"			1	0.81	0.44	0.13	0.04Ultron	"emotional:0.5,complex:0.5,logical:0.5,sympathetic:0.5"	"cold:1,condescending:1,patronizing:1,impersonal:1"		-0.37	-0.57	0.29	0.26	0.09Obadiah_Stane	deep:0.5			1	-0.41	0.18	0.06	1Loki	"boisterous:0.5,peaceful:0.5,quiet:0.5,cold:0.5,jealous:0.5,deep:0.5,direct:0.5,dull:0.5,timid:0.5,meek:0.5,impractical:0.5,objective:0.5,underhanded:0.5,benevolent:0.5"	"active:1,sociable:1,demanding:1,impatient:1,enthusiastic:1,energetic:1,social:1,deceitful:1,ruthless:1,proud:1,callous:1,condescending:1,bigoted:1,pretentious:1,ignorant:1,cunning:1"		-0.26	0.46	0.03	0.08	-0.21Black_Widow	"friendly:0.5,flirtatious:0.5,timid:0.5,independent:0.5,serious:0.5,sarcastic:0.5,smart:0.5,loyal:0.5,tough:0.5,ruthless:0.5,affectionate:0.5"	"critical:1,detached:1,independent:1,logical:1,practical:1,adventurous:1,intelligent:1,efficient:1"		-0.01	0.14	0.82	-0.27	0.72Black_Panther	"polite:0.5,respectful:0.5,firm:0.5,moral:0.5,cautious:0.5,talkative:0.5,silent:0.5,serious:0.5,humorous:0.5,sarcastic:0.5"			0.8	-0.21	1	0.05	0.02Daredevil	"selfless:0.5,emotional:0.5,firm:0.5,frank:0.5,complex:0.5,independent:0.5,cold:0.5,religious:0.5"	"reserved:1,introverted:1,selfless:1,firm:1,independent:1,religious:1,impersonal:1,stubborn:1"		-0.29	-0.62	0.48	0.01	0.4Nick_Fury	"bold:0.5,cynical:0.5,ruthless:0.5,moral:0.5"	"ambitious:1,forceful:1,adaptable:1,energetic:1,natural:1,decisive:1,communicative:1"		0.12	1	0.74	-0.5	0.44Vision	"polite:0.5,understanding:0.5,loyal:0.5,logical:0.5,selfless:0.5"			1	-0.39	1	-0.49	0.56Agent_33	"cruel:0.5,proud:0.5"			-1	0.58	0.35	-0.15	0.2Abomination	"deep:0.5,intense:0.5,aggressive:0.5,ruthless:0.5"			-0.78	1	0.35	0.09	0.88Howard_Stark	"deep:0.5,cold:0.5,cautious:0.5,loyal:0.5,sarcastic:0.5,intellectual:0.5"			-0.05	-0.58	0.68	0.16	1Arnim_Zola	cowardly:0.5			1	-1	-0.88	1	-0.29Spider-Man	"intelligent:0.5,friendly:0.5,shy:0.5,courageous:0.5,clever:0.5,prompt:0.5,reckless:0.5,zealous:0.5,humble:0.5,serious:0.5,mature:0.5,responsible:0.5"			0.69	0.1	0.89	-0.59	0.6Nebula	"vain:0.5,intense:0.5,independent:0.5,warm:0.5,emotional:0.5"			0.64	0.88	0.15	0.84	0.96Pepper_Potts	sarcastic:0.5	"industrious:1,logical:1,deliberate:1,autonomous:1,intelligent:1,intellectual:1,insightful:1,understanding:1,natural:1,organized:1"		0.34	0.04	1	-0.44	1Malekith	ruthless:0.5			-1	0.53	0.06	-0.41	-0.94Hawkeye	"brave:0.5,objective:0.5,alert:0.5,reckless:0.5,tough:0.5,humorous:0.5,sarcastic:0.5,immature:0.5,competitive:0.5,confident:0.5,compassionate:0.5,loyal:0.5"	"dominant:1,flexible:1,demanding:1,sociable:1,honest:1"		0.14	1	0.36	-0.27	0.31Deathlok	"prompt:0.5,unpredictable:0.5,sarcastic:0.5"			-0.21	0.19	0.39	0.64	0.66Scarlet_Witch	"aggressive:0.5,passionate:0.5,deep:0.5,serious:0.5,direct:0.5,compassionate:0.5,manipulative:0.5,passive:0.5,loyal:0.5"			0.7	0.4	0.45	0.25	0.67The_Other	pompous:0.5			-0.94	0.7	0.41	0.47	-1Hulk	"shy:0.5,analytical:0.5,compassionate:0.5,responsible:0.5,aggressive:0.5,direct:0.5,sarcastic:0.5,confident:0.5,wary:0.5,emotional:0.5,volatile:0.5,playful:0.5,fearful:0.5"	"sincere:1,sympathetic:1,unassuming:1,reserved:1,patient:1,insightful:1,complex:1,creative:1,analytical:1,meticulous:1,emotional:1,temperamental:1,intelligent:1"		0.65	-0.14	0.4	0.12	0.81Thanos	"complex:0.5,unforgiving:0.5,kind:0.5,confident:0.5,manipulative:0.5,patient:0.5,forceful:0.5,sarcastic:0.5,cruel:0.5,cunning:0.5"	"unforgiving:1,manipulative:1,patient:1,impersonal:1,forceful:1,cruel:1,cold:1,condescending:1,patronizing:1,aggressive:1"		-0.9	0.25	0.29	-0.1	0.16Phil_Coulson	"humorous:0.5,witty:0.5,sarcastic:0.5,loyal:0.5,cold:0.5,ruthless:0.5"	"warm:1,dependable:1,cooperative:1,practical:1,energetic:1,conventional:1"		0.8	0.37	0.98	-0.35	-0.03Falcon		"enthusiastic:1,energetic:1,friendly:1,insightful:1,sensitive:1"		1	1	0.2	-0.01	0.5Peggy_Carter	"sarcastic:0.5,loyal:0.5"	"sensitive:1,flexible:1,considerate:1,independent:1"		1	0.21	0.36	-0.04	0.84Sif	jealous:0.5			-0.53	-0.41	-0.35	1	-0.58Quicksilver	"impatient:0.5,tenacious:0.5,deep:0.5,loyal:0.5,friendly:0.5"			0.83	0.56	0.25	0.23	0.69Thunderbolt_Ross	"ruthless:0.5,unconventional:0.5"			-1	0.35	-0.91	-0.5	0.82Lance_Hunter	"sarcastic:0.5,loyal:0.5"			0.38	0.26	0.12	0.38	0.67Quake	"confident:0.5,aloof:0.5,deep:0.5,compassionate:0.5,loyal:0.5,emotional:0.5,ruthless:0.5,warm:0.5,strict:0.5,abusive:0.5,understanding:0.5"			0.71	0.41	0.4	0.21	0.35Collector	"cruel:0.5,fearful:0.5"			-0.64	-0.7	-0.29	0.94	-0.35Leo_Fitz	"emotional:0.5,understanding:0.5,secretive:0.5,tough:0.5,ruthless:0.5,cruel:0.5,cold:0.5,proud:0.5,responsible:0.5,direct:0.5,harsh:0.5"			-0.63	0.17	0.59	0.04	0.15Melinda_May	"quiet:0.5,warm:0.5,secretive:0.5,cold:0.5,kind:0.5,selfless:0.5"			0.85	-1	0.31	0	0.24Carol_Danvers	"stubborn:0.5,rebellious:0.5,reckless:0.5,impulsive:0.5,manipulative:0.5"	"stubborn:1,independent:1,reckless:1,principled:1,confident:1,outspoken:1,humorous:1,empathic:1,nonconforming:1,passionate:1"		-0.17	0.95	-0.2	-0.09	0.82Kingpin	"shy:0.5,introverted:0.5,social:0.5,understanding:0.5,emotional:0.5,natural:0.5,polite:0.5,articulate:0.5,deep:0.5,cold:0.5,abusive:0.5,responsible:0.5,cynical:0.5,ruthless:0.5,impulsive:0.5,moral:0.5"			0.48	-0.28	0.31	0.16	0.42Alexander_Pierce	"loyal:0.5,ruthless:0.5,abusive:0.5"			-0.86	0.31	0.06	-0.25	-0.35Red_Skull	"egocentric:0.5,cruel:0.5,religious:0.5,superstitious:0.5,proud:0.5,cold:0.5,humble:0.5"	"cruel:1,egocentric:1,cold:1,patronizing:1,bigoted:1"		-0.88	-0.15	0.04	0.11	-0.29Foggy_Nelson	"sociable:0.5,intelligent:0.5,firm:0.5"	"warm:1,loyal:1,brave:1,organized:1,sociable:1,unadventurous:1"		0.91	0.63	0.93	-0.23	0.31Heimdall	loyal:0.5			1	0.35	0.76	-0.18	0.53Klaw	"greedy:0.5,cunning:0.5,smart:0.5,belligerent:0.5"			-1	0.41	0.18	0.22	0.58War_Machine	"proud:0.5,reckless:0.5,firm:0.5,friendly:0.5,aggressive:0.5"	"energetic:1,forceful:1,spontaneous:1,optimistic:1,practical:1,down-to-earth:1,generous:1,conventional:1"		0.42	1	0.64	-0.6	0.11Odin	"patient:0.5,wise:0.5,thoughtful:0.5,benevolent:0.5,responsible:0.5,careful:0.5,ruthless:0.5,intense:0.5,peaceful:0.5,proud:0.5,kind:0.5,strict:0.5"			1	-0.04	1	-0.47	0.44Captain_America	"honest:0.5,intolerant:0.5,hypocritical:0.5,tough:0.5,direct:0.5,loyal:0.5,moral:0.5,emotional:0.5,selfless:0.5,extravagant:0.5"	"conservative:1,conventional:1,reserved:1,warm:1,kind:1,moral:1,persistent:1,selfless:1,stern:1,loyal:1,modest:1,brave:1,stubborn:1"		0.55	0.01	0.69	0.02	-0.13Jemma_Simmons	"deep:0.5,bright:0.5,cruel:0.5,ruthless:0.5"			-0.76	0.2	0.18	-0.35	1Star-Lord	"deep:0.5,sarcastic:0.5,bright:0.5,possessive:0.5,conscientious:0.5,impulsive:0.5,serious:0.5,cold:0.5,inventive:0.5,kind:0.5"	"playful:1,impulsive:1,cheerful:1,confident:1,sociable:1,individualistic:1,flirtatious:1,sarcastic:1,enthusiastic:1,simple:1,energetic:1"		0.45	1	0.12	-0.12	0.31Wasp	"honest:0.5,candid:0.5,proud:0.5,affectionate:0.5,cold:0.5"			0.27	0.28	0.4	-0.08	0.64Ant-Man	"moral:0.5,stubborn:0.5"			0	-0.06	0.64	0.61	0.09Doctor_Strange	"patient:0.5,simple:0.5,natural:0.5,humble:0.5,flexible:0.5,sympathetic:0.5,selfish:0.5,sarcastic:0.5,meticulous:0.5,wary:0.5,polite:0.5,direct:0.5"	"selfish:1,sarcastic:1,meticulous:1,candid:1,condescending:1,proud:1,egocentric:1,individualistic:1,intelligent:1"		0.1	0.01	0.33	-0.09	0.61Thor	"immature:0.5,stubborn:0.5,boisterous:0.5,vain:0.5,egotistical:0.5,restrained:0.5,humble:0.5,boastful:0.5,excitable:0.5,kind:0.5"	"energetic:1,confident:1,practical:1,critical:1,boisterous:1,proud:1,reckless:1,simple:1,unintellectual:1"		-0.13	0.58	0.03	0	-0.14Gamora	"aggressive:0.5,ruthless:0.5,kind:0.5,deep:0.5,serious:0.5,cruel:0.5"			-0.27	0.38	0.45	-0.06	0.45Grant_Ward	"social:0.5,moral:0.5,manipulative:0.5"			0.6	1	0.58	0.21	-0.16Sharon_Carter	moral:0.5			1	-0.53	1	-0.12	-0.12Drax_the_Destroyer	"serious:0.5,refined:0.5,prompt:0.5,understanding:0.5,impatient:0.5,immature:0.5,social:0.5"			0.79	0.18	0.53	0.6	0.22Maria__Hill	"tough:0.5,critical:0.5,loyal:0.5"			-0.43	0.39	0.62	0.08	0.41Rocket_Raccoon	"cynical:0.5,temperamental:0.5,aggressive:0.5,cruel:0.5,humorous:0.5,logical:0.5,ethical:0.5,compassionate:0.5,greedy:0.5,complex:0.5,deep:0.5,emotional:0.5"			-0.08	0.25	0.12	0.53	0.86Happy_Hogan	"rude:0.5,serious:0.5"			-1	-0.67	0.47	0.12	0.67Jane_Foster	intelligent:0.5	"candid:1,ingenious:1,independent:1,rebellious:1,intelligent:1,tolerant:1,flexible:1"		0.29	0.39	0.01	-0.78	1Bucky_Barnes	"loyal:0.5,moral:0.5,ruthless:0.5,serious:0.5"			0.56	-0.37	1	-0.12	0.12
+Character,Agreeableness,Extraversion,Conscientiousness,Neuroticism,Openness to Experience
+Winter_Soldier,1.0,-0.58,0.49,0.29,0.77
+Iron_Man,-0.08,0.51,0.46,-0.22,0.51
+Karen_Page,0.03,0.88,0.5,-0.56,0.38
+Groot,0.22,0.02,0.4,0.11,0.19
+Claire_Temple,0.95,-0.6,0.93,0.3,0.55
+Mockingbird,1.0,0.81,0.44,0.13,0.04
+Marial_Hill,0.78,-0.38,1.0,-0.49,0.08
+Ultron,-0.37,-0.57,0.29,0.26,0.09
+Obadiah_Stane,1.0,-0.41,0.18,0.06,1.0
+Loki,-0.26,0.46,0.03,0.08,-0.21
+Black_Widow,-0.01,0.14,0.82,-0.27,0.72
+Black_Panther,0.8,-0.21,1.0,0.05,0.02
+Daredevil,-0.29,-0.62,0.48,0.01,0.4
+Nick_Fury,0.12,1.0,0.74,-0.5,0.44
+Vision,1.0,-0.39,1.0,-0.49,0.56
+Agent_33,-1.0,0.58,0.35,-0.15,0.2
+Abomination,-0.78,1.0,0.35,0.09,0.88
+Howard_Stark,-0.05,-0.58,0.68,0.16,1.0
+Arnim_Zola,1.0,-1.0,-0.88,1.0,-0.29
+Spider-Man,0.69,0.1,0.89,-0.59,0.6
+Nebula,0.64,0.88,0.15,0.84,0.96
+Pepper_Potts,0.34,0.04,1.0,-0.44,1.0
+Malekith,-1.0,0.53,0.06,-0.41,-0.94
+Hawkeye,0.14,1.0,0.36,-0.27,0.31
+Deathlok,-0.21,0.19,0.39,0.64,0.66
+Scarlet_Witch,0.7,0.4,0.45,0.25,0.67
+The_Other,-0.94,0.7,0.41,0.47,-1.0
+Hulk,0.65,-0.14,0.4,0.12,0.81
+Thanos,-0.9,0.25,0.29,-0.1,0.16
+Phil_Coulson,0.8,0.37,0.98,-0.35,-0.03
+Falcon,1.0,1.0,0.12,-0.08,0.5
+Peggy_Carter,1.0,0.21,0.36,-0.04,0.84
+Sif,-0.53,-0.41,-0.35,1.0,-0.58
+Quicksilver,0.83,0.56,0.25,0.23,0.69
+Thunderbolt_Ross,-1.0,0.35,-0.91,-0.5,0.82
+Lance_Hunter,0.38,0.26,0.12,0.38,0.67
+Quake,0.71,0.41,0.4,0.21,0.35
+Collector,-0.64,-0.7,-0.29,0.94,-0.35
+Leo_Fitz,-0.63,0.17,0.59,0.04,0.15
+Melinda_May,0.85,-1.0,0.31,0.0,0.24
+Carol_Danvers,-0.17,0.95,-0.2,-0.09,0.82
+Kingpin,0.48,-0.28,0.31,0.16,0.42
+Alexander_Pierce,-0.86,0.31,0.06,-0.25,-0.35
+Red_Skull,-0.88,-0.15,0.04,0.11,-0.29
+Foggy_Nelson,0.91,0.63,0.93,-0.23,0.31
+Heimdall,1.0,0.35,0.76,-0.18,0.53
+Klaw,-1.0,0.41,0.18,0.22,0.58
+War_Machine,0.42,1.0,0.64,-0.6,0.11
+Odin,1.0,-0.04,1.0,-0.47,0.44
+Captain_America,0.55,0.01,0.69,0.02,-0.13
+Jemma_Simmons,-0.76,0.2,0.18,-0.35,1.0
+Star-Lord,0.45,1.0,0.12,-0.12,0.31
+Wasp,0.27,0.28,0.4,-0.08,0.64
+Ant-Man,0.0,-0.06,0.64,0.61,0.09
+Doctor_Strange,0.1,0.01,0.33,-0.09,0.61
+Thor,-0.13,0.58,0.03,0.0,-0.14
+Gamora,-0.27,0.38,0.45,-0.06,0.45
+Grant_Ward,0.6,1.0,0.58,0.21,-0.16
+Sharon_Carter,1.0,-0.53,1.0,-0.12,-0.12
+Drax_the_Destroyer,0.79,0.18,0.53,0.6,0.22
+Maria__Hill,-0.43,0.39,0.62,0.08,0.41
+Rocket_Raccoon,-0.08,0.25,0.12,0.53,0.86
+Happy_Hogan,-1.0,-0.67,0.47,0.12,0.67
+Jane_Foster,0.29,0.39,0.01,-0.78,1.0
+Bucky_Barnes,0.56,-0.37,1.0,-0.12,0.12
