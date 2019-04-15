@@ -8,11 +8,11 @@ Ginny_Weasley,0.67,0.96,0.43,-0.81,0.44
 Ignotus_Peverell,1.0,-0.73,1.0,-1.0,0.19
 Hermione_Granger,0.15,-0.14,0.9,-0.24,0.67
 Dean_Thomas,0.29,0.61,0.76,-0.79,0.12
-Ernie_Macmillan,0.73,0.57,0.85,-0.16,-0.16
+Ernie_Macmillan,-0.53,1.0,0.94,0.06,0.41
 Auntie_Muriel,-1.0,0.23,-1.0,-0.5,0.61
 Cuthbert_Binns,-0.99,0.99,1.0,-0.88,0.47
 Argus_Filch,-1.0,0.02,0.27,1.0,0.0
-Amycus_Carrow,0.53,0.7,0.7,-0.7,1.0
+Amycus_Carrow,-0.58,-0.18,0.5,0.35,1.0
 Bill_Weasley,-0.1,-0.61,0.95,-0.72,0.91
 Luna_Lovegood,0.78,-0.18,-0.21,-0.33,0.81
 Barty_Crouch_Sr,-0.73,-0.21,0.18,-0.07,-0.19
@@ -35,9 +35,9 @@ Lavender_Brown,1.0,-0.06,-0.79,1.0,-0.79
 Ariana_Dumbledore,1.0,0.92,0.48,-0.82,0.18
 Lee_Jordan,0.32,0.64,1.0,-0.63,0.0
 Stan_Shunpike,0.41,1.0,-0.47,0.12,0.0
-Aberforth_Dumbledore,0.02,0.34,0.6,-0.47,0.4
+Aberforth_Dumbledore,0.56,0.67,0.91,-0.64,0.22
 Augusta_Longbottom,0.18,-0.04,0.84,-0.66,0.7
-Albus_Dumbledore,0.37,-0.33,0.75,-0.03,0.74
+Albus_Dumbledore,0.34,-0.33,0.73,-0.03,0.76
 Nearly_Headless_Nick,1.0,0.55,-0.27,0.02,0.0
 Quirinus_Quirrell,0.35,-1.0,0.01,0.39,0.01
 Thorfinn_Rowle,-1.0,0.35,-1.0,0.53,0.6
@@ -61,7 +61,7 @@ Angelina_Johnson,-0.45,1.0,0.65,-1.0,0.35
 Gellert_Grindelwald,-0.2,0.28,0.27,0.15,0.13
 Porpentina_Goldstein,0.17,-0.17,1.0,-0.38,0.29
 Silvanus_Kettleburn,-1.0,1.0,-1.0,-0.06,-0.82
-Justin_Finch-Fletchley,1.0,1.0,-0.27,-0.2,-0.44
+Justin_Finch-Fletchley,1.0,1.0,-0.12,0.11,-0.3
 Irma_Pince,-1.0,-0.06,1.0,0.38,-0.76
 Oliver_Wood,-0.91,1.0,1.0,-0.94,0.23
 Mafalda_Hopkirk,1.0,1.0,0.18,-1.0,-0.35
@@ -73,7 +73,7 @@ James_Potter,0.45,1.0,0.38,-0.47,0.07
 Cornelius_Fudge,0.29,0.17,-0.37,-0.08,0.21
 Rolanda_Hooch,1.0,0.41,0.35,0.12,0.0
 Alastor_Moody,0.33,0.15,1.0,0.05,0.0
-Rufus_Scrimgeour,-1.0,0.76,0.04,0.58,0.83
+Rufus_Scrimgeour,-1.0,0.38,0.07,0.6,0.49
 Remus_Lupin,0.78,-0.55,0.72,-0.4,0.59
 Cedric_Diggory,1.0,-0.06,0.81,-0.45,0.2
 Gregory_Goyle,-0.82,1.0,1.0,-1.0,1.0
@@ -96,9 +96,9 @@ Ron_Weasley,0.75,0.19,0.09,0.38,-0.07
 Zacharias_Smith,-1.0,-0.54,-0.44,0.63,0.11
 Alicia_Spinnet,1.0,1.0,-0.18,-0.99,-0.94
 Phineas_Nigellus_Black,-1.0,0.18,-0.53,0.94,0.82
-George_Weasley#Fred_and_George_Weasley,-0.17,0.32,0.19,-0.05,-0.27
 Dolores_Jane_Umbridge,-0.3,-0.3,0.2,-0.31,-0.03
 The_Bloody_Baron,0.97,0.97,0.04,0.25,-0.16
+Walden_Macnair,1.0,0.35,0.76,-0.18,0.53
 Horace_Slughorn,1.0,0.96,0.4,-0.31,0.25
 Viktor_Krum,1.0,0.0,1.0,0.18,-0.2
 Firenze,1.0,0.99,0.67,-0.55,-0.44
