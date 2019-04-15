@@ -1,0 +1,21 @@
+#title {
+    padding-top: 350px;
+    padding-bottom: 200px;
+}
+
+#choice {
+    margin-top:50px
+}
+
+.btn {
+/*  background-color: #56ac8a;
+*/  border: none;
+  margin: 4px 2px;
+  border-radius: 12px;
+  box-shadow: white 0px 0px 10px;
+}
+
+button:hover{
+    
+    color: black
+}
