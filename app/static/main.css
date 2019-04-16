@@ -44,7 +44,7 @@
         width: 100%;
     }
     label{
-        font-weight: normal ;
+        font-weight: normal !important;
     }
     .form-check-label{
         font-weight: normal !important;
@@ -67,17 +67,6 @@ body {
 }
 main {
  display:block
-}
-
-.form-group{
-  width: 40%;
-  margin-left: 30%;
-  color: #576071;
-  font-weight: 600 !important;
-  text-align: center;
-  line-height: 1.5;
-  font-family: Open Sans,Helvetica Neue,Arial;
-  font-size: 18px;
 }
 
 .question {
