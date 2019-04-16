@@ -1,5 +1,4 @@
 Character,Agreeableness,Extraversion,Conscientiousness,Neuroticism,Openness to Experience
-Winter_Soldier,0.75,-0.49,0.24,0.4,0.72
 Iron_Man,-0.08,0.51,0.46,-0.22,0.51
 Karen_Page,0.03,0.88,0.5,-0.56,0.38
 Groot,0.22,0.02,0.4,0.11,0.19
@@ -62,4 +61,4 @@ Drax_the_Destroyer,0.79,0.18,0.53,0.6,0.22
 Rocket_Raccoon,-0.08,0.25,0.12,0.53,0.86
 Happy_Hogan,-1.0,-0.67,0.47,0.12,0.67
 Jane_Foster,0.29,0.39,0.01,-0.78,1.0
-Bucky_Barnes,0.56,-0.37,1.0,-0.12,0.12
+Bucky_Barnes,0.6,-0.51,0.4,0.31,0.59
