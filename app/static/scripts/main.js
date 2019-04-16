@@ -75,7 +75,7 @@ $('#retake-btn').click(function () {
 });
 
 $('#home-btn').click(function () {
-	document.location.href = "index.html";
+	document.location.href = "/index";
 });
 
 $('#test-btn').click(function () {
@@ -83,6 +83,6 @@ $('#test-btn').click(function () {
 });
 
 $('#beh-btn').click(function () {
-	document.location.href = "result.html";
+	document.location.href = "/result";
 });
 

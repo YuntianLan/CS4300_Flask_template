@@ -35,3 +35,8 @@ def result():
 		char1 = cnames[0], movie1 = mnames[0], quote1 = quotes[0],\
 		vec1 = vecs[0], user_vec = user_vec)
 
+@irsystem.route('/index', methods=['GET', 'POST'])
+def home():
+	return render_template('index.html')
+
+
