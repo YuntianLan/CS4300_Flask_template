@@ -3,6 +3,6 @@ $('#test-btn').click(function () {
 });
 
 $('#beh-btn').click(function () {
-	document.location.href = "/result";
+	document.location.href = "/scriptmatch";
 });
 
