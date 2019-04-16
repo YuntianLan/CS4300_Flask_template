@@ -13,7 +13,6 @@ matcher = Matcher()
 def search():
 	return render_template('search.html', name=pname, netid=net_id)
 
-
 @irsystem.route('/result', methods=['GET'])
 def result():
 	print(request.args)
@@ -34,4 +33,3 @@ def result():
 	return render_template('result.html', \
 		char1 = cnames[0], movie1 = mnames[0], quote1 = quotes[0],\
 		vec1 = vecs[0], user_vec = user_vec)
-
