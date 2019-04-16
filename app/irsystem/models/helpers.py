@@ -9,7 +9,7 @@ from collections import defaultdict
 
 
 # Number of best match characters returned (besides the best match)
-NUM_MATCH = 1
+NUM_MATCH = 5
 
 DATA_PATH = 'data/personality/char_big_five/'
 QUOTE_PATH = 'data/personality/all_characters.json'

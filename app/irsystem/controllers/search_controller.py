@@ -32,7 +32,12 @@ def result():
 
 	return render_template('result.html', \
 		char1 = cnames[0], movie1 = mnames[0], quote1 = quotes[0],\
-		vec1 = vecs[0], user_vec = user_vec)
+		vec1 = vecs[0], user_vec = user_vec,
+		char2=cnames[1], movie2=mnames[1], vec2=vecs[1], quote2=quotes[1],
+		char3=cnames[2], movie3=mnames[2], vec3=vecs[2], quote3=quotes[2],
+		char4=cnames[3], movie4=mnames[3], vec4=vecs[3], quote4=quotes[3],
+		char5=cnames[4], movie5=mnames[4], vec5=vecs[4], quote5=quotes[4]
+	)
 
 
 @irsystem.route('/index', methods=['GET', 'POST'])
