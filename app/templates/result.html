@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../static/main.css" media="all" />
     <link rel="stylesheet" type="text/css" href="../static/radar.css" media="all" />
-    <script type="text/javascript" src="../static/htmlwidgets/lib/Chart.js/dist/Chart.js"></script>
+    <script type="text/javascript" src="../static/scripts/Chart.js"></script>
     <link rel="shortcut icon" href="../static/favicon.ico">
     
     </head>
@@ -34,18 +34,61 @@
         </form>
     <div class="container text-center results">
       <div id="results">
-        <p style="color: black; font-size: 14px">You are MOST similar to {{char1}} in {{movie1}}</p>
-        <p style="color: black; font-size: 11px; font-style: italic">{{quote1}}</p>
+        <div id="result1">
+          <p style="color: black; font-size: 15px">You are MOST similar to {{char1}} in {{movie1}}</p>
+          <p style="color: black; font-size: 12px; font-style: italic">{{quote1}}</p>
 <!--        The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
         Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
         {{char1}}'s big-five score: {{vec1}}-->
-      </p>
-    </div>
-        
-    <br><br>
-    <div class="container radar">
-      <canvas id="myChart"></canvas>
-    </div>
+
+          <div class="container radar">
+            <canvas id="myChart">Radar Chart here</canvas>
+          </div>
+        </div>
+        <div id="result2">
+          <p style="color: black; font-size: 15px">You are also similar to {{char2}} in {{movie2}}</p>
+          <p style="color: black; font-size: 12px; font-style: italic">{{quote2}}</p>
+<!--        The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
+        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        {{char1}}'s big-five score: {{vec1}}-->
+
+          <div class="container radar">
+            <canvas id="myChart">Radar Chart here</canvas>
+          </div>
+        </div>
+        <div id="result3">
+          <p style="color: black; font-size: 15px">{{char3}} in {{movie3}}</p>
+          <p style="color: black; font-size: 12px; font-style: italic">{{quote3}}</p>
+<!--        The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
+        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        {{char1}}'s big-five score: {{vec1}}-->
+
+          <div class="container radar">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+        <div id="result4">
+          <p style="color: black; font-size: 15px">{{char4}} in {{movie4}}</p>
+          <p style="color: black; font-size: 12px; font-style: italic">{{quote4}}</p>
+<!--        The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
+        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        {{char1}}'s big-five score: {{vec1}}-->
+
+          <div class="container radar">
+            <canvas id="myChart">Radar Chart here</canvas>
+          </div>
+        </div>
+        <div id="result5">
+          <p style="color: black; font-size: 15px">{{char5}} in {{movie5}}</p>
+          <p style="color: black; font-size: 12px; font-style: italic">{{quote5}}</p>
+<!--        The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
+        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        {{char1}}'s big-five score: {{vec1}}-->
+
+          <div class="container radar">
+            <canvas id="myChart">Radar Chart here</canvas>
+          </div>
+        </div>
 <script>
 var ctx = document.getElementById("myChart").getContext("2d");
 
@@ -72,7 +115,7 @@ var data = {
             pointHoverBorderColor: "#56ac8a",
             lineTension: [0.1],
             fill: false,
-            data: [0.02, -0.23, 0.29, -0.11, 0.58] //{{user_vec}} List of floats(round to .01)
+            data: [0.02, -0.23, 0.29, -0.12, 0.58] //{{user_vec}} List of floats(round to .01)
         }
     ]
 };
