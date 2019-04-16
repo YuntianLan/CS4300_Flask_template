@@ -78,11 +78,3 @@ $('#home-btn').click(function () {
 	document.location.href = "/index";
 });
 
-$('#test-btn').click(function () {
-	document.location.href = "/";
-});
-
-$('#beh-btn').click(function () {
-	document.location.href = "/result";
-});
-
