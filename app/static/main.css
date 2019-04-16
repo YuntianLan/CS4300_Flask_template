@@ -86,7 +86,9 @@ main {
 }
 
 #title {
-  background-image: url("../static/img/bg.png");
+  background-image: url("../static/img/bg.png") no-repeat center center fixed; 
+  background-size: cover;
+  overflow: hidden;
   background-color:  #171a21;
   padding-top: 100px;
   padding-bottom: 100px;
