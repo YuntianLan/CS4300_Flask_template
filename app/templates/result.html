@@ -50,8 +50,7 @@
         <div id="result2">
           <p style="color: black; font-size: 18px">You are also similar to {{char2}} in {{movie2}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote2}}</p>
-        <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
-        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        <p class = "text-left" style="color: black; font-size: 15px">
         {{char2}}'s big-five score: {{vec2}}</p>
 
 <!--           <div class="container radar">
@@ -61,8 +60,7 @@
         <div id="result3">
           <p style="color: black; font-size: 18px">{{char3}} in {{movie3}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote3}}</p>
-        <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
-        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        <p class = "text-left" style="color: black; font-size: 15px">
         {{char3}}'s big-five score: {{vec3}}</p>
 
 <!--           <div class="container radar">
@@ -72,8 +70,7 @@
         <div id="result4">
           <p style="color: black; font-size: 18px">{{char4}} in {{movie4}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote4}}</p>
-        <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
-        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        <p class = "text-left" style="color: black; font-size: 15px">
         {{char4}}'s big-five score: {{vec4}}</p>
 
 <!--           <div class="container radar">
@@ -83,8 +80,7 @@
         <div id="result5">
           <p style="color: black; font-size: 18px">{{char5}} in {{movie5}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote5}}</p>
-        <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
-        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        <p class = "text-left" style="color: black; font-size: 15px">
         {{char5}}'s big-five score: {{vec5}}</p>
 
 <!--           <div class="container radar">
@@ -105,7 +101,7 @@ var data = {
             pointBorderColor: "#c1bfbd",
             pointHoverBackgroundColor: "#c1bfbd",
             pointHoverBorderColor: "rgba(179,181,198,1)",
-            data: [0, -0.33333333, 0, -0.16666667, 0.5] //{{vec1}} List of floats(round to .01)
+            data: {{vec1}} //{{vec1}} List of floats(round to .01)
         },
         {
             label: "Your Big Five",
@@ -117,7 +113,7 @@ var data = {
             pointHoverBorderColor: "#56ac8a",
             lineTension: [0.1],
             fill: false,
-            data: [0.02, -0.23, 0.29, -0.12, 0.58] //{{user_vec}} List of floats(round to .01)
+            data: {{user_vec}} //{{user_vec}} List of floats(round to .01)
         }
     ]
 };
