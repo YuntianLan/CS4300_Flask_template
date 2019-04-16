@@ -10,8 +10,9 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../static/main.css" media="all" />
     <link rel="stylesheet" type="text/css" href="../static/radar.css" media="all" />
-    <script type="text/javascript" src="../static/htmlwidgets/lib/Chart.js/dist/Chart.js"></script>
-      <link rel="shortcut icon" href="../static/favicon.ico">
+
+    <script type="text/javascript" src="../static/scripts/Chart.js"></script>
+    <link rel="shortcut icon" href="../static/favicon.ico">
     
     </head>
 
@@ -21,7 +22,8 @@
             <p>Student Name: ({{ netid }})</p>
         </div> -->
     <div id="title">
-    <button class="btn btn-primary btn-lg" onclick="location.href='index.html'">Home</button>
+
+    <button id="home-btn" class="btn btn-primary btn-lg">Home</button>
 
         <div class="text-right">
           <h1 class="container", style="font-size: 40px; font-family:Futura; color: white">Who Are You on Screen</h1>
@@ -34,20 +36,104 @@
         </form>
     <div class="container text-center results">
       <div id="results">
-        <p style="color: black; font-size: 14px">You are MOST similar to {{char1}} in {{movie1}}</p>
-        <p style="color: black; font-size: 11px; font-style: italic">"{{quote1}}"</p>
-<!--        The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
+        <div id="result1">
+          <p style="color: black; font-size: 18px">You are MOST similar to {{char1}} in {{movie1}}</p>
+          <p style="color: black; font-size: 12px; font-style: italic">{{quote1}}</p>
+        <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
         Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
-        {{char1}}'s big-five score: {{vec1}}-->
-      </p>
-    </div>
-        
-        <h2> You are the most similar to {{char1}} in {{movie1}} </h2>
-        <h3> {{quote1}} </h3>
-        <h3> The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Neuroticism, Openness to Experiences</h3>
-        <h3> Your big-five score for the five correspondences are, respectively: {{user_vec}} </h3>
-        <h3> {{char1}}'s big-five score: {{vec1}} </h3> <br><br>
+        {{char1}}'s big-five score: {{vec1}}</p>
 
+          <div class="container radar">
+            <canvas id="myChart">Radar Chart here</canvas>
+          </div>
+        </div>
+        <div id="result2">
+          <p style="color: black; font-size: 18px">You are also similar to {{char2}} in {{movie2}}</p>
+          <p style="color: black; font-size: 12px; font-style: italic">{{quote2}}</p>
+        <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
+        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        {{char2}}'s big-five score: {{vec2}}</p>
+
+<!--           <div class="container radar">
+            <canvas id="myChart">Radar Chart here</canvas>
+          </div> -->
+        </div>
+        <div id="result3">
+          <p style="color: black; font-size: 18px">{{char3}} in {{movie3}}</p>
+          <p style="color: black; font-size: 12px; font-style: italic">{{quote3}}</p>
+        <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
+        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        {{char3}}'s big-five score: {{vec3}}</p>
+
+<!--           <div class="container radar">
+            <canvas id="myChart"></canvas>
+          </div> -->
+        </div>
+        <div id="result4">
+          <p style="color: black; font-size: 18px">{{char4}} in {{movie4}}</p>
+          <p style="color: black; font-size: 12px; font-style: italic">{{quote4}}</p>
+        <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
+        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        {{char4}}'s big-five score: {{vec4}}</p>
+
+<!--           <div class="container radar">
+            <canvas id="myChart">Radar Chart here</canvas>
+          </div> -->
+        </div>
+        <div id="result5">
+          <p style="color: black; font-size: 18px">{{char5}} in {{movie5}}</p>
+          <p style="color: black; font-size: 12px; font-style: italic">{{quote5}}</p>
+        <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
+        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
+        {{char5}}'s big-five score: {{vec5}}</p>
+
+<!--           <div class="container radar">
+            <canvas id="myChart">Radar Chart here</canvas>
+          </div> -->
+        </div>
+<script>
+var ctx = document.getElementById("myChart").getContext("2d");
+
+var data = {
+    labels: ["Agreeableness", "Extraversion", "Conscientiousness", "Emotional Stability", "Openness"],
+    datasets: [
+        {
+            label: "{{char1}}'s Big Five",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#c1bfbd",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: [0, -0.33333333, 0, -0.16666667, 0.5] //{{vec1}} List of floats(round to .01)
+        },
+        {
+            label: "Your Big Five",
+            backgroundColor: "#fff",
+            borderColor: "#56ac8a",
+            pointBackgroundColor: "#56ac8a",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#56ac8a",
+            pointHoverBorderColor: "#56ac8a",
+            lineTension: [0.1],
+            fill: false,
+            data: [0.02, -0.23, 0.29, -0.12, 0.58] //{{user_vec}} List of floats(round to .01)
+        }
+    ]
+};
+var myChart = new Chart(ctx, {
+    type: 'radar',
+    data: data,
+    options: {
+        scale: {
+            ticks: {
+                display: false,
+                stepSize: 1.0
+                }
+            }
+    }
+});
+</script>
 
         <!-- SCRIPTS -->
         <div class="container text-center bottom">
@@ -59,8 +145,9 @@
         <!-- Latest compiled and minified JavaScript -->
 <!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 -->       <!-- CUSTOM -->
-<!--    <script src="https://raw.githubusercontent.com/nnnick/Chart.js/master/Chart.min.js" ></script>
--->       <script type="text/javascript" src="../static/scripts/main.js"></script>
+
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+       <script type="text/javascript" src="../static/scripts/main.js"></script>
 
 
     <div class="container text-center footer" style="font-size: 10px">
