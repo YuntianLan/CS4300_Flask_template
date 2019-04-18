@@ -41,14 +41,13 @@
 <!--         <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
         Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
         {{char1}}'s big-five score: {{vec1}}</p> -->
-          <div class="container radar"><canvas id="myChart"></canvas></div>
+          <div class="container radar"><canvas id="myChart1"></canvas></div>
         </div>
         <div id="result2" class="container result">
           <p style="color: black; font-size: 18px">You are also similar to: </p>
           <p style="color: black; font-size: 18px">{{char2}} in {{movie2}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote2}}</p>
-        <p class = "text-center" style="color: black; font-size: 15px">
-        {{char2}}'s big-five score: {{vec2}}</p>
+          <div class="container radar"><canvas id="myChart2"></canvas></div>
 
 <!--           <div class="container radar">
             <canvas id="myChart">Radar Chart here</canvas>
@@ -57,32 +56,19 @@
         <div id="result3" class="container result">
           <p style="color: black; font-size: 18px">{{char3}} in {{movie3}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote3}}</p>
-        <p class = "text-center" style="color: black; font-size: 15px">
-        {{char3}}'s big-five score: {{vec3}}</p>
-
-<!--           <div class="container radar">
-            <canvas id="myChart"></canvas>
-          </div> -->
+          <div class="container radar"><canvas id="myChart3"></canvas></div>
         </div>
+
         <div id="result4"class="container result">
           <p style="color: black; font-size: 18px">{{char4}} in {{movie4}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote4}}</p>
-        <p class = "text-center" style="color: black; font-size: 15px">
-        {{char4}}'s big-five score: {{vec4}}</p>
-
-<!--           <div class="container radar">
-            <canvas id="myChart">Radar Chart here</canvas>
-          </div> -->
+          <div class="container radar"><canvas id="myChart4"></canvas></div>
         </div> 
+
         <div id="result5" class="container result">
           <p style="color: black; font-size: 18px">{{char5}} in {{movie5}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote5}}</p>
-        <p class = "text-center" style="color: black; font-size: 15px">
-        {{char5}}'s big-five score: {{vec5}}</p>
-
-<!--           <div class="container radar">
-            <canvas id="myChart">Radar Chart here</canvas>
-          </div> -->
+          <div class="container radar"><canvas id="myChart5"></canvas></div>
         </div>
 
         <!-- SCRIPTS -->
@@ -105,9 +91,13 @@
 <script>
 var user_vec = "{{user_vec}}".slice(1,-1).match(/\S+/g).map(Number);
 var char_vec1 = "{{vec1}}".slice(1,-1).match(/\S+/g).map(Number);
-var ctx = document.getElementById("myChart").getContext("2d");
+var char_vec2 = "{{vec2}}".slice(1,-1).match(/\S+/g).map(Number);
+var char_vec3 = "{{vec3}}".slice(1,-1).match(/\S+/g).map(Number);
+var char_vec4 = "{{vec4}}".slice(1,-1).match(/\S+/g).map(Number);
+var char_vec5 = "{{vec5}}".slice(1,-1).match(/\S+/g).map(Number);
 
-var data = {
+var ctx = document.getElementById("myChart1").getContext("2d");
+var data1 = {
     labels: ["Agreeableness", "Extraversion", "Conscientiousness", "Emotional Stability", "Openness"],
     datasets: [
         {
@@ -118,7 +108,7 @@ var data = {
             pointBorderColor: "#c1bfbd",
             pointHoverBackgroundColor: "#c1bfbd",
             pointHoverBorderColor: "rgba(179,181,198,1)",
-            data: char_vec1 //{{vec1}} List of floats(round to .01)
+            data: char_vec1 
         },
         {
             label: "Your Big Five",
@@ -130,14 +120,13 @@ var data = {
             pointHoverBorderColor: "#56ac8a",
             lineTension: [0.1],
             fill: false,
-            data: user_vec //{{user_vec}} List of floats(round to .01)
+            data: user_vec 
         }
       ] 
 };
-
-var myChart = new Chart(ctx, {
+var myChart1 = new Chart(ctx, {
     type: 'radar',
-    data: data,
+    data: data1,
     draggable: true,
     options: {
         scale: {
@@ -148,6 +137,176 @@ var myChart = new Chart(ctx, {
             }
     }
 });
+
+var ctx = document.getElementById("myChart2").getContext("2d");
+var data2 = {
+    labels: ["Agreeableness", "Extraversion", "Conscientiousness", "Emotional Stability", "Openness"],
+    datasets: [
+        {
+            label: "{{char2}}'s Big Five",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#c1bfbd",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: char_vec2 
+        },
+        {
+            label: "Your Big Five",
+            backgroundColor: "#fff",
+            borderColor: "#56ac8a",
+            pointBackgroundColor: "#56ac8a",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#56ac8a",
+            pointHoverBorderColor: "#56ac8a",
+            lineTension: [0.1],
+            fill: false,
+            data: user_vec 
+        }
+      ] 
+};
+var myChart2 = new Chart(ctx, {
+    type: 'radar',
+    data: data2,
+    draggable: true,
+    options: {
+        scale: {
+            ticks: {
+                display: false,
+                stepSize: 1.0
+                }
+            }
+    }
+});
+
+var ctx = document.getElementById("myChart3").getContext("2d");
+var data3 = {
+    labels: ["Agreeableness", "Extraversion", "Conscientiousness", "Emotional Stability", "Openness"],
+    datasets: [
+        {
+            label: "{{char3}}'s Big Five",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#c1bfbd",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: char_vec3 
+        },
+        {
+            label: "Your Big Five",
+            backgroundColor: "#fff",
+            borderColor: "#56ac8a",
+            pointBackgroundColor: "#56ac8a",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#56ac8a",
+            pointHoverBorderColor: "#56ac8a",
+            lineTension: [0.1],
+            fill: false,
+            data: user_vec 
+        }
+      ] 
+};
+var myChart3 = new Chart(ctx, {
+    type: 'radar',
+    data: data3,
+    draggable: true,
+    options: {
+        scale: {
+            ticks: {
+                display: false,
+                stepSize: 1.0
+                }
+            }
+    }
+});
+
+var ctx = document.getElementById("myChart4").getContext("2d");
+var data4 = {
+    labels: ["Agreeableness", "Extraversion", "Conscientiousness", "Emotional Stability", "Openness"],
+    datasets: [
+        {
+            label: "{{char4}}'s Big Five",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#c1bfbd",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: char_vec4 
+        },
+        {
+            label: "Your Big Five",
+            backgroundColor: "#fff",
+            borderColor: "#56ac8a",
+            pointBackgroundColor: "#56ac8a",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#56ac8a",
+            pointHoverBorderColor: "#56ac8a",
+            lineTension: [0.1],
+            fill: false,
+            data: user_vec 
+        }
+      ] 
+};
+var myChart4 = new Chart(ctx, {
+    type: 'radar',
+    data: data4,
+    draggable: true,
+    options: {
+        scale: {
+            ticks: {
+                display: false,
+                stepSize: 1.0
+                }
+            }
+    }
+});
+
+var ctx = document.getElementById("myChart5").getContext("2d");
+var data5 = {
+    labels: ["Agreeableness", "Extraversion", "Conscientiousness", "Emotional Stability", "Openness"],
+    datasets: [
+        {
+            label: "{{char5}}'s Big Five",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#c1bfbd",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: char_vec5
+        },
+        {
+            label: "Your Big Five",
+            backgroundColor: "#fff",
+            borderColor: "#56ac8a",
+            pointBackgroundColor: "#56ac8a",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#56ac8a",
+            pointHoverBorderColor: "#56ac8a",
+            lineTension: [0.1],
+            fill: false,
+            data: user_vec 
+        }
+      ] 
+};
+var myChart5 = new Chart(ctx, {
+    type: 'radar',
+    data: data5,
+    draggable: true,
+    options: {
+        scale: {
+            ticks: {
+                display: false,
+                stepSize: 1.0
+                }
+            }
+    }
+});
+
+
 </script>
 
     <div class="container text-center footer" style="font-size: 10px">
