@@ -87,49 +87,6 @@
             <canvas id="myChart">Radar Chart here</canvas>
           </div> -->
         </div>
-<!-- <script>
-var ctx = document.getElementById("myChart").getContext("2d");
-
-var data = {
-    labels: ["Agreeableness", "Extraversion", "Conscientiousness", "Emotional Stability", "Openness"],
-    datasets: [
-        {
-            label: "{{char1}}'s Big Five",
-            backgroundColor: "rgba(179,181,198,0.2)",
-            borderColor: "rgba(179,181,198,1)",
-            pointBackgroundColor: "rgba(179,181,198,1)",
-            pointBorderColor: "#c1bfbd",
-            pointHoverBackgroundColor: "#c1bfbd",
-            pointHoverBorderColor: "rgba(179,181,198,1)",
-            data: {{vec1}} //{{vec1}} List of floats(round to .01)
-        },
-        {
-            label: "Your Big Five",
-            backgroundColor: "#fff",
-            borderColor: "#56ac8a",
-            pointBackgroundColor: "#56ac8a",
-            pointBorderColor: "#c1bfbd",
-            pointHoverBackgroundColor: "#56ac8a",
-            pointHoverBorderColor: "#56ac8a",
-            lineTension: [0.1],
-            fill: false,
-            data: {{user_vec}} //{{user_vec}} List of floats(round to .01)
-        }
-      ] 
-};
-var myChart = new Chart(ctx, {
-    type: 'radar',
-    data: data,
-    options: {
-        scale: {
-            ticks: {
-                display: false,
-                stepSize: 1.0
-                }
-            }
-    }
-});
-</script> -->
 
         <!-- SCRIPTS -->
         <div class="container text-center bottom">
@@ -148,6 +105,51 @@ var myChart = new Chart(ctx, {
        <script type="text/javascript" src="/static/scripts/radar.js"></script>
 <!--        <script type="text/javascript" src="../static/scripts/Chart.js"></script>
  -->
+<script>
+var ctx = document.getElementById("myChart").getContext("2d");
+
+var data = {
+    labels: ["Agreeableness", "Extraversion", "Conscientiousness", "Emotional Stability", "Openness"],
+    datasets: [
+        {
+            label: "{{char1}}'s Big Five",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#c1bfbd",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: [0.1,0.2,0.3,0.4,0.5] //{{vec1}} List of floats(round to .01)
+        },
+        {
+            label: "Your Big Five",
+            backgroundColor: "#fff",
+            borderColor: "#56ac8a",
+            pointBackgroundColor: "#56ac8a",
+            pointBorderColor: "#c1bfbd",
+            pointHoverBackgroundColor: "#56ac8a",
+            pointHoverBorderColor: "#56ac8a",
+            lineTension: [0.1],
+            fill: false,
+            data: [0.5,-0.2,0.3,0.4,0.5] //{{user_vec}} List of floats(round to .01)
+        }
+      ] 
+};
+
+var myChart = new Chart(ctx, {
+    type: 'radar',
+    data: data,
+    draggable: true,
+    options: {
+        scale: {
+            ticks: {
+                display: false,
+                stepSize: 1.0
+                }
+            }
+    }
+});
+</script>
 
     <div class="container text-center footer" style="font-size: 10px">
             <p>&copy; 2019 | Yuntian Lan (yl653), Jasmine Wu (yw644), Yifan Jia (yj77), Megan Zhou (xz494), Jianda Liu (jl3726)</p>
