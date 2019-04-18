@@ -106,11 +106,13 @@
  --><!--        <script type="text/javascript" src="../static/scripts/Chart.js"></script>
  -->
 <script>
-var user_vec = "{{user_vec}}".split(" ").map(parseFloat);
-var char_vec1 = "{{vec1}}".split(" ").map(parseFloat);
+var user_vec = "{{user_vec}}".split(" ").map(Number);
+var char_vec1 = "{{vec1}}".split(" ").map(Number);
 var ctx = document.getElementById("myChart").getContext("2d");
 
-console.log("{{user_vec}}")
+console.log(char_vec)
+console.log(user_vec)
+console.log("{{vec1}}")
 
 var data = {
     labels: ["Agreeableness", "Extraversion", "Conscientiousness", "Emotional Stability", "Openness"],
