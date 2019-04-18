@@ -102,10 +102,12 @@
 <!--        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
  -->   <script type="text/javascript" src="/static/scripts/main.js"></script>
        <script type="text/javascript" src="/static/scripts/chart.min.js"></script>
-       <script type="text/javascript" src="/static/scripts/radar.js"></script>
-<!--        <script type="text/javascript" src="../static/scripts/Chart.js"></script>
+<!--        <script type="text/javascript" src="/static/scripts/radar.js"></script>
+ --><!--        <script type="text/javascript" src="../static/scripts/Chart.js"></script>
  -->
 <script>
+// var user_vec = {{user_vec}};
+// var char_vec = {{vec1}};
 var ctx = document.getElementById("myChart").getContext("2d");
 
 var data = {
@@ -119,7 +121,7 @@ var data = {
             pointBorderColor: "#c1bfbd",
             pointHoverBackgroundColor: "#c1bfbd",
             pointHoverBorderColor: "rgba(179,181,198,1)",
-            data: [0.1,0.2,0.3,0.4,0.5] //{{vec1}} List of floats(round to .01)
+            data: "{{vec1}}" //{{vec1}} List of floats(round to .01)
         },
         {
             label: "Your Big Five",
@@ -131,7 +133,7 @@ var data = {
             pointHoverBorderColor: "#56ac8a",
             lineTension: [0.1],
             fill: false,
-            data: [0.5,-0.2,0.3,0.4,0.5] //{{user_vec}} List of floats(round to .01)
+            data: "{{user_vec}}" //{{user_vec}} List of floats(round to .01)
         }
       ] 
 };
