@@ -1,6 +1,13 @@
 .radar {
+/*	margin-top: 20px;
+	margin-top: 50px;*/
     width: 350px;
     height: 300px;
+}
+
+.result {
+	padding-top: 40px;
+	padding-bottom: 80px;
 }
 
 /*body {

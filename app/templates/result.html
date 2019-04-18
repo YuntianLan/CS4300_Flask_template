@@ -9,8 +9,8 @@
 -->     <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../static/main.css" media="all" />
-<!--     <link rel="stylesheet" type="text/css" href="../static/radar.css" media="all" />
- -->
+    <link rel="stylesheet" type="text/css" href="../static/radar.css" media="all" />
+
     <link rel="shortcut icon" href="../static/favicon.ico">
     
     </head>
@@ -35,7 +35,7 @@
         </form>
     <div class="container text-center results">
       <div id="results">
-        <div id="result1">
+        <div id="result1" class="container result">
           <p style="color: black; font-size: 18px">You are MOST similar to {{char1}} in {{movie1}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote1}}</p>
 <!--         <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
@@ -44,7 +44,7 @@
 
           <canvas id="myChart" class="container radar"></canvas>
         </div>
-        <div id="result2" class="container">
+        <div id="result2" class="container result">
           <p style="color: black; font-size: 18px">You are also similar to: </p>
           <p style="color: black; font-size: 18px">{{char2}} in {{movie2}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote2}}</p>
@@ -55,7 +55,7 @@
             <canvas id="myChart">Radar Chart here</canvas>
           </div> -->
         </div>
-        <div id="result3" class="container">
+        <div id="result3" class="container result">
           <p style="color: black; font-size: 18px">{{char3}} in {{movie3}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote3}}</p>
         <p class = "text-center" style="color: black; font-size: 15px">
@@ -65,7 +65,7 @@
             <canvas id="myChart"></canvas>
           </div> -->
         </div>
-        <div id="result4"class="container">
+        <div id="result4" class="container result">
           <p style="color: black; font-size: 18px">{{char4}} in {{movie4}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote4}}</p>
         <p class = "text-center" style="color: black; font-size: 15px">
@@ -75,7 +75,7 @@
             <canvas id="myChart">Radar Chart here</canvas>
           </div> -->
         </div>
-        <div id="result5" class="container">
+        <div id="result5" class="container result">
           <p style="color: black; font-size: 18px">{{char5}} in {{movie5}}</p>
           <p style="color: black; font-size: 12px; font-style: italic">{{quote5}}</p>
         <p class = "text-center" style="color: black; font-size: 15px">
