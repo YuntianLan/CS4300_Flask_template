@@ -81,7 +81,7 @@ class Matcher(object):
 		ans[1] = results[0] - results[5]
 		ans[0] = results[6] - results[1]
 		ans[2] = results[2] - results[7]
-		ans[3] = results[3] - results[8]
+		ans[3] = results[8] - results[3]
 		ans[4] = results[4] - results[9]
 		return ans / 6
 
