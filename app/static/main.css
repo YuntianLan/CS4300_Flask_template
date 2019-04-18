@@ -257,6 +257,12 @@ main {
     color: #5f394d;
 }
 
+.radar {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 350px;
+    height: 300px;
+}
 
 .btn {
 	margin: 0 20px 0 20px;
