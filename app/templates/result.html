@@ -106,8 +106,8 @@
  --><!--        <script type="text/javascript" src="../static/scripts/Chart.js"></script>
  -->
 <script>
-var user_vec = "{{user_vec}}".split(" ").map(Number);
-var char_vec1 = "{{vec1}}".split(" ").map(Number);
+var user_vec = "{{user_vec}}".slice(1,-1).match(/\S+/g).map(Number);
+var char_vec1 = "{{vec1}}".slice(1,-1).match(/\S+/g).map(Number);
 var ctx = document.getElementById("myChart").getContext("2d");
 
 console.log(char_vec1)
