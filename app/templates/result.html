@@ -106,11 +106,11 @@
  --><!--        <script type="text/javascript" src="../static/scripts/Chart.js"></script>
  -->
 <script>
-// var user_vec = {{user_vec}};
-// var char_vec = {{vec1}};
+var user_vec = "{{user_vec}}".split(" ").map(parseFloat);
+var char_vec1 = "{{vec1}}".split(" ").map(parseFloat);
 var ctx = document.getElementById("myChart").getContext("2d");
 
-console.log(typeof({{user_vec}}))
+console.log("{{user_vec}}")
 
 var data = {
     labels: ["Agreeableness", "Extraversion", "Conscientiousness", "Emotional Stability", "Openness"],
@@ -123,7 +123,7 @@ var data = {
             pointBorderColor: "#c1bfbd",
             pointHoverBackgroundColor: "#c1bfbd",
             pointHoverBorderColor: "rgba(179,181,198,1)",
-            data: {{vec1}} //{{vec1}} List of floats(round to .01)
+            data: char_vec1 //{{vec1}} List of floats(round to .01)
         },
         {
             label: "Your Big Five",
@@ -135,7 +135,7 @@ var data = {
             pointHoverBorderColor: "#56ac8a",
             lineTension: [0.1],
             fill: false,
-            data: {{user_vec}} //{{user_vec}} List of floats(round to .01)
+            data: user_vec //{{user_vec}} List of floats(round to .01)
         }
       ] 
 };
