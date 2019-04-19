@@ -71,10 +71,10 @@ $('#submit-btn').click(function () {
 
 // Refresh the screen to show a new quiz if they click the retake quiz button
 $('#retake-btn').click(function () {
-	document.location.href = "/";
+	document.location.href = "/search";
 });
 
 $('#home-btn').click(function () {
-	document.location.href = "/index";
+	document.location.href = "/";
 });
 

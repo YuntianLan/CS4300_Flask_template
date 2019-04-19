@@ -36,8 +36,11 @@
     <div class="container text-center results">
       <div id="results">
         <div id="result1" class="container result">
-          <p style="color: black; font-size: 18px">You are MOST similar to {{char1}} in {{movie1}}</p>
-          <p style="color: black; font-size: 12px; font-style: italic">{{quote1}}</p>
+          <p style="color: black; font-size: 20px">You are MOST similar to <a href="{{url1}}">{{char1}}</a> in {{movie1}}</p>
+          {% for row in quote1 %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+          {% endfor %}
+        <p style="color: black; font-size: 14px; font-style: italic">{{saidby1}}</p>
 <!--         <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
         Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
         {{char1}}'s big-five score: {{vec1}}</p> -->
@@ -45,27 +48,39 @@
           
         </div>
         <div id="result2" class="container result">
-          <p style="color: black; font-size: 18px">You are also similar to: </p>
-          <p style="color: black; font-size: 18px">{{char2}} in {{movie2}}</p>
-          <p style="color: black; font-size: 12px; font-style: italic">{{quote2}}</p>
+          <p style="color: black; font-size: 20px">You are also similar to: </p>
+          <p style="color: black; font-size: 20px"><a href="{{url2}}">{{char2}}</a> in {{movie2}}</p>
+          {% for row in quote2 %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+          {% endfor %}
+        <p style="color: black; font-size: 14px; font-style: italic">{{saidby2}}</p>
           <div class="container radar"><canvas id="myChart2"></canvas></div>
         </div>
 
         <div id="result3" class="container result">
-          <p style="color: black; font-size: 18px">{{char3}} in {{movie3}}</p>
-          <p style="color: black; font-size: 12px; font-style: italic">{{quote3}}</p>
+          <p style="color: black; font-size: 20px"><a href="{{url3}}">{{char3}}</a> in {{movie3}}</p>
+          {% for row in quote3 %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+          {% endfor %}
+        <p style="color: black; font-size: 14px; font-style: italic">{{saidby3}}</p>
           <div class="container radar"><canvas id="myChart3"></canvas></div>
         </div>
 
         <div id="result4"class="container result">
-          <p style="color: black; font-size: 18px">{{char4}} in {{movie4}}</p>
-          <p style="color: black; font-size: 12px; font-style: italic">{{quote4}}</p>
+          <p style="color: black; font-size: 20px"><a href="{{url4}}">{{char4}}</a> in {{movie4}}</p>
+          {% for row in quote4 %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+          {% endfor %}
+        <p style="color: black; font-size: 14px; font-style: italic">{{saidby4}}</p>
           <div class="container radar"><canvas id="myChart4"></canvas></div>
         </div> 
 
         <div id="result5" class="container result">
-          <p style="color: black; font-size: 18px">{{char5}} in {{movie5}}</p>
-          <p style="color: black; font-size: 12px; font-style: italic">{{quote5}}</p>
+          <p style="color: black; font-size: 20px"><a href="{{url5}}">{{char5}}</a> in {{movie5}}</p>
+          {% for row in quote5 %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+          {% endfor %}
+        <p style="color: black; font-size: 14px; font-style: italic">{{saidby5}}</p>
           <div class="container radar"><canvas id="myChart5"></canvas></div>
         </div>
 
