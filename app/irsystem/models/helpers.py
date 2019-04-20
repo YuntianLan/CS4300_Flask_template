@@ -11,12 +11,15 @@ from collections import defaultdict
 # Number of best match characters returned (besides the best match)
 NUM_MATCH = 5
 
-DATA_PATH = 'data/personality/char_big_five/'
-QUOTE_PATH = 'data/personality/all_characters.json'
+# DATA_PATH = 'data/personality/char_big_five/'
+DATA_PATH = 'data/personality/all_characters.json'
+DEFAULT_URL = 'https://www.google.com'
+DEFAULT_DESCRIPTION = 'No description available'
+DEFAULT_QUOTE, DEFAULT_SAID_BY = ('Nothing', 'No One')
 
 
 sanitize = lambda s: s[:s.find(' ')] if ' ' in s else s
-capt = lambda s: ' '.join(s.split('_'))
+capt = lambda s: ' '.join(list(map(lambda nm: nm.capitalize(), s.split(' '))))
 
 
 # name: path for the csv file containing big 5 information
@@ -24,21 +27,21 @@ capt = lambda s: ' '.join(s.split('_'))
 
 # Bigfive order:
 # aggreableness, extraversion, conscientious, neuroticism, openess
-def read_csv(name):
-	series_name = capt(name[name.rfind('/')+1:-4])
-	series_name = ' '.join(list(map(lambda s: s.capitalize(), series_name.split(' '))))
-	char_names, char_vecs = [], []
-	lst = []
-	with open(name) as f:
-		reader = csv.reader(f)
-		for row in reader:
-			lst.append(row)
-	for item in lst[1:]:
-		cname = capt(sanitize(item[0]))
-		cvec = np.array(list(map(float, item[-5:])))
-		char_names.append(cname)
-		char_vecs.append(cvec)
-	return series_name, char_names, np.array(char_vecs)
+# def read_csv(name):
+# 	series_name = capt(name[name.rfind('/')+1:-4])
+# 	series_name = ' '.join(list(map(lambda s: s.capitalize(), series_name.split(' '))))
+# 	char_names, char_vecs = [], []
+# 	lst = []
+# 	with open(name) as f:
+# 		reader = csv.reader(f)
+# 		for row in reader:
+# 			lst.append(row)
+# 	for item in lst[1:]:
+# 		cname = capt(sanitize(item[0]))
+# 		cvec = np.array(list(map(float, item[-5:])))
+# 		char_names.append(cname)
+# 		char_vecs.append(cvec)
+# 	return series_name, char_names, np.array(char_vecs)
 
 
 
@@ -47,35 +50,68 @@ class Matcher(object):
 		cur_id = 0
 		self.chars = {} # character id to char name
 		self.ids = {} # character name to id
-		self.series = {} # char id to movie / TV name
+		self.movies = defaultdict(str) # char id to movie / TV name
+		self.series = defaultdict(str) # char id to series name
+		self.urls = defaultdict(lambda: DEFAULT_URL) # char id to char url
 		self.bigfive = None
-		self.quotes = defaultdict(str)
-		files = os.listdir(DATA_PATH)
-		for file in files:
-			if file[0] == '.': continue
-			sname, names, vecs = read_csv(DATA_PATH + file)
-			for nm in names:
-				self.chars[cur_id] = nm
-				self.ids[nm] = cur_id
-				self.series[cur_id] = sname
-				cur_id += 1
-			if self.bigfive is None:
-				self.bigfive = vecs
-			else:
-				self.bigfive = np.concatenate((self.bigfive, vecs))
-		with open(QUOTE_PATH) as f:
-			j = json.load(f)
-		for char in j:
-			nm = char.replace('_', ' ')
-			if nm in self.ids:
-				cid = self.ids[nm]
-				quote = ' '.join(j[char].get('quote', []))
-				if quote and quote[0] == '"': quote = quote[1:]
-				if quote and quote[-1] == '"': quote = quote[:-1]
-				self.quotes[cid] = quote
+		# char id to (quote, said_by)
+		self.quotes = defaultdict(lambda: (DEFAULT_QUOTE, DEFAULT_SAID_BY))
+
+		with open(DATA_PATH) as f:
+			ja = json.load(f)
+
+		vecs = []
+		cid = 0
+		for char in ja:
+			d = ja[char]
+			name = d['name']
+			vec = d['big_five']
+			movie = d['movie'].title()
+			series = d['series'].title()
+			desc = d.get('description', DEFAULT_DESCRIPTION)
+			url = d.get('url', DEFAULT_URL)
+			quote, said_by = d.get('quote', (DEFAULT_QUOTE, DEFAULT_SAID_BY))
+			
+			self.chars[cid] = name
+			self.ids[name] = cid
+			self.series[cid] = series
+			self.movies[cid] = movie
+			self.urls[cid] = url
+			self.quotes[cid] = (quote, said_by)
+
+			vecs.append(vec)
+			cid += 1
+
+		self.bigfive = np.array(vecs)
 
 
-	def __calc_bigfive(self, results):
+
+		# files = os.listdir(DATA_PATH)
+		# for file in files:
+		# 	if file[0] == '.': continue
+		# 	sname, names, vecs = read_csv(DATA_PATH + file)
+		# 	for nm in names:
+		# 		self.chars[cur_id] = nm
+		# 		self.ids[nm] = cur_id
+		# 		self.series[cur_id] = sname
+		# 		cur_id += 1
+		# 	if self.bigfive is None:
+		# 		self.bigfive = vecs
+		# 	else:
+		# 		self.bigfive = np.concatenate((self.bigfive, vecs))
+		# with open(QUOTE_PATH) as f:
+		# 	j = json.load(f)
+		# for char in j:
+		# 	nm = char.replace('_', ' ')
+		# 	if nm in self.ids:
+		# 		cid = self.ids[nm]
+		# 		quote = ' '.join(j[char].get('quote', []))
+		# 		if quote and quote[0] == '"': quote = quote[1:]
+		# 		if quote and quote[-1] == '"': quote = quote[:-1]
+		# 		self.quotes[cid] = quote
+
+
+	def calc_bigfive(self, results):
 		assert len(results) == 10, 'must provide 10 answers for bigfive quiz'
 		ans = np.zeros(5)
 		ans[1] = results[0] - results[5]
@@ -98,15 +134,27 @@ class Matcher(object):
 	Each list has a length of NUM_MATCH, ranking from most to least similar
 	'''
 	def match(self, results):
-		vec = self.__calc_bigfive(results)
+		vec = self.calc_bigfive(results)
 		indices = np.linalg.norm(vec - self.bigfive, axis = 1).argsort()
 		nearest = indices[:NUM_MATCH]
-		cnames, mnames, quotes = [], [], []
+		names, movies, series, quotes, urls = [], [], [], [], []
+		vecs = self.bigfive[nearest]
 		for i in nearest:
-			cnames.append(self.chars[i])
-			mnames.append(self.series[i])
+			names.append(self.chars[i])
+			movies.append(self.movies[i])
+			series.append(self.series[i])
 			quotes.append(self.quotes[i])
-		return cnames, mnames, quotes, self.bigfive[nearest], vec
+			urls.append(self.urls[i])
+		origins = []
+		for i, movie in enumerate(movies):
+			if movie and series[i]:
+				s = '%s(%s)' % (movie, series[i])
+			elif not movie:
+				s = series[i]
+			else:
+				s = movie
+			origins.append(s)
+		return names, origins, quotes, urls, vecs, vec
 
 
 def http_json(result, bool):

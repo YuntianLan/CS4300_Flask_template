@@ -1,5 +1,5 @@
 $('#test-btn').click(function () {
-	document.location.href = "/";
+	document.location.href = "/search";
 });
 
 $('#beh-btn').click(function () {
