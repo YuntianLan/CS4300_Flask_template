@@ -69,6 +69,32 @@ main {
  display:block
 }
 
+#myListofchoices{
+  width: 40%;
+  margin-left: 30%;
+}
+
+.select-css::-ms-expand {
+  display: none;
+}
+.select-css:hover {
+  border-color: #888;
+}
+.select-css:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222; 
+  outline: none;
+}
+.select-css option {
+  font-weight:normal;
+}
+
+#myListofchoices{
+  color: #5f394d;
+}
+
 .form-group{
   width: 40%;
   margin-left: 30%;
@@ -78,6 +104,17 @@ main {
   line-height: 1.5;
   font-family: Open Sans,Helvetica Neue,Arial;
   font-size: 18px;
+}
+
+.form-control{
+  width: 50% !important;
+}
+
+.short_paragraph{
+  width: 40%;
+  margin: 0% !important;
+  text-align: left;
+  float: left;
 }
 
 .question {
