@@ -131,14 +131,29 @@ def process_scripts_2(lines, pbar, i):
 			scripts.append(get_script(i, char, sanitize(line)))
 	return scripts
 
+def get_lines(line):
+	ans = []
+	while line.count(':') > 1:
+		i = line.rfind(':')
+		while not line[i] in ends:
+			i -= 1
+		ans.append(line[i+2:])
+		line = line[:i+1]
+	ans.append(line)
+	ans.reverse()
+	return ans
+
+
+
 def process_scripts_3(lines, pbar, i):
 	scripts = []
-	for line in lines:
-		sp = line.split(': ', 1)
-		if len(sp) < 2: continue
-		char, words = sp
-		if legal_char(char):
-			scripts.append(get_script(i, char, sanitize(words)))
+	for sub_line in lines:
+		for line in get_lines(sub_line):
+			sp = line.split(': ', 1)
+			if len(sp) < 2: continue
+			char, words = sp
+			if legal_char(char):
+				scripts.append(get_script(i, char, sanitize(words)))
 	return scripts
 
 funcs = [
