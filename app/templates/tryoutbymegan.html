@@ -6,6 +6,7 @@
       <title>Who are you on Screen?</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	  <link rel="stylesheet" type="text/css" href="../static/main.css" media="all" />
+	  <link rel="stylesheet" type="text/css" href="../static/easy-autocomplete.min.css"> 
 	  <link rel="shortcut icon" href="../static/favicon.ico">
 	</head>
 
@@ -21,9 +22,12 @@
   		</div> -->
 
   		<label for="ajax">Pick an HTML Element (options loaded using AJAX)</label>
-  <input type="text" id="ajax" list="json-datalist" placeholder="e.g. datalist">
+  <input type="text"   placeholder="e.g. datalist" id="basics" />
   <datalist id="json-datalist"></datalist>
 
   		<script type="text/javascript" src="../static/scripts/tryout.js"></script>
+  		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  		<script type="text/javascript" src="../static/scripts/jquery.easy-autocomplete.min.js"></script> 
+
 
  </html>
