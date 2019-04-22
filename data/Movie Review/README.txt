@@ -17,7 +17,7 @@ Reviews related to characters for the other 4 franchises.
 "Unsup" (unsupervised) category automatically yields a score of 0 because label is not given.
 
 intersected_script_reviews.csv
-reviews for movies found in the Cornell movie dataset. 
+reviews for characters in movies found in the Cornell movie dataset. 
 
 intersected_script_reviews_other_franchises.csv
-reviews for movies for the other 4 franchises.
+reviews for characters in movies for the other 4 franchises.
