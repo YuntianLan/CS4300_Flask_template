@@ -1,4 +1,4 @@
----------- Files used for generating .json and .csv
+---------- Files used for generating .json are Character Mapping.ipynb and for generating .csv are Extract Movie Name.ipynb, Name and ID Correspondence.ipynb
 
 ---------- Opening json file
 # Way to open:
