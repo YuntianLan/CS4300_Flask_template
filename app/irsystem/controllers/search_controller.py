@@ -4,8 +4,6 @@ from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 from app.irsystem.models.helpers import Matcher
 import numpy as np
 
-pname = "Who are you on screen?"
-net_id = ""
 
 matcher = Matcher()
 
