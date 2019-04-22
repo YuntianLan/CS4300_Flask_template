@@ -8,6 +8,14 @@ char_mappings.json:
     maps character ids used in images and *characters.json to character ids in transcripts
     only contains characters in the cornell movie dataset, star wars and marvel movies now
 	
+all_character_lines.json:
+   maps character ids to their lines in transcripts. 
+   only contains characters in the cornell movie dataset, star wars and marvel movies now
+
+char_quotes.json:
+   maps character ids to their quotes scraped from imdb
+   only contains characters in the four franchises, can be used to supplement all_characterlines.json
+
 personality
     all_characters.json:
     	character information for characters in four franchises
