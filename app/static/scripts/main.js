@@ -60,6 +60,12 @@ $('#submit-btn').click(function () {
 	var adj = $('#adjectives').val();
 	var moviename = $('#moviename').val();
 	var character = $('#charactername').val();
+
+	var hpchecked = document.getElementById("hpchecked");
+	var gotchecked = document.getElementById("gotchecked");
+	var marvelchecked = document.getElementById("marvelchecked");
+	var swchecked = document.getElementById("swchecked");
+
 	var url = "result?group0=" + returnDict["group0"] + 
 			"&group1=" + returnDict["group1"] + 
 			"&group2=" + returnDict["group2"] + 
@@ -73,7 +79,11 @@ $('#submit-btn').click(function () {
 			"&catchphrace=" + catchphrace +
 			"&adj="+ adj +
 			"&moviename=" + moviename +
-			"&character=" +character  
+			"&character=" +character +
+			"hp=" + hpchecked + 
+			"got" + gotchecked +
+			"mar" + marvelchecked +
+			"sw" + swchecked
 			;
 	document.location.href = url;
 
