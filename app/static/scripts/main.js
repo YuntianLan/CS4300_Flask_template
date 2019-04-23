@@ -81,9 +81,9 @@ $('#submit-btn').click(function () {
 			"&moviename=" + moviename +
 			"&character=" +character +
 			"hp=" + hpchecked + 
-			"got" + gotchecked +
-			"mar" + marvelchecked +
-			"sw" + swchecked
+			"got=" + gotchecked +
+			"mar=" + marvelchecked +
+			"sw=" + swchecked
 			;
 	document.location.href = url;
 
