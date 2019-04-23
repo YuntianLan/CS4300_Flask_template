@@ -41,9 +41,9 @@ def result():
 	)
 
 
-@irsystem.route('/index', methods=['GET', 'POST'])
+@irsystem.route('/', methods=['GET', 'POST'])
 def home():
-	return render_template('index.html')
+	return render_template('search.html')
 
 @irsystem.route('/scriptmatch', methods=['GET', 'POST'])
 def beh():
