@@ -49,7 +49,7 @@ class Matcher(object):
 
 			movie = d.get('movie', '').title()
 			series = d.get('series', '').title()
-			if self.cur_fandom_ind<len(fandom_names) and series==fandom_names[self.cur_fandom_ind]:
+			if self.cur_fandom_ind<len(FANDOM_NAMES) and series==FANDOM_NAMES[self.cur_fandom_ind]:
 				self.fandom_indices.append(self.cur_id)
 				self.cur_fandom_ind+=1
 
