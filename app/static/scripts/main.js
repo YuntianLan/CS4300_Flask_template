@@ -61,13 +61,28 @@ $('#submit-btn').click(function () {
 	var moviename = $('#moviename').val();
 	var character = $('#charactername').val();
 
+	if (document.getElementById('hpchecked').checked) {
+            var hp="yes";
+        } else {
+            var hp="no";
+        }
+ 	if (document.getElementById('gotchecked').checked) {
+            var got="yes";
+        } else {
+            var got="no";
+        }
+ 	if (document.getElementById('marvelchecked').checked) {
+            var mar="yes";
+        } else {
+            var mar="no";
+        }
+    if (document.getElementById('swchecked').checked) {
+            var sw="yes";
+        } else {
+            var sw="no";
+        }
 	
- 	var hpchecked = document.getElementById("hpchecked").checked;
- 	if (hpchecked.checked){var hp="yes";}
- 	else {hp="no";}
-	var gotchecked = document.getElementById("gotchecked");
-	var marvelchecked = document.getElementById("marvelchecked");
-	var swchecked = document.getElementById("swchecked");
+	
 
 	var url = "result?group0=" + returnDict["group0"] + 
 			"&group1=" + returnDict["group1"] + 
@@ -84,9 +99,9 @@ $('#submit-btn').click(function () {
 			"&moviename=" + moviename +
 			"&character=" +character +
 			"&hp=" + hp + 
-			"&got=" + gotchecked +
-			"&mar=" + marvelchecked +
-			"&sw=" + swchecked
+			"&got=" + got +
+			"&mar=" + mar +
+			"&sw=" + sw
 			;
 	document.location.href = url;
 
