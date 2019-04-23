@@ -31,31 +31,18 @@ capt = lambda s: ' '.join(list(map(lambda nm: nm.capitalize(), s.split(' '))))
 
 # Bigfive order:
 # aggreableness, extraversion, conscientious, neuroticism, openess
-# def read_csv(name):
-# 	series_name = capt(name[name.rfind('/')+1:-4])
-# 	series_name = ' '.join(list(map(lambda s: s.capitalize(), series_name.split(' '))))
-# 	char_names, char_vecs = [], []
-# 	lst = []
-# 	with open(name) as f:
-# 		reader = csv.reader(f)
-# 		for row in reader:
-# 			lst.append(row)
-# 	for item in lst[1:]:
-# 		cname = capt(sanitize(item[0]))
-# 		cvec = np.array(list(map(float, item[-5:])))
-# 		char_names.append(cname)
-# 		char_vecs.append(cvec)
-# 	return series_name, char_names, np.array(char_vecs)
-
 
 
 class Matcher(object):
-	def load_json(self, j):
+	def load_json(self, ja):
 		vecs = []
 		for char in ja:
 			d = ja[char]
 			name = d['name']
 			vec = d['big_five']
+
+			if not vec: continue
+
 			movie = d.get('movie', '').title()
 			series = d.get('series', '').title()
 			desc = d.get('description', DEFAULT_DESCRIPTION)
@@ -69,10 +56,14 @@ class Matcher(object):
 			self.urls[self.cur_id] = url
 			self.quotes[self.cur_id] = (quote, said_by)
 
-			vecs.append(vec)
+			vecs.append(np.array(vec))
 			self.cur_id += 1
 
-		self.bigfive = np.concatenate((self.bigfive, np.array(vecs)))
+		if self.bigfive is None:
+			self.bigfive = np.array(vecs)
+		else:
+			self.bigfive = np.concatenate((self.bigfive, np.array(vecs)))
+
 
 	def __init__(self):
 		self.cur_id = 0
@@ -88,29 +79,6 @@ class Matcher(object):
 		for path in ALL_DATA:
 			with open(path) as f:
 				self.load_json(json.load(f))
-
-		# vecs = []
-		# for char in ja:
-		# 	d = ja[char]
-		# 	name = d['name']
-		# 	vec = d['big_five']
-		# 	movie = d['movie'].title()
-		# 	series = d['series'].title()
-		# 	desc = d.get('description', DEFAULT_DESCRIPTION)
-		# 	url = d.get('url', DEFAULT_URL)
-		# 	quote, said_by = d.get('quote', (DEFAULT_QUOTE, DEFAULT_SAID_BY))
-			
-		# 	self.chars[self.cur_id] = name
-		# 	self.ids[name] = self.cur_id
-		# 	self.series[self.cur_id] = series
-		# 	self.movies[self.cur_id] = movie
-		# 	self.urls[self.cur_id] = url
-		# 	self.quotes[self.cur_id] = (quote, said_by)
-
-		# 	vecs.append(vec)
-		# 	self.cur_id += 1
-
-		# self.bigfive = np.array(vecs)
 
 
 	def calc_bigfive(self, results):
@@ -141,7 +109,8 @@ class Matcher(object):
 		nearest = indices[:NUM_MATCH]
 		names, movies, series, quotes, urls = [], [], [], [], []
 		vecs = self.bigfive[nearest]
-		for i in nearest:
+		for (idx, i) in enumerate(nearest):
+			# i = len(self.chars) - idx - 1
 			names.append(self.chars[i])
 			movies.append(self.movies[i])
 			series.append(self.series[i])
