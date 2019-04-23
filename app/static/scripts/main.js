@@ -80,10 +80,10 @@ $('#submit-btn').click(function () {
 			"&adj="+ adj +
 			"&moviename=" + moviename +
 			"&character=" +character +
-			"hp=" + hpchecked + 
-			"got=" + gotchecked +
-			"mar=" + marvelchecked +
-			"sw=" + swchecked
+			"&hp=" + hpchecked + 
+			"&got=" + gotchecked +
+			"&mar=" + marvelchecked +
+			"&sw=" + swchecked
 			;
 	document.location.href = url;
 
