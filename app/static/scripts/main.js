@@ -61,7 +61,10 @@ $('#submit-btn').click(function () {
 	var moviename = $('#moviename').val();
 	var character = $('#charactername').val();
 
-	var hpchecked = document.getElementById("hpchecked");
+	
+ 	var hpchecked = document.getElementById("hpchecked").checked;
+ 	if (hpchecked.checked){var hp=1;}
+ 	else {hp=0;}
 	var gotchecked = document.getElementById("gotchecked");
 	var marvelchecked = document.getElementById("marvelchecked");
 	var swchecked = document.getElementById("swchecked");
@@ -80,7 +83,7 @@ $('#submit-btn').click(function () {
 			"&adj="+ adj +
 			"&moviename=" + moviename +
 			"&character=" +character +
-			"&hp=" + hpchecked + 
+			"&hp=" + hp + 
 			"&got=" + gotchecked +
 			"&mar=" + marvelchecked +
 			"&sw=" + swchecked
