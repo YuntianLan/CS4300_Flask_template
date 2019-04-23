@@ -63,8 +63,8 @@ $('#submit-btn').click(function () {
 
 	
  	var hpchecked = document.getElementById("hpchecked").checked;
- 	if (hpchecked.checked){var hp=1;}
- 	else {hp=0;}
+ 	if (hpchecked.checked){var hp="yes";}
+ 	else {hp="no";}
 	var gotchecked = document.getElementById("gotchecked");
 	var marvelchecked = document.getElementById("marvelchecked");
 	var swchecked = document.getElementById("swchecked");
