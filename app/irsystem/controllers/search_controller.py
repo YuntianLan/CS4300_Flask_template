@@ -1,10 +1,10 @@
-from . import *  
+from . import *
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 from app.irsystem.models.helpers import Matcher
 import numpy as np
 
-
+FANDOMS = ["got","hp","mar","sw"]
 matcher = Matcher()
 
 @irsystem.route('/', methods=['GET', 'POST'])
@@ -20,8 +20,12 @@ def search():
 def result():
 	print(request.args)
 	query = [int(request.args.get('group%d' % i)) for i in range(10)]
+	fandoms = []
+	for i,f in enumerate(FANDOMS):
+		if request.args.get(f)=="true":
+			fandoms.append(i)
 
-	cnames, mnames, quotes, urls, vecs, user_vec = matcher.match(query)
+	cnames, mnames, quotes, urls, vecs, user_vec = matcher.match(query, fandoms)
 	return render_template('result.html',
 		user_vec = user_vec,
 
