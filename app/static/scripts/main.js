@@ -54,7 +54,12 @@ $.ajax({
 
 
 $('#submit-btn').click(function () {
+
 	document.data = returnDict;
+	var catchphrace = $('#catchphrase').val();
+	var adj = $('#adjectives').val();
+	var moviename = $('#moviename').val();
+	var character = $('#charactername').val();
 	var url = "result?group0=" + returnDict["group0"] + 
 			"&group1=" + returnDict["group1"] + 
 			"&group2=" + returnDict["group2"] + 
@@ -64,8 +69,14 @@ $('#submit-btn').click(function () {
 			"&group6=" + returnDict["group6"] + 
 			"&group7=" + returnDict["group7"] + 
 			"&group8=" + returnDict["group8"] + 
-			"&group9=" + returnDict["group9"];
+			"&group9=" + returnDict["group9"] +
+			"&catchphrace=" + catchphrace +
+			"&adj="+ adj +
+			"&moviename=" + moviename +
+			"&character=" +character  
+			;
 	document.location.href = url;
+
 
 });
 
