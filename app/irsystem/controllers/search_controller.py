@@ -9,12 +9,7 @@ matcher = Matcher()
 
 @irsystem.route('/', methods=['GET', 'POST'])
 def index():
-	return render_template('index.html')
-
-@irsystem.route('/search', methods=['GET', 'POST'])
-def search():
 	return render_template('search.html')
-
 
 @irsystem.route('/result', methods=['GET'])
 def result():
@@ -22,7 +17,7 @@ def result():
 	query = [int(request.args.get('group%d' % i)) for i in range(10)]
 	fandoms = []
 	for i,f in enumerate(FANDOMS):
-		if request.args.get(f)=="true":
+		if request.args.get(f)=="yes":
 			fandoms.append(i)
 
 	cnames, mnames, quotes, urls, vecs, user_vec = matcher.match(query, fandoms)
