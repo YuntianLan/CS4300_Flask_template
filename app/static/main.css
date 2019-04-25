@@ -109,12 +109,14 @@ main {
 .form-control{
   width: 50% !important;
   margin-left: 25%;
+  
 }
 
 .short_paragraph{
-  width: 40%;
-  margin: 0% !important;
+  width: 50%;
+  margin-left:  25%;
   text-align: left;
+
   float: left;
   font-weight: normal !important;
   font-size: 16px;
