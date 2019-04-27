@@ -11,7 +11,67 @@
 		<link rel="stylesheet" type="text/css" href="../static/main.css" media="all" />
 		<link rel="shortcut icon" href="../static/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
-	  
+    
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+  font-size: 15px !important;
+  font-weight: 300 !important;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+</style>
+
+
     </head>
 
 	<body>
@@ -212,21 +272,21 @@
             <div class="statement"> Select if you only want matched characters from the following movies:</div>
           <!-- <legend>Selecting elements</legend> -->
             <!--  <label>Specific </label> -->
-             <form  id = "myListofchoices">
+             <form  autocomplete="off" action="/action_page.php" id = "myListofchoices">
               <br>              <div class="pretty p-switch">
-               <input type="checkbox" name="choiceofuniverse" value="HP">
+               <input id= "hpchecked" name="hpchecked" type="checkbox" >
                <div class="state"> <label>Harry Potter</label>
                </div></div>
                <div class="pretty p-switch">
-               <input type="checkbox" name="choiceofuniverse" value="GoT">
+               <input id="gotchecked" name="gotchecked" type="checkbox" >
                <div class="state"> <label>Game of Thrones</label>
                </div></div> 
                <div class="pretty p-switch">
-               <input type="checkbox" name="choiceofuniverse" value="marvel">
+               <input id="marvelchecked" name="marvelchecked" type="checkbox" >
                <div class="state"> <label>Marvel Cinematic Universe</label>
                </div></div> 
                <div class="pretty p-switch">
-               <input type="checkbox" name="choiceofuniverse" value="Starwars">
+               <input id="swchecked" name="swchecked" type="checkbox" >
                <div class="state"> <label>Star Wars</label>
                </div></div> 
              </form>
@@ -252,19 +312,34 @@
       <div class="form-group">
         <label class= "statement" for="disagreesituation">[Optional Question] What fictionl character would you consider similar to your self?</label>
         <br>
-        <br>
         <div class="similar_character_info">
+
+
+          <!-- for autocompletion -->
+
+          
+          
         <div class="short_paragraph"><p> Name of the movie/TV: </p></div>
-        <input type="text" class="short-form-control" id="moviename" placeholder="movie/TV name">
+        <br>
+        <div class="autocomplete" style="width:500px;">
+        <input class= "form-control" type="text"  id="moviename" placeholder="movie/TV name" />
       </div>
+    </div>
         <div class="similar_character_info">
         <div class="short_paragraph"><p> Name of the character: </p></div>
-        <input type="text" class="short-form-control" id="charactername" placeholder="character name">
+        <br>
+        <div class="autocomplete" style="width:500px;">
+
+        <input class= "form-control" type="text" name="myCountry" id="myInput" placeholder="character name" >
+        </div>
+        </div>
       </div>
+    </form>
       <br>
     </div>
-  
+  <br>
   </form>
+
 
 
 		<div class="container text-center results hide">
@@ -276,6 +351,11 @@
 
       		<button id="retake-btn" class="hide btn btn-primary btn-lg">Retake Quiz</button>
       	</div>
+
+
+        <script type="text/javascript" src="../static/scripts/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="../static/script/jquery.autocomplete.min.js"></script>
+        <script type="text/javascript" src="../static/script/character-autocomplete.js"></script>
       	<!-- JQUERY -->
       	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
       	<!-- BOOTSTRAP -->
@@ -283,6 +363,112 @@
       	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       	<!-- CUSTOM -->
       	<script type="text/javascript" src="../static/scripts/main.js"></script>
+
+<script>
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var countries = ['Anthony_Goldstein', 'Xenophilius_Lovegood', 'Newt_Scamander', 'Jacob_Kowalski', 'Katie_Bell', 'Ginny_Weasley', 'Ignotus_Peverell', 'Hermione_Granger', 'Dean_Thomas', 'Ernie_Macmillan', 'Auntie_Muriel', 'Cuthbert_Binns', 'Argus_Filch', 'Amycus_Carrow', 'Bill_Weasley', 'Luna_Lovegood', 'Barty_Crouch_Sr', 'Vernon_Dursley', 'Pansy_Parkinson', 'Aurora_Sinistra', 'Barty_Crouch_Jr', 'Scabbers', 'Tom_Riddle', 'Pius_Thicknesse', 'Buckbeak', 'George_Weasley', 'Ollivander', 'Wilhelmina_Grubbly-Plank', 'Rita_Skeeter', 'Lily_Evans', 'Arabella_Figg', 'Lavender_Brown', 'Lee_Jordan', 'Stan_Shunpike', 'Aberforth_Dumbledore', 'Augusta_Longbottom', 'Albus_Dumbledore', 'Nearly_Headless_Nick', 'Quirinus_Quirrell', 'Thorfinn_Rowle', 'Antonin_Dolohov', 'Sybill_Trelawney', 'Albert_Runcorn', 'Severus_Snape', 'Mundungus_Fletcher', 'Kingsley_Shacklebolt', 'Rubeus_Hagrid', 'Crookshanks', 'Marietta_Edgecombe', 'The_Fat_Friar', 'Ludo_Bagman', 'Frank_Longbottom', 'Igor_Karkaroff', 'Narcissa_Malfoy', 'Bathilda_Bagshot', 'Gellert_Grindelwald', 'Porpentina_Goldstein', 'Silvanus_Kettleburn', 'Justin_Finch-Fletchley', 'Irma_Pince', 'Oliver_Wood', 'Mafalda_Hopkirk', 'Seamus_Finnigan', 'Dobby', 'Fred_Weasley', 'Nagini', 'James_Potter', 'Cornelius_Fudge', 'Rolanda_Hooch', 'Alastor_Moody', 'Rufus_Scrimgeour', 'Remus_Lupin', 'Cedric_Diggory', 'Gregory_Goyle', 'Arthur_Weasley', 'Amelia_Bones', 'Myrtle_Warren', 'Lucius_Malfoy', 'Cho_Chang', 'Poppy_Pomfrey', 'Marge_Dursley', 'Minerva_McGonagall', 'Nymphadora_Tonks', 'Molly_Weasley', 'Fleur_Delacour', 'Morfin_Gaunt', 'Frank_Bryce', 'Elphias_Doge', 'Ron_Weasley', 'Zacharias_Smith', 'Alicia_Spinnet', 'Phineas_Nigellus_Black', 'Dolores_Jane_Umbridge', 'The_Bloody_Baron', 'Walden_Macnair', 'Horace_Slughorn', 'Viktor_Krum', 'Firenze', 'Harry_Potter', 'Augustus_Rookwood', 'Pomona_Sprout', 'Gilderoy_Lockhart', 'Percy_Weasley', 'Fawkes', 'Filius_Flitwick', 'Bellatrix_Lestrange', 'Hedwig', 'Dudley_Dursley', 'Grawp', 'Neville_Longbottom', 'Parvati_Patil', 'Hannah_Abbott', 'Sirius_Black', 'Dedalus_Diggle', 'Charlie_Weasley', 'Olympe_Maxime', 'Draco_Malfoy', 'Antioch_Peverell', 'Regulus_Black', 'Petunia_Dursley', 'The_Waif', 'Eddard_Stark', 'Petyr_Baelish', 'Tywin_Lannister', 'Joffrey_Baratheon', 'Euron_Greyjoy', 'Rhaegar_Targaryen', 'Renly_Baratheon', 'Qyburn', 'Tormund', 'Lord_Varys', 'Jon_Snow', 'Olenna_Tyrell', 'Catelyn_Stark', 'Jaime_Lannister', 'Alliser_Thorne', 'Tormund_Giantsbane', 'Maester_Luwin', 'Meryn_Trant', 'Bran_Stark', 'Shae', 'Bronn', 'Lancel_Lannister', 'Janos_Slynt', 'Ellaria_Sand', 'Hodor', 'Tyrion_Lannister', 'Kevan_Lannister', 'Edmure_Tully', 'Samwell_Tarly', 'Stannis_Baratheon', 'Robb_Stark', 'Viserys_Targaryen', 'Tommen_Baratheon', 'Lyanna_Mormont', 'Daenerys_Targaryen', 'Cersei_Lannister', 'Rast', 'Lyanna_Stark', 'Barristan_Selmy', 'Davos_Seaworth', 'Margaery_Tyrell', 'Gendry', 'Maester_Aemon', 'Arya_Stark', 'Theon_Greyjoy', 'Sansa_Stark', 'Yara_Greyjoy', 'Roose_Bolton', 'Sandor_Clegane', 'Loras_Tyrell', 'Ramsay_Bolton', 'Brienne_of_Tarth', 'Melisandre', 'Jorah_Mormont', 'Myrcella_Baratheon', 'Robert_Baratheon', 'Iron_Man', 'Karen_Page', 'Thaddeus_Ross', 'Groot', 'Ultron', 'Obadiah_Stane', 'Loki', 'Black_Widow', 'Ned_Leeds', 'Valkyrie', 'Black_Panther', 'Daredevil', 'Nick_Fury', 'Vision', 'Hela', 'Liz_Toomes', 'Howard_Stark', 'Arnim_Zola', 'Spider-Man', 'Nebula', 'Pepper_Potts', 'Malekith', 'Hawkeye', 'Scarlet_Witch', 'The_Other', 'Hulk', 'Yondu_Udonta', 'Thanos', 'Phil_Coulson', 'Falcon', 'Hank_Pym', 'Maria_Hill', 'Punisher', 'Jarvis', 'Peggy_Carter', 'Sif', 'Quicksilver', 'Ulysses_Klaue', 'Collector', 'Carol_Danvers', 'Kingpin', 'Alexander_Pierce', 'Red_Skull', 'Foggy_Nelson', 'Heimdall', 'War_Machine', 'Odin', 'Captain_America', 'Star-Lord', 'Wasp', 'Ant-Man', 'Doctor_Strange', 'Thor', 'Gamora', 'Sharon_Carter', 'Drax_the_Destroyer', 'Rocket_Raccoon', 'Happy_Hogan', 'Jane_Foster', 'Bucky_Barnes', 'Mace_Windu', 'Chewbacca', 'Orson_Krennic', 'Darth_Vader', "Qi'ra", 'Yoda', 'Qui-Gon_Jinn', 'Cassian_Andor', 'Asajj_Ventress', 'Wedge_Antilles', 'Kylo_Ren', 'Lando_Calrissian', 'Finn', 'Poe_Dameron', 'Grand_Admiral_Thrawn', 'Captain_Phasma', 'Padmé_Amidala', 'Rose_Tico', 'Grand_Moff_Tarkin', 'Saw_Gerrera', 'Jyn_Erso', 'Palpatine', 'Admiral_Piett', 'Luke_Skywalker', 'Nien_Nunb', 'Ahsoka_Tano', 'Princess_Leia', 'Iden_Versio', 'C-3PO', 'Bail_Organa', 'R2-D2', 'Rey', 'General_Hux', 'Obi-Wan_Kenobi', 'Darth_Maul', 'Han_Solo', 'Jango_Fett'];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+
 		
 		<div class="container text-center footer" style="font-size: 10px">
             <p>&copy; 2019 | Yuntian Lan (yl653), Jasmine Wu (yw644), Yifan Jia (yj77), Megan Zhou (xz494), Jianda Liu (jl3726)</p>

@@ -1,26 +1,25 @@
-from . import *  
+from . import *
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 from app.irsystem.models.helpers import Matcher
 import numpy as np
 
-
+FANDOMS = ["got","hp","mar","sw"]
 matcher = Matcher()
 
 @irsystem.route('/', methods=['GET', 'POST'])
 def index():
-	return render_template('index.html')
-
-@irsystem.route('/search', methods=['GET', 'POST'])
-def search():
 	return render_template('search.html')
-
 
 @irsystem.route('/result', methods=['GET'])
 def result():
 	query = [int(request.args.get('group%d' % i)) for i in range(10)]
+	fandoms = []
+	for i,f in enumerate(FANDOMS):
+		if request.args.get(f)=="yes":
+			fandoms.append(i)
 
-	cnames, mnames, quotes, urls, vecs, user_vec = matcher.match(query)
+	cnames, mnames, quotes, urls, vecs, user_vec = matcher.match(query, fandoms)
 	return render_template('result.html',
 		user_vec = user_vec,
 
@@ -41,9 +40,9 @@ def result():
 	)
 
 
-@irsystem.route('/index', methods=['GET', 'POST'])
+@irsystem.route('/', methods=['GET', 'POST'])
 def home():
-	return render_template('index.html')
+	return render_template('search.html')
 
 @irsystem.route('/scriptmatch', methods=['GET', 'POST'])
 def beh():

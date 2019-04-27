@@ -5,6 +5,7 @@ import json
 import numpy as np
 import os
 import csv
+import math
 from collections import defaultdict
 
 
@@ -15,12 +16,13 @@ NUM_MATCH = 5
 DATA_PATH = 'data/personality/all_characters.json'
 CU_MOVIE_DATA_PATH = 'data/personality/cornell_movie_characters_bigfive.json'
 ALL_DATA = [DATA_PATH, CU_MOVIE_DATA_PATH]
-
+REVIEWS_CU_PATH = "data/Movie Review/characters_review_cornell.json"
+REVIEWS_OTHER_PATH = "data/Movie Review/characters_review_other.json"
 
 DEFAULT_URL = 'https://www.google.com'
 DEFAULT_DESCRIPTION = 'No description available'
 DEFAULT_QUOTE, DEFAULT_SAID_BY = ('Nothing', 'No One')
-
+FANDOM_NAMES = ["Game Of Thrones", "Harry Potter", "Marvel Cinematic Universe", "Star Wars",""]
 
 sanitize = lambda s: s[:s.find(' ')] if ' ' in s else s
 capt = lambda s: ' '.join(list(map(lambda nm: nm.capitalize(), s.split(' '))))
@@ -35,9 +37,11 @@ capt = lambda s: ' '.join(list(map(lambda nm: nm.capitalize(), s.split(' '))))
 
 class Matcher(object):
 	def load_json(self, ja):
+		sorted_ja = sorted(ja.items(), key=lambda kv: kv[1]["series"])
 		vecs = []
-		for char in ja:
-			d = ja[char]
+		review_counts = []
+		for char in sorted_ja:
+			d = char[1]
 			name = d['name']
 			vec = d['big_five']
 
@@ -45,10 +49,15 @@ class Matcher(object):
 
 			movie = d.get('movie', '').title()
 			series = d.get('series', '').title()
+			if self.cur_fandom_ind<len(FANDOM_NAMES) and series==FANDOM_NAMES[self.cur_fandom_ind]:
+				self.fandom_indices.append(self.cur_id)
+				self.cur_fandom_ind+=1
+
 			desc = d.get('description', DEFAULT_DESCRIPTION)
 			url = d.get('url', DEFAULT_URL)
 			quote, said_by = d.get('quote', (DEFAULT_QUOTE, DEFAULT_SAID_BY))
-			
+			if len(quote)==0: continue
+
 			self.chars[self.cur_id] = name
 			self.ids[name] = self.cur_id
 			self.series[self.cur_id] = series
@@ -57,13 +66,16 @@ class Matcher(object):
 			self.quotes[self.cur_id] = (quote, said_by)
 
 			vecs.append(np.array(vec))
+			review_count = self.reviews[char[0]]["review_count"]
+			review_counts.append(self.scale_review_count(review_count))
 			self.cur_id += 1
 
 		if self.bigfive is None:
 			self.bigfive = np.array(vecs)
+			self.review_count = np.array(review_counts)
 		else:
 			self.bigfive = np.concatenate((self.bigfive, np.array(vecs)))
-
+			self.review_count = np.concatenate((self.review_count, np.array(review_counts)))
 
 	def __init__(self):
 		self.cur_id = 0
@@ -75,11 +87,19 @@ class Matcher(object):
 		self.bigfive = None
 		# char id to (quote, said_by)
 		self.quotes = defaultdict(lambda: (DEFAULT_QUOTE, DEFAULT_SAID_BY))
+		self.fandom_indices=[]
+		self.cur_fandom_ind = 0
+		self.review_count = None
+
+		with open(REVIEWS_CU_PATH) as f:
+			reviews_cu = json.loads(json.load(f))
+		with open(REVIEWS_OTHER_PATH) as f:
+			reviews_others = json.loads(json.load(f))
+		self.reviews = {**reviews_cu, **reviews_others}
 
 		for path in ALL_DATA:
 			with open(path) as f:
 				self.load_json(json.load(f))
-
 
 	def calc_bigfive(self, results):
 		assert len(results) == 10, 'must provide 10 answers for bigfive quiz'
@@ -90,6 +110,10 @@ class Matcher(object):
 		ans[3] = results[3] - results[8]
 		ans[4] = results[4] - results[9]
 		return ans / 6
+
+
+	def scale_review_count(self, c):
+		return math.log(1+c)*0.01 #really small effect right now
 
 
 	'''
@@ -103,10 +127,22 @@ class Matcher(object):
 			User bigfive vector
 	Each list has a length of NUM_MATCH, ranking from most to least similar
 	'''
-	def match(self, results):
+	def match(self, results, fandoms):
 		vec = self.calc_bigfive(results)
-		indices = np.linalg.norm(vec - self.bigfive, axis = 1).argsort()
-		nearest = indices[:NUM_MATCH]
+		selected_inds = set()
+		if len(fandoms)>0:
+			for fandom in fandoms:
+				if fandom+1>=len(self.fandom_indices):
+					selected_inds.update(range(self.fandom_indices[fandom], len(self.bigfive)))
+				else:
+					selected_inds.update(range(self.fandom_indices[fandom],self.fandom_indices[fandom+1]))
+
+		indices = (np.linalg.norm(vec - self.bigfive, axis = 1)-self.review_count).argsort()
+		if len(fandoms)>0:
+			selected_indices = [ind for ind in indices if ind in selected_inds]
+		else:
+			selected_indices = indices
+		nearest = selected_indices[:NUM_MATCH]
 		names, movies, series, quotes, urls = [], [], [], [], []
 		vecs = self.bigfive[nearest]
 		for (idx, i) in enumerate(nearest):
@@ -119,7 +155,7 @@ class Matcher(object):
 		origins = []
 		for i, movie in enumerate(movies):
 			if movie and series[i]:
-				s = '%s(%s)' % (movie, series[i])
+				s = '%s (%s)' % (movie, series[i])
 			elif not movie:
 				s = series[i]
 			else:

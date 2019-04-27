@@ -60,20 +60,48 @@ $('#submit-btn').click(function () {
 	var adj = $('#adjectives').val();
 	var moviename = $('#moviename').val();
 	var character = $('#charactername').val();
-	var url = "result?group0=" + returnDict["group0"] + 
-			"&group1=" + returnDict["group1"] + 
-			"&group2=" + returnDict["group2"] + 
-			"&group3=" + returnDict["group3"] + 
-			"&group4=" + returnDict["group4"] + 
-			"&group5=" + returnDict["group5"] + 
-			"&group6=" + returnDict["group6"] + 
-			"&group7=" + returnDict["group7"] + 
-			"&group8=" + returnDict["group8"] + 
+
+	if (document.getElementById('hpchecked').checked) {
+            var hp="yes";
+        } else {
+            var hp="no";
+        }
+ 	if (document.getElementById('gotchecked').checked) {
+            var got="yes";
+        } else {
+            var got="no";
+        }
+ 	if (document.getElementById('marvelchecked').checked) {
+            var mar="yes";
+        } else {
+            var mar="no";
+        }
+    if (document.getElementById('swchecked').checked) {
+            var sw="yes";
+        } else {
+            var sw="no";
+        }
+
+
+
+	var url = "result?group0=" + returnDict["group0"] +
+			"&group1=" + returnDict["group1"] +
+			"&group2=" + returnDict["group2"] +
+			"&group3=" + returnDict["group3"] +
+			"&group4=" + returnDict["group4"] +
+			"&group5=" + returnDict["group5"] +
+			"&group6=" + returnDict["group6"] +
+			"&group7=" + returnDict["group7"] +
+			"&group8=" + returnDict["group8"] +
 			"&group9=" + returnDict["group9"] +
 			"&catchphrace=" + catchphrace +
 			"&adj="+ adj +
 			"&moviename=" + moviename +
-			"&character=" +character  
+			"&character=" +character +
+			"&hp=" + hp +
+			"&got=" + got +
+			"&mar=" + mar +
+			"&sw=" + sw
 			;
 	document.location.href = url;
 
@@ -82,7 +110,7 @@ $('#submit-btn').click(function () {
 
 // Refresh the screen to show a new quiz if they click the retake quiz button
 $('#retake-btn').click(function () {
-	document.location.href = "/search";
+	document.location.href = "/";
 });
 
 $('#home-btn').click(function () {
