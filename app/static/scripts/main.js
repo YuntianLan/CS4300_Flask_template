@@ -81,6 +81,11 @@ $('#submit-btn').click(function () {
         } else {
             var sw="no";
         }
+    if (document.getElementById('otherchecked').checked) {
+            var other="yes";
+        } else {
+            var other="no";
+        }
 
 
 
@@ -101,7 +106,8 @@ $('#submit-btn').click(function () {
 			"&hp=" + hp +
 			"&got=" + got +
 			"&mar=" + mar +
-			"&sw=" + sw
+			"&sw=" + sw +
+			"&other=" + other
 			;
 	document.location.href = url;
 
