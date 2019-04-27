@@ -18,7 +18,6 @@ def search():
 
 @irsystem.route('/result', methods=['GET'])
 def result():
-	print(request.args)
 	query = [int(request.args.get('group%d' % i)) for i in range(10)]
 
 	cnames, mnames, quotes, urls, vecs, user_vec = matcher.match(query)
