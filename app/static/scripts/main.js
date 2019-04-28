@@ -58,7 +58,6 @@ $('#submit-btn').click(function () {
 	document.data = returnDict;
 	var catchphrace = $('#catchphrase').val();
 	var adj = $('#adjectives').val();
-	var moviename = $('#moviename').val();
 	var character = $('#charactername').val();
 
 	if (document.getElementById('hpchecked').checked) {
@@ -101,7 +100,6 @@ $('#submit-btn').click(function () {
 			"&group9=" + returnDict["group9"] +
 			"&catchphrace=" + catchphrace +
 			"&adj="+ adj +
-			"&moviename=" + moviename +
 			"&character=" +character +
 			"&hp=" + hp +
 			"&got=" + got +
