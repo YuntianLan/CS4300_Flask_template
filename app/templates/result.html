@@ -31,7 +31,15 @@
     </div>
 
             <br><br>
-            
+
+        <div id="bigfivediscription">
+            <p id="bigfivetitle">Your personality scores are calculated based on the <a href="https://www.123test.com/big-five-personality-theory/">Big Five Personality Test</a>.</p>   
+            <p id="bigfiveexplaination"> The concept of the “Big Five” personality traits is taken from psychology and includes five broad domains that describe personality. These five personality traits are used to understand the relationship between personality and various behaviors.   
+
+            <br>
+            <br>
+            These five factors, including <a href="https://www.123test.com/personality-openness/">Openness</a>, <a href="https://www.123test.com/personality-conscientiousness/">Conscientiousness</a>, <a href="https://www.123test.com/personality-extraversion/">Extraversion</a>, <a href="https://www.123test.com/personality-agreeableness/">Agreeableness</a>, <a href="https://www.123test.com/personality-neuroticism/">Neuroticism</a> are assumed to represent the basic structure behind all personality traits. These five factors were defined and described by several different researchers during multiple periods of research. </p>
+        </div>
         </form>
     <div class="container text-center results">
       <div id="results">
@@ -41,6 +49,8 @@
             <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
           {% endfor %}
         <p style="color: black; font-size: 14px; font-style: italic">{{saidby1}}</p>
+         <div class="characterpicture"> 
+            <img src="../../data/images/{{char1}}.jpg" alt="{{char1}}"></div>
 <!--         <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
         Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
         {{char1}}'s big-five score: {{vec1}}</p> -->
@@ -54,6 +64,8 @@
             <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
           {% endfor %}
         <p style="color: black; font-size: 14px; font-style: italic">{{saidby2}}</p>
+        <div class="characterpicture"> 
+        <img src="../../data/images/{{char2}}.jpg" alt="{{char2}}"></div>
           <div class="container radar"><canvas id="myChart2"></canvas></div>
         </div>
 
@@ -63,6 +75,8 @@
             <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
           {% endfor %}
         <p style="color: black; font-size: 14px; font-style: italic">{{saidby3}}</p>
+         <div class="characterpicture"> 
+         <img src="../../data/images/{{char3}}.jpg" alt="{{char3}}"></div>
           <div class="container radar"><canvas id="myChart3"></canvas></div>
         </div>
 
@@ -72,6 +86,9 @@
             <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
           {% endfor %}
         <p style="color: black; font-size: 14px; font-style: italic">{{saidby4}}</p>
+         
+          <div class="characterpicture"> 
+         <img src="../../data/images/{{char4}}.jpg" alt="{{char4}}"></div>
           <div class="container radar"><canvas id="myChart4"></canvas></div>
         </div> 
 
@@ -81,6 +98,8 @@
             <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
           {% endfor %}
         <p style="color: black; font-size: 14px; font-style: italic">{{saidby5}}</p>
+         <div class="characterpicture"> 
+         <img src="../../data/images/{{char5}}.jpg" alt="{{char5}}"></div>
           <div class="container radar"><canvas id="myChart5"></canvas></div>
         </div>
 

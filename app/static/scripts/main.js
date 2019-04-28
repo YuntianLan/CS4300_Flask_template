@@ -81,27 +81,33 @@ $('#submit-btn').click(function () {
         } else {
             var sw="no";
         }
-	
-	
+    if (document.getElementById('otherchecked').checked) {
+            var other="yes";
+        } else {
+            var other="no";
+        }
 
-	var url = "result?group0=" + returnDict["group0"] + 
-			"&group1=" + returnDict["group1"] + 
-			"&group2=" + returnDict["group2"] + 
-			"&group3=" + returnDict["group3"] + 
-			"&group4=" + returnDict["group4"] + 
-			"&group5=" + returnDict["group5"] + 
-			"&group6=" + returnDict["group6"] + 
-			"&group7=" + returnDict["group7"] + 
-			"&group8=" + returnDict["group8"] + 
+
+
+	var url = "result?group0=" + returnDict["group0"] +
+			"&group1=" + returnDict["group1"] +
+			"&group2=" + returnDict["group2"] +
+			"&group3=" + returnDict["group3"] +
+			"&group4=" + returnDict["group4"] +
+			"&group5=" + returnDict["group5"] +
+			"&group6=" + returnDict["group6"] +
+			"&group7=" + returnDict["group7"] +
+			"&group8=" + returnDict["group8"] +
 			"&group9=" + returnDict["group9"] +
 			"&catchphrace=" + catchphrace +
 			"&adj="+ adj +
 			"&moviename=" + moviename +
 			"&character=" +character +
-			"&hp=" + hp + 
+			"&hp=" + hp +
 			"&got=" + got +
 			"&mar=" + mar +
-			"&sw=" + sw
+			"&sw=" + sw +
+			"&other=" + other
 			;
 	document.location.href = url;
 
@@ -110,7 +116,7 @@ $('#submit-btn').click(function () {
 
 // Refresh the screen to show a new quiz if they click the retake quiz button
 $('#retake-btn').click(function () {
-	document.location.href = "/search";
+	document.location.href = "/";
 });
 
 $('#home-btn').click(function () {
