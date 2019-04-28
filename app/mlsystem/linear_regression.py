@@ -4,11 +4,12 @@ import numpy as np
 import json
 import collections
 
+
 ignore = ['.', '!', '?']
 MIN_OCCURENCE = 10
 learning_rate = 1e-2
 regularization = 1e-4
-num_epoch = 5000
+num_epoch = 400
 
 def get_train_data():
 	char_five = '../../data/personality/all_characters.json'
@@ -94,10 +95,10 @@ def train_model():
 	torch.save(model.state_dict(), 'model.ckpt')
 	with open('lookup.json', 'w+') as f:
 		json.dump(lookup, f)
-	return model, lookup, unlabeled
+	return model, lookup, unlabeled, x_train, y_train
 
 def predict():
-	model, lookup, unlabeled = train_model()
+	model, lookup, unlabeled, _, _ = train_model()
 	chars = unlabeled.keys()
 	n, d = len(unlabeled), len(lookup)
 	x = np.zeros((n, d), dtype = np.float32)
@@ -118,8 +119,19 @@ def predict():
 	with open('char_pred.json', 'w+') as f:
 		json.dump(pred, f)
 
+
+def calc_r2():
+	model, lookup, unlabeled, xs, ys = train_model()
+	ave = ys.mean(axis = 0)
+	stot = np.sum((ys - ave)**2, axis = 0)
+	x_tensor = torch.from_numpy(xs)
+	pred = model(x_tensor).data.numpy()
+	sreg = np.sum((pred - ave)**2, axis = 0)
+	return 1 - sreg / stot
+
+
 if __name__ == '__main__':
-	predict()
+	print(calc_r2())
 
 
 

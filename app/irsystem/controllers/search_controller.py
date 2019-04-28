@@ -4,7 +4,7 @@ from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 from app.irsystem.models.helpers import Matcher
 import numpy as np
 
-FANDOMS = ["got","hp","mar","sw"]
+FANDOMS = ["got", "hp", "mar", "sw"]
 matcher = Matcher()
 
 @irsystem.route('/', methods=['GET', 'POST'])
@@ -39,10 +39,6 @@ def result():
 		quote5=quotes[4][0].split('\n'), saidby5=quotes[4][1], url5=urls[4],
 	)
 
-
-@irsystem.route('/', methods=['GET', 'POST'])
-def home():
-	return render_template('search.html')
 
 @irsystem.route('/scriptmatch', methods=['GET', 'POST'])
 def beh():
