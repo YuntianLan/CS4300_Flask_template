@@ -121,11 +121,11 @@
  --><!--        <script type="text/javascript" src="../static/scripts/Chart.js"></script>
  -->
 <script>
-char1under=char1.split(' ').join('_');
-char2under=char2.split(' ').join('_');
-char3under=char3.split(' ').join('_');
-char4under=char4.split(' ').join('_');
-char5under=char5.split(' ').join('_');
+var char1under=char1.split(' ').join('_');
+var char2under=char2.split(' ').join('_');
+var char3under=char3.split(' ').join('_');
+var char4under=char4.split(' ').join('_');
+var char5under=char5.split(' ').join('_');
 
 var user_vec = "{{user_vec}}".slice(1,-1).match(/\S+/g).map(Number);
 var char_vec1 = "{{vec1}}".slice(1,-1).match(/\S+/g).map(Number);
