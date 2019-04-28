@@ -27,6 +27,11 @@ FANDOM_NAMES = ["Game Of Thrones", "Harry Potter", "Marvel Cinematic Universe", 
 sanitize = lambda s: s[:s.find(' ')] if ' ' in s else s
 capt = lambda s: ' '.join(list(map(lambda nm: nm.capitalize(), s.split(' '))))
 
+weights = {
+	'review': 1,
+
+}
+
 
 # name: path for the csv file containing big 5 information
 # returns: parsed movie / TV name, character names, big-five matrix
@@ -100,6 +105,7 @@ class Matcher(object):
 		for path in ALL_DATA:
 			with open(path) as f:
 				self.load_json(json.load(f))
+		import pdb; pdb.set_trace()
 
 	def calc_bigfive(self, results):
 		assert len(results) == 10, 'must provide 10 answers for bigfive quiz'
@@ -127,7 +133,7 @@ class Matcher(object):
 			User bigfive vector
 	Each list has a length of NUM_MATCH, ranking from most to least similar
 	'''
-	def match(self, results, fandoms):
+	def match(self, results, fandoms, adj, catchphrase, char):
 		vec = self.calc_bigfive(results)
 		selected_inds = set()
 		if len(fandoms)>0:

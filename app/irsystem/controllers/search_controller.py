@@ -4,7 +4,7 @@ from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 from app.irsystem.models.helpers import Matcher
 import numpy as np
 
-FANDOMS = ["got", "hp", "mar", "sw"]
+FANDOMS = ["got", "hp", "mar", "sw", "other"]
 matcher = Matcher()
 
 @irsystem.route('/', methods=['GET', 'POST'])
@@ -14,12 +14,17 @@ def index():
 @irsystem.route('/result', methods=['GET'])
 def result():
 	query = [int(request.args.get('group%d' % i)) for i in range(10)]
+	adj = request.args.get('adj')
+	catchphrase = request.args.get('catchphrase')
+	char = request.args.get('character')
+
 	fandoms = []
-	for i,f in enumerate(FANDOMS):
+	for i, f in enumerate(FANDOMS):
 		if request.args.get(f)=="yes":
 			fandoms.append(i)
 
-	cnames, mnames, quotes, urls, vecs, user_vec = matcher.match(query, fandoms)
+	res = matcher.match(query, fandoms, adj, catchphrase, char)
+	cnames, mnames, quotes, urls, vecs, user_vec = res
 	return render_template('result.html',
 		user_vec = user_vec,
 
