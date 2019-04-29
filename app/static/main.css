@@ -177,8 +177,8 @@ img{
 }
 
 #title {
-  width: 100%
-  background-image: url("../static/img/bg.png");
+/*  width: 100%
+*/  background-image: url("../static/img/bg.png");
   background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 120px;
