@@ -8,6 +8,8 @@ import csv
 import math
 from collections import defaultdict
 from sklearn.feature_extraction.text import TfidfVectorizer
+import Levenshtein
+import re
 
 
 # Number of best match characters returned (besides the best match)
@@ -241,11 +243,16 @@ class Matcher(object):
 		dists -= self.weights['catchphrase'] * angles
 
 		# Special case: groot, hodor
-		catchphrase = catchphrase.lower()
-		if 'groot' in catchphrase:
-			dists[self.ids['Groot']] = 0
-		if 'hodor' in catchphrase or ('hold' in catchphrase and 'door' in catchphrase):
-			dists[self.ids['Hodor']] = 0
+		catchphrase = re.sub(r'[^\w\s]','', catchphrase.lower()) #remove punctuation
+		edit_dist = Levenshtein.distance(catchphrase, "i am groot")
+		rescaled = max(0.25 - edit_dist * 0.05, 0) #rescale 0-5 to 0.25-0
+		dists[self.ids["Groot"]] = max(dists[self.ids["Groot"]]-rescaled, 0)
+		edit_dist = Levenshtein.distance(catchphrase, "hold the door")
+		if catchphrase=='hodor':
+			rescaled = 0.25
+		else:
+			rescaled = max(0.25 - edit_dist * 0.05, 0) #rescale 0-5 to 0.25-0
+		dists[self.ids["Hodor"]] = max(dists[self.ids["Hodor"]]-rescaled, 0)
 
 		# Exclude the most sim char
 		if sim_cid != -1:
