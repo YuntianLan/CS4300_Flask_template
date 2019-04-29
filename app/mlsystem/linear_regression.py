@@ -25,7 +25,7 @@ def get_train_data():
 	with open(char_five) as f: ja = json.load(f)
 	with open(char_lines1) as f: jl = json.load(f)
 	with open(char_lines2) as f: jl2 = json.load(f)
-
+	import pdb; pdb.set_trace()
 	for c in jl2:
 		jl[c] = jl2[c]
 

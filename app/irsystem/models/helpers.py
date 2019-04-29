@@ -90,6 +90,9 @@ class Matcher(object):
 			self.bigfive = np.concatenate((self.bigfive, np.array(vecs)))
 			self.review_count = np.concatenate((self.review_count, np.array(review_counts)))
 
+		for char_line_file in CHAR_LINES:
+			jc = json.load(open(char_line_file))
+
 	def __init__(self):
 		self.cur_id = 0
 		self.chars = {} # character id to char name
@@ -177,9 +180,9 @@ class Matcher(object):
 			if abs(vec[i] - sim_char_bigfive[i]) < sim_char_weight:
 				vec[i] = sim_char_bigfive[i]
 			elif vec[i] < sim_char_bigfive[i]:
-				vec[i] += sim_char_weight
+				vec[i] += sim_char_weight[i]
 			else:
-				vec[i] -= sim_char_weight
+				vec[i] -= sim_char_weight[i]
 
 		# Filter fandom
 		selected_inds = set()
