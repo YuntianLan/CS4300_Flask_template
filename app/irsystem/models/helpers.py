@@ -200,6 +200,7 @@ class Matcher(object):
 			vec_shift += adj_vec
 		vec_shift = np.clip(vec_shift, -1, 1)
 		vec += vec_shift * self.weights['adjs']
+		vec = np.clip(vec, -1, 1)
 
 		# 3. Sim char shift
 		sim_cid = self.chars.get(char.replace('_', ' '), -1)
@@ -213,6 +214,7 @@ class Matcher(object):
 				vec[i] += abs(sim_char_bigfive[i])
 			else:
 				vec[i] -= abs(sim_char_bigfive[i])
+		vec = np.clip(vec, -1, 1)
 
 		# 4. catchphrase cos sim
 		cp_vec = self.tfidf.transform([make_script([catchphrase])]).toarray()
