@@ -6,6 +6,9 @@ with open('char_pred.json') as f:
 	jp = json.load(f)
 
 for c in jp:
+	if not c in jc:
+		print(c)
+		continue
 	lst = map(float, jp[c][1:-1].split(', '))
 	jc[c]['big_five'] = lst
 

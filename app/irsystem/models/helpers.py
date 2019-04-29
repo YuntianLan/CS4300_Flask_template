@@ -7,6 +7,7 @@ import os
 import csv
 import math
 from collections import defaultdict
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 # Number of best match characters returned (besides the best match)
@@ -35,11 +36,19 @@ sanitize = lambda s: s[:s.find(' ')] if ' ' in s else s
 capt = lambda s: ' '.join(list(map(lambda nm: nm.capitalize(), s.split(' '))))
 
 weights = {
-	'review': 1,
+	'review': 0.5,
 	'char': 0.1,
 	'adjs': 0.1,
+	'catchphrase': 0.1
 }
 
+def make_script(lst):
+	ignore = ['.', '!', '?']
+	script = ' '.join(lst)
+	script = script.replace('...', ' ')
+	for sign in ignore:
+		script = script.replace(sign, '')
+	return script.lower()
 
 # name: path for the csv file containing big 5 information
 # returns: parsed movie / TV name, character names, big-five matrix
@@ -93,8 +102,7 @@ class Matcher(object):
 			self.bigfive = np.concatenate((self.bigfive, np.array(vecs)))
 			self.review_count = np.concatenate((self.review_count, np.array(review_counts)))
 
-		for char_line_file in CHAR_LINES:
-			jc = json.load(open(char_line_file))
+		
 
 	def __init__(self):
 		self.cur_id = 0
@@ -120,7 +128,6 @@ class Matcher(object):
 					vec[i] = float(num.replace('*', ''))
 				self.adjs[adj] = vec
 
-
 		self.weights = weights
 
 		with open(REVIEWS_CU_PATH) as f:
@@ -133,7 +140,26 @@ class Matcher(object):
 			with open(path) as f:
 				self.load_json(json.load(f))
 
-		print(self.chars)
+		# Make tfidf vectorizer for all character scripts
+		scripts_dict = {}
+		for char_line_file in CHAR_LINES:
+			jl = json.load(open(char_line_file))
+			for k in jl:
+				scripts_dict[k.replace('_', ' ')] = make_script(jl[k])
+		scripts = [''] * self.cur_id
+		for i in range(self.cur_id):
+			if self.chars[i] in scripts_dict:
+				scripts[i] = scripts_dict[self.chars[i]]
+		self.tfidf = TfidfVectorizer(min_df = 5,
+							max_df = 0.8, 
+							max_features = 3000,
+							stop_words = 'english', 
+							norm = 'l2'
+							)
+		self.doc_vocab_mat = self.tfidf.fit_transform(scripts).toarray()
+		self.doc_norms = np.linalg.norm(self.doc_vocab_mat, axis = 1)
+		self.lookup = {i:v for i, v in enumerate(self.tfidf.get_feature_names())}
+
 
 	def calc_bigfive(self, results):
 		assert len(results) == 10, 'must provide 10 answers for bigfive quiz'
@@ -162,7 +188,7 @@ class Matcher(object):
 	Each list has a length of NUM_MATCH, ranking from most to least similar
 	'''
 	def match(self, results, fandoms, adj, catchphrase, char):
-		# 1. Test bigfive 4. catchphrase cos sim
+		# 1. Test bigfive
 		vec = self.calc_bigfive(results)
 
 		# 2. adj shift 
@@ -180,12 +206,20 @@ class Matcher(object):
 		sim_char_bigfive = self.bigfive[sim_cid] if sim_cid != -1 else np.zeros(5)
 		sim_char_weight = self.weights['char']
 		for i in range(5):
+			cur_sim = sim_char_bigfive[i]
 			if abs(vec[i] - sim_char_bigfive[i]) < sim_char_weight:
 				vec[i] = sim_char_bigfive[i]
 			elif vec[i] < sim_char_bigfive[i]:
-				vec[i] += sim_char_weight[i]
+				vec[i] += abs(sim_char_bigfive[i])
 			else:
-				vec[i] -= sim_char_weight[i]
+				vec[i] -= abs(sim_char_bigfive[i])
+
+		# 4. catchphrase cos sim
+		cp_vec = self.tfidf.transform([make_script([catchphrase])]).toarray()
+		if np.linalg.norm(cp_vec) == 0: cp_vec[0] += 1e-5
+		dot_prod = (self.doc_vocab_mat * cp_vec).sum(axis = 1)
+		cossim = dot_prod / (self.doc_norms * np.linalg.norm(cp_vec))
+		angles = np.arccos(cossim) / np.pi # 0 - 3.14159 (pi), normalize
 
 		# Filter fandom
 		selected_inds = set()
@@ -199,11 +233,16 @@ class Matcher(object):
 		
 
 
-		dists = np.linalg.norm(vec - self.bigfive, axis = 1)
+		dists = np.linalg.norm(vec - self.bigfive, axis = 1) / (20**0.5) # normalize
 		# 5. review
 		dists -= self.weights['review'] * self.review_count
+		dists -= self.weights['catchphrase'] * angles
 
-
+		# Special case: groot, hodor
+		if 'groot' in catchphrase:
+			dists[self.ids['Groot']] = 0
+		if 'hodor' in catchphrase or ('hold' in catchphrase and 'door' in catchphrase):
+			dists[self.ids['Hodor']] = 0
 
 		indices = dists.argsort()
 

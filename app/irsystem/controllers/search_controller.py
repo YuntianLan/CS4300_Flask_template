@@ -16,9 +16,9 @@ def index():
 @irsystem.route('/result', methods=['GET'])
 def result():
 	query = [int(request.args.get('group%d' % i)) for i in range(10)]
-	adj = request.args.get('adj')
-	catchphrase = request.args.get('catchphrase')
-	char = request.args.get('character')
+	adj = request.args.get('adj', '')
+	catchphrase = request.args.get('catchphrace', '')
+	char = request.args.get('character', '')
 
 	fandoms = []
 	for i, f in enumerate(FANDOMS):
