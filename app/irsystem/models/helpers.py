@@ -66,7 +66,10 @@ class Matcher(object):
 			self.quotes[self.cur_id] = (quote, said_by)
 
 			vecs.append(np.array(vec))
-			review_count = self.reviews[char[0]]["review_count"]
+			if char[0] in self.reviews:
+				review_count = self.reviews[char[0]]["review_count"]
+			else:
+				review_count = 0
 			review_counts.append(self.scale_review_count(review_count))
 			self.cur_id += 1
 
