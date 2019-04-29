@@ -4,7 +4,9 @@ from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 from app.irsystem.models.helpers import Matcher
 import numpy as np
 
+
 FANDOMS = ["got", "hp", "mar", "sw", "other"]
+
 matcher = Matcher()
 
 @irsystem.route('/', methods=['GET', 'POST'])

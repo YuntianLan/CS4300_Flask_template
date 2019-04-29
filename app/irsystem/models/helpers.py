@@ -24,12 +24,20 @@ DEFAULT_DESCRIPTION = 'No description available'
 DEFAULT_QUOTE, DEFAULT_SAID_BY = ('Nothing', 'No One')
 FANDOM_NAMES = ["Game Of Thrones", "Harry Potter", "Marvel Cinematic Universe", "Star Wars",""]
 
+ADJS_PATH = 'data/personality/big5.csv'
+
+CHAR_LINES = [
+	'data/all_character_lines.json',
+	'data/char_quotes.json',
+]
+
 sanitize = lambda s: s[:s.find(' ')] if ' ' in s else s
 capt = lambda s: ' '.join(list(map(lambda nm: nm.capitalize(), s.split(' '))))
 
 weights = {
 	'review': 1,
-
+	'char': 0.1,
+	'adjs': 0.1,
 }
 
 
@@ -96,6 +104,19 @@ class Matcher(object):
 		self.cur_fandom_ind = 0
 		self.review_count = None
 
+		self.adjs = {}
+		with open(ADJS_PATH) as f:
+			reader = csv.reader(f, delimiter = ',')
+			for row in reader:
+				adj = row[0].lower()
+				vec = np.zeros(5, dtype = np.float32)
+				for i, num in enumerate(row[1:]):
+					vec[i] = float(num.replace('*', ''))
+				self.adjs[adj] = vec
+
+
+		self.weights = weights
+
 		with open(REVIEWS_CU_PATH) as f:
 			reviews_cu = json.loads(json.load(f))
 		with open(REVIEWS_OTHER_PATH) as f:
@@ -105,7 +126,8 @@ class Matcher(object):
 		for path in ALL_DATA:
 			with open(path) as f:
 				self.load_json(json.load(f))
-		import pdb; pdb.set_trace()
+
+		print(self.chars)
 
 	def calc_bigfive(self, results):
 		assert len(results) == 10, 'must provide 10 answers for bigfive quiz'
@@ -134,7 +156,32 @@ class Matcher(object):
 	Each list has a length of NUM_MATCH, ranking from most to least similar
 	'''
 	def match(self, results, fandoms, adj, catchphrase, char):
+		# 1. Test bigfive 4. catchphrase cos sim
 		vec = self.calc_bigfive(results)
+
+		# 2. adj shift 
+		adjs = adj.split(',')
+		vec_shift = np.zeros(5)
+		for adj in adjs:
+			adj = adj.strip().lower()
+			adj_vec = self.adjs.get(adj, np.zeros(5))
+			vec_shift += adj_vec
+		vec_shift = np.clip(vec_shift, -1, 1)
+		vec += vec_shift * self.weights['adjs']
+
+		# 3. Sim char shift
+		sim_cid = self.chars.get(char.replace('_', ' '), -1)
+		sim_char_bigfive = self.bigfive[sim_cid] if sim_cid != -1 else np.zeros(5)
+		sim_char_weight = self.weights['char']
+		for i in range(5):
+			if abs(vec[i] - sim_char_bigfive[i]) < sim_char_weight:
+				vec[i] = sim_char_bigfive[i]
+			elif vec[i] < sim_char_bigfive[i]:
+				vec[i] += sim_char_weight
+			else:
+				vec[i] -= sim_char_weight
+
+		# Filter fandom
 		selected_inds = set()
 		if len(fandoms)>0:
 			for fandom in fandoms:
@@ -143,7 +190,17 @@ class Matcher(object):
 				else:
 					selected_inds.update(range(self.fandom_indices[fandom],self.fandom_indices[fandom+1]))
 
-		indices = (np.linalg.norm(vec - self.bigfive, axis = 1)-self.review_count).argsort()
+		
+
+
+		dists = np.linalg.norm(vec - self.bigfive, axis = 1)
+		# 5. review
+		dists -= self.weights['review'] * self.review_count
+
+
+
+		indices = dists.argsort()
+
 		if len(fandoms)>0:
 			selected_indices = [ind for ind in indices if ind in selected_inds]
 		else:
