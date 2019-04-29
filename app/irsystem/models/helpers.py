@@ -10,7 +10,7 @@ from collections import defaultdict
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-# Number of best match characters returned (besides the best match)
+# Number of best match characters returned
 NUM_MATCH = 5
 
 # DATA_PATH = 'data/personality/char_big_five/'
@@ -23,7 +23,13 @@ REVIEWS_OTHER_PATH = "data/Movie Review/characters_review_other.json"
 DEFAULT_URL = 'https://www.google.com'
 DEFAULT_DESCRIPTION = 'No description available'
 DEFAULT_QUOTE, DEFAULT_SAID_BY = ('Nothing', 'No One')
-FANDOM_NAMES = ["Game Of Thrones", "Harry Potter", "Marvel Cinematic Universe", "Star Wars",""]
+FANDOM_NAMES = [
+	"Game Of Thrones",
+	"Harry Potter",
+	"Marvel Cinematic Universe",
+	"Star Wars",
+	"",
+]
 
 ADJS_PATH = 'data/personality/big5.csv'
 
@@ -31,9 +37,6 @@ CHAR_LINES = [
 	'data/char_quotes.json',
 	'data/all_character_lines.json',
 ]
-
-sanitize = lambda s: s[:s.find(' ')] if ' ' in s else s
-capt = lambda s: ' '.join(list(map(lambda nm: nm.capitalize(), s.split(' '))))
 
 weights = {
 	'review': 0.5,
@@ -71,7 +74,8 @@ class Matcher(object):
 
 			movie = d.get('movie', '').title()
 			series = d.get('series', '').title()
-			if self.cur_fandom_ind<len(FANDOM_NAMES) and series==FANDOM_NAMES[self.cur_fandom_ind]:
+			if self.cur_fandom_ind<len(FANDOM_NAMES) and \
+			series==FANDOM_NAMES[self.cur_fandom_ind]:
 				self.fandom_indices.append(self.cur_id)
 				self.cur_fandom_ind+=1
 
@@ -100,7 +104,8 @@ class Matcher(object):
 			self.review_count = np.array(review_counts)
 		else:
 			self.bigfive = np.concatenate((self.bigfive, np.array(vecs)))
-			self.review_count = np.concatenate((self.review_count, np.array(review_counts)))
+			self.review_count = np.concatenate((self.review_count, \
+				np.array(review_counts)))
 
 
 
@@ -158,7 +163,8 @@ class Matcher(object):
 							)
 		self.doc_vocab_mat = self.tfidf.fit_transform(scripts).toarray()
 		self.doc_norms = np.linalg.norm(self.doc_vocab_mat, axis = 1)
-		self.lookup = {i:v for i, v in enumerate(self.tfidf.get_feature_names())}
+		self.lookup = {i:v for i, v in \
+			enumerate(self.tfidf.get_feature_names())}
 
 
 	def calc_bigfive(self, results):
@@ -173,7 +179,7 @@ class Matcher(object):
 
 
 	def scale_review_count(self, c):
-		return math.log(1+c)*0.01 #really small effect right now
+		return math.log(1+c) * 0.01 #really small effect right now
 
 
 	'''
@@ -218,7 +224,7 @@ class Matcher(object):
 
 		# 4. catchphrase cos sim
 		cp_vec = self.tfidf.transform([make_script([catchphrase])]).toarray()
-		if np.linalg.norm(cp_vec) == 0: cp_vec[0] += 1e-5
+		if np.linalg.norm(cp_vec) == 0: cp_vec += 1e-5
 		dot_prod = (self.doc_vocab_mat * cp_vec).sum(axis = 1)
 		cossim = dot_prod / (self.doc_norms * np.linalg.norm(cp_vec))
 		angles = np.arccos(cossim) / np.pi # 0 - 3.14159 (pi), normalize
@@ -228,9 +234,11 @@ class Matcher(object):
 		if len(fandoms)>0:
 			for fandom in fandoms:
 				if fandom+1>=len(self.fandom_indices):
-					selected_inds.update(range(self.fandom_indices[fandom], len(self.bigfive)))
+					selected_inds.update(range(self.fandom_indices[fandom], \
+						len(self.bigfive)))
 				else:
-					selected_inds.update(range(self.fandom_indices[fandom],self.fandom_indices[fandom+1]))
+					selected_inds.update(range(self.fandom_indices[fandom],\
+						self.fandom_indices[fandom+1]))
 
 
 
@@ -244,7 +252,8 @@ class Matcher(object):
 		catchphrase = catchphrase.lower()
 		if 'groot' in catchphrase:
 			dists[self.ids['Groot']] = 0
-		if 'hodor' in catchphrase or ('hold' in catchphrase and 'door' in catchphrase):
+		if 'hodor' in catchphrase or \
+		('hold' in catchphrase and 'door' in catchphrase):
 			dists[self.ids['Hodor']] = 0
 
 		# Exclude the most sim char

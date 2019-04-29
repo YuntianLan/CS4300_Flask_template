@@ -49,9 +49,3 @@ def result():
 		quote5=quotes[4][0].split('\n'), saidby5=quotes[4][1], url5=urls[4],
 	)
 
-
-@irsystem.route('/scriptmatch', methods=['GET', 'POST'])
-def beh():
-	return render_template('scriptmatch.html')
-
-

@@ -9,8 +9,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 ignore = ['.', '!', '?']
 MIN_OCCURENCE = 10
 learning_rate = 5e-3
-regularization = 0
-num_epoch = 1000
+regularization = 1e-3
+num_epoch = 100
 
 max_df = 0.8
 min_df = 5
@@ -67,32 +67,6 @@ def train_model():
 	x_train = doc_vocab_mat.astype(np.float32)
 	y_train = big_five
 	n, d = x_train.shape
-
-
-
-	# counts = collections.defaultdict(int)
-	# for line in lines:
-	# 	for w in line.split(' '):
-	# 		counts[w] += 1
-	# words = list(filter(lambda k: counts[k] > MIN_OCCURENCE, counts.keys()))
-
-	# lookup = {}
-	# for i, w in enumerate(words):
-	# 	lookup[w] = i
-	# n, d = len(lines), len(words)
-	# x_train = np.zeros((n, d), dtype = np.float32)
-	# y_train = big_five
-	# for (i, line) in enumerate(lines):
-	# 	for w in line.split(' '):
-	# 		if w in lookup:
-	# 			x_train[i, lookup[w]] += 1
-	# # import pdb; pdb.set_trace()
-	# invalid = np.sum(x_train, axis = 1) == 0
-	# x_train /= np.sum(x_train, axis = 1).reshape(n, 1)
-
-	# x_train[invalid] = 0
-
-	# import pdb; pdb.set_trace()
 
 	model = nn.Linear(d, 5)
 	criterion = nn.MSELoss()
