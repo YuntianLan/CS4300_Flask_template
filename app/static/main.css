@@ -178,11 +178,11 @@ img{
 
 #title {
   background-image: url("../static/img/bg.png");
-  background-color:  #171a21;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  color: #c1bfbd;
-  box-shadow:black 0px 0px 10px;
+/*  background-color:  #171a21;
+*//*  padding-top: 100px;
+  padding-bottom: 100px;*/
+/*  color: #c1bfbd;
+*/  box-shadow:black 0px 0px 10px;
 }
 
 .option.med {
