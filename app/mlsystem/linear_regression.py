@@ -26,7 +26,8 @@ def get_train_data():
 	with open(char_lines1) as f: jl = json.load(f)
 	with open(char_lines2) as f: jl2 = json.load(f)
 	for c in jl2:
-		jl[c] = jl2[c]
+		if c not in jl:
+			jl[c] = jl2[c]
 
 	unlabeled = {}; added = set()
 
@@ -55,9 +56,9 @@ def train_model():
 
 
 	tfidf = TfidfVectorizer(min_df = min_df,
-							max_df = max_df, 
-							max_features = max_features, 
-							stop_words = 'english', 
+							max_df = max_df,
+							max_features = max_features,
+							stop_words = 'english',
 							norm = 'l2'
 							)
 	doc_vocab_mat = tfidf.fit_transform(lines).toarray()
@@ -88,7 +89,7 @@ def train_model():
 	# # import pdb; pdb.set_trace()
 	# invalid = np.sum(x_train, axis = 1) == 0
 	# x_train /= np.sum(x_train, axis = 1).reshape(n, 1)
-	
+
 	# x_train[invalid] = 0
 
 	# import pdb; pdb.set_trace()
@@ -101,13 +102,13 @@ def train_model():
 	for epoch in range(num_epoch):
 		indices = np.arange(n)
 		np.random.shuffle(indices)
-		
+
 		x_in = torch.from_numpy(x_train[indices])
 		y_in = torch.from_numpy(y_train[indices])
-		
+
 		outputs = model(x_in)
 		loss = criterion(outputs, y_in)
-		
+
 		optimizer.zero_grad()
 		loss.backward()
 		optimizer.step()
