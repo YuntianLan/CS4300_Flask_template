@@ -28,8 +28,8 @@ FANDOM_NAMES = ["Game Of Thrones", "Harry Potter", "Marvel Cinematic Universe", 
 ADJS_PATH = 'data/personality/big5.csv'
 
 CHAR_LINES = [
-	'data/all_character_lines.json',
 	'data/char_quotes.json',
+	'data/all_character_lines.json',
 ]
 
 sanitize = lambda s: s[:s.find(' ')] if ' ' in s else s
@@ -102,7 +102,7 @@ class Matcher(object):
 			self.bigfive = np.concatenate((self.bigfive, np.array(vecs)))
 			self.review_count = np.concatenate((self.review_count, np.array(review_counts)))
 
-		
+
 
 	def __init__(self):
 		self.cur_id = 0
@@ -151,9 +151,9 @@ class Matcher(object):
 			if self.chars[i] in scripts_dict:
 				scripts[i] = scripts_dict[self.chars[i]]
 		self.tfidf = TfidfVectorizer(min_df = 5,
-							max_df = 0.8, 
+							max_df = 0.8,
 							max_features = 3000,
-							stop_words = 'english', 
+							stop_words = 'english',
 							norm = 'l2'
 							)
 		self.doc_vocab_mat = self.tfidf.fit_transform(scripts).toarray()
@@ -191,7 +191,7 @@ class Matcher(object):
 		# 1. Test bigfive
 		vec = self.calc_bigfive(results)
 
-		# 2. adj shift 
+		# 2. adj shift
 		adjs = adj.split(',')
 		vec_shift = np.zeros(5)
 		for adj in adjs:
@@ -230,7 +230,7 @@ class Matcher(object):
 				else:
 					selected_inds.update(range(self.fandom_indices[fandom],self.fandom_indices[fandom+1]))
 
-		
+
 
 
 		dists = np.linalg.norm(vec - self.bigfive, axis = 1) / (20**0.5) # normalize
@@ -239,6 +239,7 @@ class Matcher(object):
 		dists -= self.weights['catchphrase'] * angles
 
 		# Special case: groot, hodor
+		catchphrase = catchphrase.lower()
 		if 'groot' in catchphrase:
 			dists[self.ids['Groot']] = 0
 		if 'hodor' in catchphrase or ('hold' in catchphrase and 'door' in catchphrase):
