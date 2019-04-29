@@ -244,6 +244,10 @@ class Matcher(object):
 		if 'hodor' in catchphrase or ('hold' in catchphrase and 'door' in catchphrase):
 			dists[self.ids['Hodor']] = 0
 
+		# Exclude the most sim char
+		if sim_cid != -1:
+			dists[sim_cid] = np.inf
+
 		indices = dists.argsort()
 
 		if len(fandoms)>0:
