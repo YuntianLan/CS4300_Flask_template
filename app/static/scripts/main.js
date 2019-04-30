@@ -24,7 +24,7 @@ $('.option').mousedown(function () {
 	//console.log(this_group);
 
 	// If button is already selected, de-select it when clicked and subtract any previously added values to the total
-	// Otherwise, de-select any selected buttons in group and select the one just clicked
+	// Otherwise, de-select any selected buttons in group and select the one just clicke
 	if($(this).hasClass('active')) {
 		$(this).removeClass('active');
 	} else {
@@ -35,9 +35,9 @@ $('.option').mousedown(function () {
 
 		 //$(this).prop('checked', true);
 		$(this).addClass('active');
-		console.log((num_group+1).toString());
-		console.log(next_id);
-		document.getElementById(next_id).scrollIntoView({block: 'start', behavior: 'smooth'});
+		if (next_id < 10){
+			document.getElementById(next_id).scrollIntoView({block: 'start', behavior: 'smooth'});
+		}
 	}
 
 	console.log(Object.values(returnDict)); // THIS IS WHAT WE WANT TO PASS TO THE BACKEND!!
