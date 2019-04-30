@@ -20,6 +20,7 @@ $('.option').mousedown(function () {
 	var this_group = classArr[0];
 	var num_group = parseInt(this_group[this_group.length-1])
 	var value = parseInt(classArr[classArr.length-1]);
+	var next_id = 'question' + toString(num_group+1)
 	//console.log(this_group);
 
 	// If button is already selected, de-select it when clicked and subtract any previously added values to the total
@@ -32,10 +33,11 @@ $('.option').mousedown(function () {
 		$('.'+this_group).removeClass('active');
 		returnDict[this_group] = value;
 
-		document.getElementById("question" + toString(num_group+1)).scrollIntoView();
-
 		 //$(this).prop('checked', true);
 		$(this).addClass('active');
+		console.log(toString(num_group+1));
+		console.log(next_id);
+		document.getElementById(next_id).scrollIntoView();
 	}
 
 	console.log(Object.values(returnDict)); // THIS IS WHAT WE WANT TO PASS TO THE BACKEND!!
