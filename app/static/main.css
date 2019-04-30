@@ -102,6 +102,8 @@ img{
 
 .characterpicture{
   width: 250px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #myListofchoices{
