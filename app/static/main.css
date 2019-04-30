@@ -68,16 +68,7 @@ body {
 main {
  display:block
 }
-/*
-#bigfivedescription{
-  width: 50%;
-  color:black;
-}*/
 
-.smalltext{
-font-size: 12px;
-font-weight: 200px !important;
-}
 
 .explanation{
   font-size: 12px;
@@ -91,7 +82,7 @@ img{
 
 #myListofchoices{
   width: 20%;
-  margin-left: 40%;
+  margin-left: 35%;
 }
 
 
@@ -163,6 +154,13 @@ img{
   padding-top: 200px;
   padding-bottom: 150px;
   box-shadow:black 0px 0px 10px;
+}
+
+#quiz {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 /* Centered text */
