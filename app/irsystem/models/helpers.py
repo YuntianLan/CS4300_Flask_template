@@ -285,7 +285,10 @@ class Matcher(object):
 		origins = []
 		for i, movie in enumerate(movies):
 			if movie and series[i]:
-				s = '%s (%s)' % (movie, series[i])
+				if series[i]==FANDOM_NAMES[0]: # just series name for got
+					s = "Game of Thrones"
+				else:
+					s = '%s (%s)' % (movie, series[i])
 			elif not movie:
 				s = series[i]
 			else:
