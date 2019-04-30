@@ -69,19 +69,14 @@ main {
  display:block
 }
 
-#bigfivediscription{
+#bigfivedescription{
   width: 50%;
-  margin-left: 25%; 
   color:black;
 }
 
 .smalltext{
 font-size: 12px;
 font-weight: 200px !important;
-}
-
-#bigfivetitle{
-  text-align: center;
 }
 
 #bigfiveexplaination{
