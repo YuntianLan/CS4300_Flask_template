@@ -158,10 +158,11 @@ img{
 }
 
 #title {
-/*  width: 100%
-*/  background-image: url("../static/img/bg.png");
-  width: 100%;
-  background-repeat: no-repeat;
+  background: url("/static/img/bg.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 150px;
   box-shadow:black 0px 0px 10px;
