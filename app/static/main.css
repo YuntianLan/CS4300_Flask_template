@@ -79,9 +79,10 @@ font-size: 12px;
 font-weight: 200px !important;
 }
 
-#bigfiveexplaination{
+.explaination{
   font-size: 12px;
   width: 80%;
+  padding-bottom: 10px;
 }
 
 img{
@@ -120,8 +121,6 @@ img{
   margin-left: 25%;
   
 }
-
-
 
 .short_paragraph{
   width: 50%;
