@@ -156,14 +156,14 @@ img{
   box-shadow:black 0px 0px 10px;
 }
 
-#quiz {
+#quiz, #fq {
   width: 70%;
   margin-left: 15%;
   padding-bottom: 20px;
   border-bottom: 1px solid #dcdcdc;
 }
 
-#fq {
+form {
   padding-top: 50px;
 }
 
