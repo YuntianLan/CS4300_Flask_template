@@ -103,7 +103,10 @@ def predict():
 	x = tfidf.transform(lines).toarray().astype(np.float32)
 
 	out = model(torch.from_numpy(x)).data.numpy()
-	out /= np.max(out)
+	mean = np.mean(out, axis=0)
+	max_mean = np.max(np.abs(out-mean), axis=0)
+	out = (out-mean)/max_mean+mean
+	out = np.clip(out, -0.9, 0.9)
 	pred = {}
 	for (i, char) in enumerate(chars):
 		pred[char] = str(list(out[i]))
