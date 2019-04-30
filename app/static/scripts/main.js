@@ -18,6 +18,7 @@ $('.option').mousedown(function () {
 	var classArr = classList.split(" ");
 	// console.log(classArr);
 	var this_group = classArr[0];
+	var num_group = parseInt(this_group[this_group.length-1])
 	var value = parseInt(classArr[classArr.length-1]);
 	//console.log(this_group);
 
@@ -30,6 +31,8 @@ $('.option').mousedown(function () {
 		 //console.log($('.'+this_group+'.active').text());
 		$('.'+this_group).removeClass('active');
 		returnDict[this_group] = value;
+
+		document.getElementById(question + toString(num_group+1)).scrollIntoView();
 
 		 //$(this).prop('checked', true);
 		$(this).addClass('active');
