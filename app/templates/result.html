@@ -20,21 +20,7 @@
             <p>Project Name: {{ name }}</p>
             <p>Student Name: ({{ netid }})</p>
         </div> -->
-    <div id="title">
-
-
-<!-- <script>
-var char1under=char1.split(' ').join('_');
-var char2under=char2.split(' ').join('_');
-var char3under=char3.split(' ').join('_');
-var char4under=char4.split(' ').join('_');
-var char5under=char5.split(' ').join('_');
-</script> -->
-<!--         <div class="text-right">
-          <h1 class="container", style="font-size: 40px; font-family:Futura; color: white">Who Are You on Screen</h1>
-          <h2 class="container", style="font-size: 15px; font-family:Futura; color: white">Fictional Characters Match-Up</h2>
-        </div> -->
-    </div>
+    <div id="title"></div>
 
             <br><br>
 
@@ -46,23 +32,49 @@ var char5under=char5.split(' ').join('_');
             <br>
             These five factors, including <a href="https://www.123test.com/personality-openness/">Openness</a>, <a href="https://www.123test.com/personality-conscientiousness/">Conscientiousness</a>, <a href="https://www.123test.com/personality-extraversion/">Extraversion</a>, <a href="https://www.123test.com/personality-agreeableness/">Agreeableness</a>, <a href="https://www.123test.com/personality-neuroticism/">Neuroticism</a> are assumed to represent the basic structure behind all personality traits. These five factors were defined and described by several different researchers during multiple periods of research. </p>
         </div>
-        </form>
+
+              <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item {{'active' if loop.index0 == 0}}">
+              <div class="row">
+                <div class="col-md-3 container">
+                  <img class="center poster" src="/static/img/{{char1under}}.jpg" style="height:400px; width: 300px; object-fit: fill;" alt="{{char1}}">
+                  <div class="post_title" display="none">
+                    <div class="container radar"><canvas id="myChart1"></canvas></div>
+                    <p><strong style="font-size: 20px;">{{char1}}</strong></p>
+                    <p>{{movie1}}</p>
+                    {% for row in quote1 %}
+                        <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+                    {% endfor %}
+                    <p style="color: black; font-size: 14px; font-style: italic">{{saidby1}}</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
     <div class="container text-center results">
       <div id="results">
+
         <div id="result1" class="container result">
           <p style="color: black; font-size: 20px">You are MOST similar to <a href="{{url1}}">{{char1}}</a> in {{movie1}}</p>
           {% for row in quote1 %}
             <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
           {% endfor %}
         <p style="color: black; font-size: 14px; font-style: italic">{{saidby1}}</p>
-         <div class="characterpicture"> 
-            <img src="../static/img/{{char1under}}.jpg" alt="{{char1}}"></div>
-<!--         <p class = "text-left" style="color: black; font-size: 15px">The Big-Five Correspondances: Agreeableness, Extraversion, Conscientiousness, Emotional Stability, Openness to Experiences<br>
-        Your big-five score for the five correspondences are, respectively: {{user_vec}}<br>
-        {{char1}}'s big-five score: {{vec1}}</p> -->
+         <div class="container characterpicture"><img src="/static/img/{{char1under}}.jpg" alt="{{char1}}"></div>
           <div class="container radar"><canvas id="myChart1"></canvas></div>
-          
         </div>
+
         <div id="result2" class="container result">
           <p style="color: black; font-size: 20px">You are also similar to: </p>
           <p style="color: black; font-size: 20px"><a href="{{url2}}">{{char2}}</a> in {{movie2}}</p>
@@ -70,7 +82,7 @@ var char5under=char5.split(' ').join('_');
             <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
           {% endfor %}
         <p style="color: black; font-size: 14px; font-style: italic">{{saidby2}}</p>
-        <div class="characterpicture"> 
+        <div class="container characterpicture"> 
         <img src="../static/img/{{char2under}}.jpg" alt="{{char2}}"></div>
           <div class="container radar"><canvas id="myChart2"></canvas></div>
         </div>
@@ -81,7 +93,7 @@ var char5under=char5.split(' ').join('_');
             <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
           {% endfor %}
         <p style="color: black; font-size: 14px; font-style: italic">{{saidby3}}</p>
-         <div class="characterpicture"> 
+         <div class="container characterpicture"> 
          <img src="../static/img/{{char3under}}.jpg" alt="{{char3}}"></div>
           <div class="container radar"><canvas id="myChart3"></canvas></div>
         </div>
@@ -93,7 +105,7 @@ var char5under=char5.split(' ').join('_');
           {% endfor %}
         <p style="color: black; font-size: 14px; font-style: italic">{{saidby4}}</p>
          
-          <div class="characterpicture"> 
+          <div class="container characterpicture"> 
          <img src="../static/img/{{char4under}}.jpg" alt="{{char4}}"></div>
           <div class="container radar"><canvas id="myChart4"></canvas></div>
         </div> 
@@ -104,7 +116,7 @@ var char5under=char5.split(' ').join('_');
             <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
           {% endfor %}
         <p style="color: black; font-size: 14px; font-style: italic">{{saidby5}}</p>
-         <div class="characterpicture"> 
+         <div class="container characterpicture"> 
          <img src="../static/img/{{char5under}}.jpg" alt="{{char5}}"></div>
           <div class="container radar"><canvas id="myChart5"></canvas></div>
         </div>

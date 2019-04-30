@@ -89,6 +89,7 @@ font-weight: 200px !important;
   width: 80%;
   margin-left: 10%;
 }
+
 img{
   max-width: 100%;
 }
@@ -97,24 +98,14 @@ img{
   width: 40%;
   margin-left: 30%;
 }
+
+.result {
+    width: 550px;
+    overflow: hidden; 
+}
+
 .characterpicture{
   width: 250px;
-}
-.select-css::-ms-expand {
-  display: none;
-}
-.select-css:hover {
-  border-color: #888;
-}
-.select-css:focus {
-  border-color: #aaa;
-  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-  box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: #222; 
-  outline: none;
-}
-.select-css option {
-  font-weight:normal;
 }
 
 #myListofchoices{
@@ -348,20 +339,20 @@ img{
 }*/
 
 .btn {
-	margin: 0 20px 0 20px;
+  margin: 0 20px 0 20px;
 }
 
 .hide {
-	display: none;
+  display: none;
 }
 
 .show {
-	display: block;
+  display: block;
 }
 
 .bottom {
   margin-top: 100px;
-	margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .fa-check::before {
