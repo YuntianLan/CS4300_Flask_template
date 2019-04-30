@@ -68,11 +68,11 @@ body {
 main {
  display:block
 }
-
+/*
 #bigfivedescription{
   width: 50%;
   color:black;
-}
+}*/
 
 .smalltext{
 font-size: 12px;
@@ -82,7 +82,6 @@ font-weight: 200px !important;
 #bigfiveexplaination{
   font-size: 12px;
   width: 80%;
-  margin-left: 10%;
 }
 
 img{
