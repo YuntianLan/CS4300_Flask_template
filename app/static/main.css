@@ -237,7 +237,7 @@ img{
       box-sizing: border-box;
   }
 
-.autocomplete{
+/*.autocomplete{
   position: relative;
 }
 
@@ -250,7 +250,7 @@ img{
   top: 100%;
   left: 0;
   right: 0;
-}
+}*/
 
 .option {
     border-radius: 50%;
