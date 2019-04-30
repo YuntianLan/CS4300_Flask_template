@@ -274,7 +274,7 @@ class Matcher(object):
 			selected_indices = indices
 		nearest = selected_indices[:NUM_MATCH]
 		names, movies, series, quotes, urls = [], [], [], [], []
-		vecs = self.bigfive[nearest]
+		vecs = np.round(self.bigfive[nearest],decimals=2)
 		for (idx, i) in enumerate(nearest):
 			# i = len(self.chars) - idx - 1
 			names.append(self.chars[i])
