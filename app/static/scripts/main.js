@@ -32,7 +32,7 @@ $('.option').mousedown(function () {
 		$('.'+this_group).removeClass('active');
 		returnDict[this_group] = value;
 
-		document.getElementById(question + toString(num_group+1)).scrollIntoView();
+		document.getElementById("question" + toString(num_group+1)).scrollIntoView();
 
 		 //$(this).prop('checked', true);
 		$(this).addClass('active');
