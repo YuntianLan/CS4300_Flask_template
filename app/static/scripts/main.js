@@ -35,7 +35,7 @@ $('.option').mousedown(function () {
 
 		 //$(this).prop('checked', true);
 		$(this).addClass('active');
-		if (next_id < 10){
+		if (num_group < 9){
 			document.getElementById(next_id).scrollIntoView({block: 'start', behavior: 'smooth'});
 		}
 	}
