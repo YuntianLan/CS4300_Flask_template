@@ -37,7 +37,7 @@ $('.option').mousedown(function () {
 		$(this).addClass('active');
 		console.log((num_group+1).toString());
 		console.log(next_id);
-		document.getElementById(next_id).scrollIntoView();
+		document.getElementById(next_id).scrollIntoView({block: 'start', behavior: 'smooth'});
 	}
 
 	console.log(Object.values(returnDict)); // THIS IS WHAT WE WANT TO PASS TO THE BACKEND!!
