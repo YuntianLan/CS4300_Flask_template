@@ -158,7 +158,7 @@ img{
 }
 
 #title {
-  background: url("/static/img/bg.png") no-repeat center center fixed; 
+  background: url("/static/img/bg.png") no-repeat; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
