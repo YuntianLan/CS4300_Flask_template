@@ -12,6 +12,14 @@
     <link rel="stylesheet" type="text/css" href="../static/radar.css" media="all" />
 
     <link rel="shortcut icon" href="../static/favicon.ico">
+
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
+  </style>
     
     </head>
 
@@ -33,8 +41,101 @@
             These five factors, including <a href="https://www.123test.com/personality-openness/">Openness</a>, <a href="https://www.123test.com/personality-conscientiousness/">Conscientiousness</a>, <a href="https://www.123test.com/personality-extraversion/">Extraversion</a>, <a href="https://www.123test.com/personality-agreeableness/">Agreeableness</a>, <a href="https://www.123test.com/personality-neuroticism/">Neuroticism</a> are assumed to represent the basic structure behind all personality traits. These five factors were defined and described by several different researchers during multiple periods of research. </p>
         </div>
 
+
+
     <div class="container text-center results">
       <div id="results">
+
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+        <div id="result1" class="container result">
+
+         <div class="container characterpicture"><img src="/static/img/{{char1under}}.jpg" alt="{{char1}}"></div>
+          <div class="container radar"><canvas id="myChart1"></canvas></div>
+        </div>
+
+      <div class="item active">
+        <div class="container characterpicture"><img src="/static/img/{{char1under}}.jpg" alt="{{char1}}"></div>
+        <div class="post_title carousel-caption">
+          <p style="color: black; font-size: 20px"><a href="{{url1}}">{{char1}}</a> in {{movie1}}</p>
+          {% for row in quote1 %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+          {% endfor %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{saidby1}}</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="container characterpicture"><img src="/static/img/{{char2under}}.jpg" alt="{{char2}}"></div>
+        <div class="post_title carousel-caption">
+          <p style="color: black; font-size: 20px"><a href="{{url2}}">{{char2}}</a> in {{movie2}}</p>
+          {% for row in quote2 %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+          {% endfor %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{saidby2}}</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="container characterpicture"><img src="/static/img/{{char3under}}.jpg" alt="{{char3}}"></div>
+        <div class="post_title carousel-caption">
+          <p style="color: black; font-size: 20px"><a href="{{url3}}">{{char3}}</a> in {{movie3}}</p>
+          {% for row in quote3 %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+          {% endfor %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{saidby3}}</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="container characterpicture"><img src="/static/img/{{char4under}}.jpg" alt="{{char4}}"></div>
+        <div class="post_title carousel-caption">
+          <p style="color: black; font-size: 20px"><a href="{{url4}}">{{char4}}</a> in {{movie4}}</p>
+          {% for row in quote4 %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+          {% endfor %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{saidby4}}</p>
+        </div>
+      </div>
+
+    <div class="item">
+        <div class="container characterpicture"><img src="/static/img/{{char5under}}.jpg" alt="{{char5}}"></div>
+        <div class="post_title carousel-caption">
+          <p style="color: black; font-size: 20px"><a href="{{url5}}">{{char5}}</a> in {{movie5}}</p>
+          {% for row in quote5 %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{row}}</p>
+          {% endfor %}
+            <p style="color: black; font-size: 14px; font-style: italic">{{saidby5}}</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
         <div id="result1" class="container result">
           <p style="color: black; font-size: 20px">You are MOST similar to <a href="{{url1}}">{{char1}}</a> in {{movie1}}</p>
@@ -45,6 +146,7 @@
          <div class="container characterpicture"><img src="/static/img/{{char1under}}.jpg" alt="{{char1}}"></div>
           <div class="container radar"><canvas id="myChart1"></canvas></div>
         </div>
+
 
         <div id="result2" class="container result">
           <p style="color: black; font-size: 20px">You are also similar to: </p>
@@ -57,6 +159,7 @@
         <img src="../static/img/{{char2under}}.jpg" alt="{{char2}}"></div>
           <div class="container radar"><canvas id="myChart2"></canvas></div>
         </div>
+
 
         <div id="result3" class="container result">
           <p style="color: black; font-size: 20px"><a href="{{url3}}">{{char3}}</a> in {{movie3}}</p>

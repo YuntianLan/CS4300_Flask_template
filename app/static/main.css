@@ -156,7 +156,6 @@ img{
     font-weight: 600;
     text-align: center;
     line-height: 1.5;
-
 }
 
 #title {
@@ -166,6 +165,61 @@ img{
   padding-top: 200px;
   padding-bottom: 140px;
   box-shadow:black 0px 0px 10px;
+}
+
+/* Centered text */
+.post_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.post_title:hover {
+  cursor: pointer;
+}
+
+.container:hover .post_title {
+  display: inline-block;
+  opacity: 1;
+}
+
+.container:hover .poster {
+  padding: 15px;
+}
+
+span.glyphicon {
+  color: white;
+  opacity: 1;
+}
+
+.carousel-control {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 100%;
+}
+.carousel-control.right {
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,1) 100%);
+}
+.carousel-control.left {
+  background-image: linear-gradient(to right,rgba(0,0,0,1) 0,rgba(0,0,0,.0001) 100%);
+}
+
+.carousel-indicators {
+  bottom: -10%;
+}
+
+.carousel-indicators li {
+  border: 1px solid rgba(255,255,255, 0.8);
+}
+
+.container:hover img {
+  filter: brightness(50%);
 }
 
 .option.med {
@@ -320,12 +374,6 @@ img{
     color: #5f394d;
 }
 
-/*.radar {
-    padding-top: 20px;
-    padding-bottom: 50px;
-    width: 350px;
-    height: 300px;
-}*/
 
 .btn {
   margin: 0 20px 0 20px;
