@@ -157,10 +157,14 @@ img{
 }
 
 #quiz {
-  width: 90%;
-  margin-left: 5%;
-  padding-bottom: 50px;
+  width: 70%;
+  margin-left: 15%;
+  padding-bottom: 20px;
   border-bottom: 1px solid #dcdcdc;
+}
+
+#fq {
+  padding-top: 50px;
 }
 
 /* Centered text */
