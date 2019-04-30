@@ -1,11 +1,11 @@
 Character,Agreeableness,Extraversion,Conscientiousness,Neuroticism,Openness to Experience
-Mace_Windu,0.06,0.42,0.67,0.31,0.82
+Mace_Windu,-0.06,0.42,0.67,0.31,0.82
 Chewbacca,0.74,-0.09,0.39,-0.38,0.67
 Orson_Krennic,-0.57,0.73,-0.29,0.54,0.82
 Darth_Vader,-0.83,-0.07,0.26,0.19,-0.12
 Qi'ra,-0.12,0.58,0.23,-0.22,0.28
 Yoda,0.43,-0.32,0.72,-0.44,0.92
-Qui-Gon_Jinn,0.83,0.46,0.09,0.13,0.84
+Qui-Gon_Jinn,0.83,0.46,0.39,-0.13,0.84
 Cassian_Andor,-0.26,-0.58,0.67,-0.64,0.5
 Asajj_Ventress,0.26,0.18,-0.79,0.29,0.67
 Wedge_Antilles,0.12,0.74,0.6,-0.57,0.18
@@ -24,7 +24,7 @@ Palpatine,-0.82,-0.26,0.36,0.18,0.22
 Admiral_Piett,-0.8,-0.2,-0.1,0.07,0.15
 Luke_Skywalker,0.34,-0.16,0.16,-0.22,0.77
 Nien_Nunb,0.03,0.77,0,-0.23,0.47
-Ahsoka_Tano,0.52,0.66,0.34,0.04,0.28
+Ahsoka_Tano,0.52,0.66,0.34,-0.34,0.28
 Princess_Leia,0.48,0.83,0.83,-0.72,0.86
 Iden_Versio,-0.01,0.07,0.22,0.44,0.1
 C-3PO,0.58,0.18,0.6,0.43,-0.59
