@@ -31,7 +31,7 @@
         </div> -->
     <div id="title"></div>
 
-            <br><br>
+<!--             <br><br>
 
         <div class="container">
             <p class="text-center" style="color: black">Your personality scores are calculated based on the <a href="https://www.123test.com/big-five-personality-theory/">Big Five Personality Test</a>.</p>   
@@ -40,12 +40,12 @@
             <p class="container explanation">These five factors, including <a href="https://www.123test.com/personality-openness/">Openness</a>, <a href="https://www.123test.com/personality-conscientiousness/">Conscientiousness</a>, <a href="https://www.123test.com/personality-extraversion/">Extraversion</a>, <a href="https://www.123test.com/personality-agreeableness/">Agreeableness</a>, <a href="https://www.123test.com/personality-neuroticism/">Neuroticism</a> are assumed to represent the basic structure behind all personality traits. These five factors were defined and described by several different researchers during multiple periods of research. </p>
 
             <p class="container explanation">We calculated your big-five personality vector according to your answers to the 10 multiple choices. This vector was then adjusted based on the adjective you used to describe yourself and the most similar movie character you think you are (if provided). The result was combined with your personal catchphrase (compared to characters’ scripts using cosine similarity) to help you determine who you would be in a movie/TV series.</p>
-        </div>
+        </div> -->
 
 
 
-    <div class="container text-center results">
-      <div id="results">
+<!--     <div class="container text-center results">
+ -->      <div id="results">
             <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -61,8 +61,8 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-                <div class="col-md-3 container">
-                  <img class="center poster" src="/static/img/{{char1under}}.jpg" alt="">
+                <div class="col-md-3 img_container">
+                  <img class="center poster" src="/static/img/{{char1under}}.jpg" alt="{{char1}}">
                   <div class="post_title" display="none">
                     <div class="radar"><canvas id="myChart1"></canvas></div>
                     <p><strong style="font-size: 20px;">1. {{char1}} in {{movie1}}</strong></p>
@@ -75,9 +75,8 @@
               </div>
 
               <div class="item">
-                <div class="col-md-3 container">
-                  <div class="img_container">
-                  <img class="center poster" src="/static/img/{{char2under}}.jpg" alt="Seamus Finnigan"></div>
+                <div class="col-md-3 img_container">
+                  <img class="center poster" src="/static/img/{{char2under}}.jpg" alt="{{char2}}">
                   <div class="post_title" display="none">
                     <div class="radar"><canvas id="myChart2"></canvas></div>
                     <p><strong style="font-size: 20px;">2. {{char2}} in {{movie2}}</strong></p>
@@ -90,9 +89,8 @@
               </div>
               
               <div class="item">
-                <div class="col-md-3 container">
-                  <div class="img_container">
-                  <img class="center poster" src="/static/img/{{char3under}}.jpg"  alt="Wasp"></div>
+                <div class="col-md-3 img_container">
+                  <img class="center poster" src="/static/img/{{char3under}}.jpg"  alt="{{char3}}">
                   <div class="post_title" display="none">
                     <div class="radar"><canvas id="myChart3"></canvas></div>
                     <p><strong style="font-size: 20px;">3. {{char3}} in {{movie3}}</strong></p>
@@ -105,10 +103,8 @@
               </div>
 
               <div class="item">
-                <div class="col-md-3 container">
-                  <div class="img_container">
-
-                  <img class="center poster" src="/static/img/{{char4under}}.jpg" alt="{{char4}}"></div>
+                <div class="col-md-3 img_container">
+                  <img class="center poster" src="/static/img/{{char4under}}.jpg" alt="{{char4}}">
                   <div class="post_title" display="none">
                     <div class="radar"><canvas id="myChart4"></canvas></div>
                     <p><strong style="font-size: 20px;">4. {{char4}} in {{movie4}}</strong></p>
@@ -121,9 +117,8 @@
               </div>
               
               <div class="item">
-                <div class="col-md-3 container">
-                  <div class="img_container">
-                  <img class="center poster" src="/static/img/{{char5under}}.jpg" alt="{{char5}}"></div>
+                <div class="col-md-3 img_container">
+                  <img class="center poster" src="/static/img/{{char5under}}.jpg" alt="{{char5}}">
                   <div class="post_title" display="none">
                     <div class="radar"><canvas id="myChart5"></canvas></div>
                     <p><strong style="font-size: 20px;">5. {{char5}} in {{movie5}}</strong></p>
@@ -248,7 +243,7 @@ var data1 = {
         },
         {
             label: "Your Big Five",
-            backgroundColor: "#fff",
+            backgroundColor: "rgba(179,181,198,0.2)",
             borderColor: "#56ac8a",
             pointBackgroundColor: "#56ac8a",
             pointBorderColor: "#c1bfbd",
@@ -306,7 +301,7 @@ var data2 = {
         },
         {
             label: "Your Big Five",
-            backgroundColor: "#fff",
+            backgroundColor: "rgba(179,181,198,0.2)",
             borderColor: "#56ac8a",
             pointBackgroundColor: "#56ac8a",
             pointBorderColor: "#c1bfbd",
@@ -364,7 +359,7 @@ var data3 = {
         },
         {
             label: "Your Big Five",
-            backgroundColor: "#fff",
+            backgroundColor: "rgba(179,181,198,0.2)",
             borderColor: "#56ac8a",
             pointBackgroundColor: "#56ac8a",
             pointBorderColor: "#c1bfbd",
@@ -422,7 +417,7 @@ var data4 = {
         },
         {
             label: "Your Big Five",
-            backgroundColor: "#fff",
+            backgroundColor: "rgba(179,181,198,0.2)",
             borderColor: "#56ac8a",
             pointBackgroundColor: "#56ac8a",
             pointBorderColor: "#c1bfbd",
@@ -480,7 +475,7 @@ var data5 = {
         },
         {
             label: "Your Big Five",
-            backgroundColor: "#fff",
+            backgroundColor: "rgba(179,181,198,0.2)",
             borderColor: "#56ac8a",
             pointBackgroundColor: "#56ac8a",
             pointBorderColor: "#c1bfbd",
