@@ -21,7 +21,7 @@
 
 .img_container {
 /*    position: relative;
-*/  width: 40%;
+*/  width: 55%;
     transition: opacity;
     float: left;
   padding-top:50px;
@@ -44,6 +44,7 @@ img {
     font-family: 'Font Awesome 5 Pro', sans-serif;
     font-size: 15px;
     padding-top: 70px;
+    width: 400px;
 /*    display: none;
 */}
 
@@ -52,12 +53,11 @@ img {
 }*/
 
 .radar {
-    padding: 20px;
+    padding: 30px;
     width: 400px;
     height: auto;
     left: 0;
 }
-
 
 
 .img_container:hover .post_title {
