@@ -1,0 +1,118 @@
+.carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
+.center {
+  color: white;
+  font-weight: 900;
+  font-size: 14.5px;
+}
+
+.carousel {
+  height: 600px;
+  background-color: #040404;
+}
+/* Carasoul Display */
+.poster {
+  padding: 30px;
+}
+
+.poster:hover {
+  cursor: pointer;
+}
+
+.container {
+/*    position: relative;
+*/    width: 50%;
+margin-left: 25%;
+    color: white;
+    transition: opacity;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+
+img {
+  margin-left: 20%;
+  width: 330px; 
+  height: 450px;
+  border-radius: 50%;
+  box-shadow:white 0px 0px 10px;
+  object-fit: fill;
+}
+/* Centered text */
+.post_title {
+    position: absolute;
+    margin-right: 10%;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    font-family: 'Font Awesome 5 Pro', sans-serif;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.post_title:hover .radar:hover {
+  cursor: pointer;
+}
+
+.radar {
+  margin-left: 80%;
+  padding-top: 50%;
+    width: 450px;
+    height: auto;
+    left: 0;
+}
+
+
+.container:hover .post_title {
+  transition-duration: .7s;
+  display: inline-block;
+  opacity: 1;
+  left: 0px;
+}
+
+.container:hover img {
+  filter: brightness(30%);
+}
+
+.container:hover .poster {
+  transition-duration: .7s;
+  padding: 15px;
+}
+
+span.glyphicon {
+  color: white;
+  opacity: 1;
+}
+
+.carousel-control {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 100%;
+}
+
+.carousel-control.right {
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,1) 100%);
+}
+.carousel-control.left {
+  background-image: linear-gradient(to right,rgba(0,0,0,1) 0,rgba(0,0,0,.0001) 100%);
+}
+
+.carousel-indicators {
+  bottom: 5%;
+}
+
+.carousel-indicators li {
+  border: 1px solid rgba(255,255,255, 0.8);
+}
+
+
+strong {
+  font-weight: 900;
+  /*font-size: 14px;*/
+}
