@@ -68,7 +68,7 @@ img {
 }
 
 .img_container:hover img {
-  filter: brightness(70%);
+  filter: brightness(90%);
 }
 
 .img_container:hover .poster {
