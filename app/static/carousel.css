@@ -21,8 +21,7 @@
 
 .img_container {
 /*    position: relative;
-*/  width: 50%;
-    color: white;
+*/  width: 40%;
     transition: opacity;
     float: left;
   padding-top:50px;
@@ -59,10 +58,6 @@ img {
     left: 0;
 }
 
-/*canvas {
-    width: 400px;
-    height: auto;
-}*/
 
 
 .img_container:hover .post_title {
