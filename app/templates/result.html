@@ -68,9 +68,6 @@
                     <p><strong style="font-size: 14px;">{{movie1}}</strong></p>
                   </div>
                 </div>
-      <script type="text/javascript">
-        $('[data-toggle="tooltip"]').tooltip({html:true});
-      </script>
 
               <div class="item">
                 <div class="col-md-3 img_container">
@@ -515,6 +512,10 @@ var myChart5 = new Chart(ctx, {
                 }
             }
         }
+});
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip({html:true});   
 });
 
 
