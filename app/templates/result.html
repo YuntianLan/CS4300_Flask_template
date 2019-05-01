@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" type="text/css" href="/static/main.css" media="all" />
     <link rel="stylesheet" type="text/css" href="/static/carousel.css" media="all" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
     <link rel="shortcut icon" href="/static/favicon.ico">
 
@@ -55,12 +57,6 @@
         <li data-target="#myCarousel" data-slide-to="4"></li>
       </ol>
 
-      <script>
-        $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip();   
-        });
-      </script>
-
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
@@ -77,6 +73,11 @@
                     <p><strong style="font-size: 14px;">{{movie1}}</strong></p>
                   </div>
                 </div>
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+      </script>
 
               <div class="item">
                 <div class="col-md-3 img_container">
