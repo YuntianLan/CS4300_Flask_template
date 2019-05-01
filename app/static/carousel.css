@@ -10,7 +10,12 @@ body {
   font-size: 14.5px;
 }
 
-/* Carasoul Display */
+/* Carousel Display */
+.caroursel {
+  width:100%;
+  height:600px;
+}
+
 .poster {
   padding: 30px;
 }
