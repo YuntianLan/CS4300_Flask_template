@@ -1,7 +1,5 @@
 body {
-  width: 100%;
   background-color: #040404;
-  box-shadow: #222025 0px 0px 10px;
 }
 
 .center {
@@ -10,12 +8,10 @@ body {
   font-size: 14.5px;
 }
 
-/* Carousel Display */
-.caroursel {
-  width:100%;
+/* Carasoul Display */
+.carousel {
   height:600px;
 }
-
 .poster {
   padding: 30px;
 }
