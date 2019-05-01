@@ -14,12 +14,18 @@
 
     <link rel="shortcut icon" href="/static/favicon.ico">
 
-<style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    width: 70%;
-    margin: auto;
-  }
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+
+        .tooltip-inner {
+            text-align: left;
+            max-width: 500px;
+            border-radius: 20px;
+        }
   </style>
     
     </head>
@@ -30,18 +36,6 @@
             <p>Student Name: ({{ netid }})</p>
         </div> -->
     <div id="title"></div>
-
-<!--             <br><br>
-
-        <div class="container">
-            <p class="text-center" style="color: black">Your personality scores are calculated based on the <a href="https://www.123test.com/big-five-personality-theory/">Big Five Personality Test</a>.</p>   
-            <p class="container explanation">The concept of the “Big Five” personality traits is taken from psychology and includes five broad domains that describe personality. These five personality traits are used to understand the relationship between personality and various behaviors.</p>
-
-            <p class="container explanation">These five factors, including <a href="https://www.123test.com/personality-openness/">Openness</a>, <a href="https://www.123test.com/personality-conscientiousness/">Conscientiousness</a>, <a href="https://www.123test.com/personality-extraversion/">Extraversion</a>, <a href="https://www.123test.com/personality-agreeableness/">Agreeableness</a>, <a href="https://www.123test.com/personality-neuroticism/">Neuroticism</a> are assumed to represent the basic structure behind all personality traits. These five factors were defined and described by several different researchers during multiple periods of research. </p>
-
-            <p class="container explanation">We calculated your big-five personality vector according to your answers to the 10 multiple choices. This vector was then adjusted based on the adjective you used to describe yourself and the most similar movie character you think you are (if provided). The result was combined with your personal catchphrase (compared to characters’ scripts using cosine similarity) to help you determine who you would be in a movie/TV series.</p>
-        </div> -->
-
 
 
 <!--     <div class="container text-center results">
@@ -57,7 +51,6 @@
       </ol>
 
 
-
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
@@ -65,7 +58,7 @@
                   <img class="center poster" src="/static/img/{{char1under}}.jpg" alt="{{char1}}">
                 </div>
                 <div class="post_title">
-                    <p><strong style="font-size: 20px;">1. {{char1}}</strong></p>
+                    <p><strong style="font-size: 20px;">1. {{char1}}  </strong><a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<p>We calculated your big-five personality vector according to your answers to the 10 multiple choices. This vector was then adjusted based on the adjective you used to describe yourself and the most similar movie character you think you are (if provided). The result was combined with your personal catchphrase (compared to characters’ scripts using cosine similarity) to help you determine who you would be in a movie/TV series. </p><p>These five factors, including Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism are assumed to represent the basic structure behind all personality traits. </p>">🔑</a></p>
                     <div class="radar"><canvas id="myChart1"></canvas></div>
                     {% for row in quote1 %}
                     <p><i style="font-size: 12px;">{{row}}</i></p>
