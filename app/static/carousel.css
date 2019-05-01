@@ -1,15 +1,15 @@
+body {
+  width: 100%;
+  background-color: #040404;
+  box-shadow: #222025 0px 0px 10px;
+}
+
 .center {
   color: white;
   font-weight: 900;
   font-size: 14.5px;
 }
 
-.carousel {
-  width: 100%;
-  height: 600px;
-  background-color: #040404;
-  box-shadow: #222025 0px 0px 10px;
-}
 /* Carasoul Display */
 .poster {
   padding: 30px;
@@ -20,17 +20,16 @@
 }
 
 .img_container {
-/*    position: relative;
-*/  width: 55%;
-    transition: opacity;
-    float: left;
+  width: 55%;
+  transition: opacity;
+  float: left;
   padding-top:50px;
   padding-bottom:50px;
 }
 
 img {
   margin-left: 20%;
-  width: 330px; 
+  width: 50; 
 /*  height: 450px;
 */  border-radius: 50%;
   box-shadow:white 0px 0px 10px;
