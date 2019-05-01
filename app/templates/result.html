@@ -59,7 +59,7 @@
                   <img class="center poster" src="/static/img/{{char1under}}.jpg" alt="{{char1}}">
                 </div>
                 <div class="post_title">
-                    <p><strong style="font-size: 20px;">1. {{char1}}  </strong><a href="#" datatoggle="tooltip" data-placement="top" data-original-title="<p>We calculated your big-five personality vector according to your answers to the 10 multiple choices. This vector was then adjusted based on the adjective you used to describe yourself and the most similar movie character you think you are (if provided). The result was combined with your personal catchphrase (compared to characters’ scripts using cosine similarity) to help you determine who you would be in a movie/TV series. </p><p>These five factors, including Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism are assumed to represent the basic structure behind all personality traits. </p>">🔑</a></p>
+                    <p><strong style="font-size: 20px;">1. {{char1}}  </strong><a href="#" data-toggle="tooltip" data-html="true"data-placement="left" title="<p>We calculated your big-five personality vector according to your answers to the 10 multiple choices. This vector was then adjusted based on the adjective you used to describe yourself and the most similar movie character you think you are (if provided). The result was combined with your personal catchphrase (compared to characters’ scripts using cosine similarity) to help you determine who you would be in a movie/TV series. </p><p>These five factors, including Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism are assumed to represent the basic structure behind all personality traits. </p>">🔑</a></p>
                     <div class="radar"><canvas id="myChart1"></canvas></div>
                     {% for row in quote1 %}
                     <p><i style="font-size: 12px;">{{row}}</i></p>
@@ -515,7 +515,7 @@ var myChart5 = new Chart(ctx, {
 });
 
 $(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip({html:true});   
+  $('[data-toggle="tooltip"]').tooltip();   
 });
 
 
