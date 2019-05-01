@@ -59,6 +59,11 @@ img {
     left: 0;
 }
 
+/*canvas {
+    width: 400px;
+    height: auto;
+}*/
+
 
 .img_container:hover .post_title {
   transition-duration: .7s;
